@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" href="./assets/icons/SeridoPonto.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/icons/SeridoPonto.ico">
   <title>SeridoPonto</title>
 
   <!-- CSS BOOTSTRAP -->
@@ -47,8 +47,8 @@
     
     </div>
     <div id="btn-header">
-      <a href="./pages/auth/login.html"><button type="button" class="btn btn-primary box-shadow-btn-primary ml-2">Funcionario</button></a> 
-      <a href="./pages/auth/login.html"><button type="button" class="btn btn-secundary box-shadow-btn-secundary ">Empresa</button></a> 
+      <a href="./pages/funcionario/home.html"><button type="button" class="btn btn-primary box-shadow-btn-primary ml-2">Funcionario</button></a> 
+      <a href="./pages/empresa/homeEmpresa.html"><button type="button" class="btn btn-success box-shadow-btn-secundary ">Empresa</button></a> 
     </div>
   </div>
 </nav>
@@ -65,7 +65,7 @@
         Conheça a melhor solução de controle de ponto
       </h3>
       <div class="text-center mt-4">
-      <button type="button" class="btn btn-primary box-shadow-btn-primary ">Comece agora!</button>
+      <a href="./pages/auth/login.html"><button type="button" class="btn btn-primary box-shadow-btn-primary ">Comece agora!</button></a> 
       </div>
     </div>
   </div>
@@ -79,8 +79,8 @@
         <div class="col-12 col-md-4">
           <div class="card text-center">
             <div class="card-body">
-              <h5 class="card-title mt-3">Acesse</h5>
-              <p class="card-text text-start color-font-secundary text-center">Lorem ipsum dolor sit amet elit.Lorem ipsum dolor sit amet elit.</p>
+              <h5 class="card-title mt-3">Acesse de qualquer lugar</h5>
+              <p class="card-text text-start color-font-secundary text-center">Acesse de onde estiver, pelo celular, tablet ou pela web para bater ou controlar os pontos.</p>
               <div class="icon-card">
                 <i class="bi bi-map color-light"></i>
               </div>
@@ -90,8 +90,8 @@
         <div class="col-12 col-md-4">
           <div class="card text-center">
             <div class="card-body">
-              <h5 class="card-title mt-3">Acesse</h5>
-              <p class="card-text text-start color-font-secundary text-center">Lorem ipsum dolor sit amet elit.Lorem ipsum dolor sit amet elit.</p>
+              <h5 class="card-title mt-3">Banco de horas</h5>
+              <p class="card-text text-start color-font-secundary text-center">Controle facilmente de forma simples e objetiva o banco de horas de seus colaboradores.</p>
               <div class="icon-card">
                 <i class="bi bi-clock"></i>
               </div>
@@ -101,10 +101,10 @@
         <div class="col-12 col-md-4">
           <div class="card text-center">
             <div class="card-body">
-              <h5 class="card-title mt-3">Acesse</h5>
-              <p class="card-text text-start color-font-secundary text-center">Lorem ipsum dolor sit amet elit.Lorem ipsum dolor sit amet elit.</p>
+              <h5 class="card-title mt-3">Relatórios completos</h5>
+              <p class="card-text text-start color-font-secundary text-center">Controle facilmente ajustes, folgas e visualize a folha de ponto em tempo real.</p>
               <div class="icon-card">
-                <i class="bi bi-shield-check"></i>
+                <i class="bi bi-file-earmark-text"></i>
               </div>
             </div>
           </div>
@@ -114,10 +114,10 @@
       <div class="col-12 col-md-4">
         <div class="card text-center">
           <div class="card-body">
-            <h5 class="card-title mt-3">Acesse</h5>
-            <p class="card-text text-start color-font-secundary text-center">Lorem ipsum dolor sit amet elit.Lorem ipsum dolor sit amet elit.</p>
+            <h5 class="card-title mt-3">Suporte online</h5>
+            <p class="card-text text-start color-font-secundary text-center">Tenha todo o apoio de nossa equipe de atendimento para tirar todas suas dúvidas.</p>
             <div class="icon-card">
-              <i class="bi bi-file-earmark-text"></i>
+              <i class="bi bi-shield-check"></i>
             </div>
           </div>
         </div>
@@ -125,8 +125,8 @@
       <div class="col-12 col-md-4">
         <div class="card text-center">
           <div class="card-body">
-            <h5 class="card-title mt-3">Acesse</h5>
-            <p class="card-text text-start color-font-secundary text-center">Lorem ipsum dolor sit amet elit.Lorem ipsum dolor sit amet elit.</p>
+            <h5 class="card-title mt-3">Seguro empresarial</h5>
+            <p class="card-text text-start color-font-secundary text-center">Em caso de falha do sistema, perca de dados ou recurso a empresa será asegurada.</p>
             <div class="icon-card">
               <i class="bi bi-person-video"></i>
             </div>
@@ -136,8 +136,8 @@
       <div class="col-12 col-md-4">
         <div class="card text-center">
           <div class="card-body">
-            <h5 class="card-title mt-3">Acesse</h5>
-            <p class="card-text text-start color-font-secundary text-center">Lorem ipsum dolor sit amet elit.Lorem ipsum dolor sit amet elit.</p>
+            <h5 class="card-title mt-3">Tecnologias</h5>
+            <p class="card-text text-start color-font-secundary text-center">Gerencie sua empresa ultilizando as mais inovadoras tecnologias do mercado</p>
             <div class="icon-card">
               <i class="bi bi-bookmark-check-fill"></i>
             </div>
@@ -153,37 +153,41 @@
   <div class="accordion accordion-flush mx-5 mb-5 mt-5">
     <div class="accordion-item">
       <h2 class="accordion-header" id="flush-headingOne">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Accordion Item #1
+        <button class="accordion-button collapsed fs-5"  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Como funciona a SeridoPonto?
         </button>
       </h2>
       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        <div class="accordion-body">O controle de ponto online é uma tecnologia que, na prática, permite fazer a marcação de ponto digitalmente, ou seja, por meio do acesso à web via computador, tablet ou celular. Neste último caso, o registro de entrada e saída dos colaboradores é feito através de um aplicativo instalado no smartphone, por exemplo.</div>
       </div>
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="flush-headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-          Accordion Item #2
+        <button class="accordion-button collapsed fs-5"" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          O SeridoPonto é de graça?
         </button>
       </h2>
       <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+        <div class="accordion-body">Oferecemos um período de 7 dias para teste e implantação de até 20 funcionários do sistema na sua empresa. Para empresas maiores, entre em contato.</div>
       </div>
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="flush-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          Accordion Item #3
+        <button class="accordion-button collapsed fs-5"" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Como funciona o SeridoPonto no celular?
         </button>
       </h2>
       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        <div class="accordion-body">Bata o ponto no celular pelo aplicativo pontoGo colaborador (Android e iOS) Para registrar o horário de entrada, pausa para almoço ou saída, o colaborador terá que clicar na opção de bater ponto.</div>
       </div>
     </div>
   </div>
 </div>
+
 </main>
+<footer class="" style="background-color: white; padding: 16px 0; border-top: 1px solid #dddd;">
+  <p class="text-center mt-4 color-font-secundary" >© 2022 SeridoPonto. Termos de Uso e Políticas de Privacidade</p>
+</footer>
 
 </body>
 

@@ -14,6 +14,7 @@ color: #666666;
   color: #46BB83;
 }
 
+
 .btn-primary {
   background-color: #5366FF;
   color: white;
@@ -21,6 +22,11 @@ color: #666666;
 
 .btn-secundary{
   background-color: #46BB83;
+  color: white;
+}
+
+.btn-secundary:hover{
+  background-color: #39996B;
   color: white;
 }
 

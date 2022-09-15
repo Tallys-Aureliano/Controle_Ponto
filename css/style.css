@@ -1,28 +1,27 @@
 body {
   background-color: #FAFAFA !important;
+  color: #050505;
 }
 
-.cards-func {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  padding: 0 16px;
-  gap: 24px !important;
-  max-width: 1000px !important;
-  margin: auto !important;
+#btn-header {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  gap: 12px;
 }
 
-/* @media (max-width:950px) {
-  .cards-func {
-    grid-template-columns: repeat(2, 1fr) !important;
+@media (max-width:990px) {
+  #btn-header {
+    display: none;
   }
-  
-} */
+}
 
-.card-body {
-  padding: 48px 24px 16px 24px !important;
-  width: 286px !important;
-  height: 200px;
+
+#cards-func {
+  margin-top: 120px !important;
+}
+.card {
+  margin-bottom: 4em;
 }
 
 .icon-card {
@@ -39,6 +38,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.bi {
+  color: white;
+  font-size: 1.3em;
+}
 
 .position-relative{
   background: url("../assets/images/indeximage.png") top center no-repeat;
@@ -46,56 +49,7 @@ body {
   height: 550px;
 }
 
-/* func */
-.func {
-  margin: 100px 0;
-}
 
-/* duvidas */
-.duvida {
-  display: flex;
- 
-  flex-direction: column;
-  align-items: center;
-}
-
-.duvida details {
-  /* width: 700px; */
-  border-bottom: 1px solid #96BBA9;
-   
-  padding: 24px 0;
-}
-
-.duvida summary {
- font-size: 24px;
- color: #1c1c1c;
-}
-
-.duvida p {
-  color: #666666;
- }
-
- footer {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
-
- /* footer .auto-footer {
-  display: flex;
-  gap: 100px;
-  align-items: center;
-} */
-
-footer .bottom-footer ::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 5px;
-  background-color: #dddddd;
-  top: 0;
-}
 
 .--box-authentication {
     width: 450px;

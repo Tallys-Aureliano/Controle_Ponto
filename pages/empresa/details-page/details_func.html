@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Funcionário</title>
+    <!-- CSS BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- ICONS BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="../../../css/global.css" />
+    <!-- CSS DO PROJETO -->
+    <link rel="stylesheet" href="../../../css/home.css">
+   
+    <!-- SCRIPT DO BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+<body>
+  <nav class="navbar bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../../../assets/images/SeridoPonto.png" alt="logo"/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <img src="../../../assets/images/SeridoPonto.png" alt="logo"/>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="./casdastro_func.html">Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./funcionarios.html">Funcionarios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./relatorios.html">Relatórios</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <h1 class="mt-5 pt-5 text-center">Detalhes do Funcionário</h1>
+  <div class="pt-2 d-flex justify-content-center">
+    <div class="card mb-3 mt-5" style="max-width: 350px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="../../../assets/images/pessoa.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-center">João</h5>
+            <p class="card-text text-center">Programador</p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <main class="container mt-2">
+        <div class="--form-filter mt-5 mb-3">
+            <form action="" class="get">
+                <div class="d-flex flex-wrap gap-3">
+                <select class="form-select form-control-sm shadow-sm" aria-label="Funcionario">
+                    <option selected>Mes</option>
+                    <option value="1">Janeiro</option>
+                    <option value="2">fevereuro</option>
+                    <option value="3">Março</option>
+                  </select>
+                  <select class="form-select form-control-sm shadow-sm" aria-label="Situação">
+                    <option selected>Situação</option>
+                    <option value="1">Extra</option>
+                    <option value="2">Falta</option>
+                    <option value="3">Atraso</option>
+                  </select>
+
+                  <button class="btn btn-sm btn-outline-success shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
+                </div>
+            </form>
+        </div>
+        <div class="--table-data table-responsive mt-3">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Data</th>
+                    <th scope="col">Horas</th>
+                    <th scope="col">Situação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-danger">
+                        <td>20/03/2022</td>
+                        <td>8 horas</td>
+                        <td>Inativo</td>
+                    </tr>
+                    <tr class="bg-success">
+                        <td>20/03/2022</td>
+                        <td>8 horas</td>
+                        <td>Extra</td>
+                    </tr>
+                    <tr>
+                        <td>20/03/2022</td>
+                        <td>10 horas</td>
+                        <td>Normal</td>
+                    </tr>
+                    <tr class="bg-warning">
+                        <td>20/03/2022</td>
+                        <td>8 horas</td>
+                        <td>Atraso</td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="mt-5 mb-5" id="detalhes">
+          <h2 class="text-center mb-5">Detalhes Gerais</h2>
+          <div class="col-7 offset-2 col-md-10 offset-md-1" id="cards-func">
+            <div class="row gx-5">
+              <div class="col-12 col-md-4">
+                <div class="card mb-5 text-center">
+                  <div class="card-body mb-2">
+                    <p class="card-title color-font-secundary">Atrasos</p>
+                    <h1 class="card-text text-start text-center">5h</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card mb-5 text-center">
+                  <div class="card-body mb-2">
+                    <p class="card-title color-font-secundary">Carga Horária</p>
+                    <h1 class="card-text text-start text-center">120H</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card mb-5 text-center">
+                  <div class="card-body mb-2">
+                    <p class="card-title color-font-secundary">Horas Extras</p>
+                    <h1 class="card-text text-start text-center">10h</h1>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </main>
+<script>
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+const config = {
+  type: 'doughnut',
+  data: data,
+};
+</script>
+</body>
+</html>

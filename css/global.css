@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+.color-font-secundary {
+color: #666666;
+}
+.color-primary {
+  color: #5366FF;
+}
+
+.color-secundary {
+  color: #46BB83;
+}
+
+.btn-primary {
+  background-color: #5366FF;
+  color: white;
+}
+
+.btn-secundary{
+  background-color: #46BB83;
+  color: white;
+}
+
+.box-shadow-btn-primary {
+  box-shadow: 0 4px 10px 2px #5366FF50;;
+
+}
+
+.box-shadow-btn-secundary{
+  box-shadow: 0 4px 10px 2px #46BB8320;;
+
+}

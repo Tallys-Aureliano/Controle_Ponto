@@ -1,19 +1,6 @@
 body {
   background-color: #FAFAFA !important;
 }
-.navbar {
-  position: fixed !important;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  background-color: white !important;
-}
-
-
-/* index */
-.img-fluid {
-  width: 100% !important;
-}
 
 .cards-func {
   display: flex !important;
@@ -25,12 +12,12 @@ body {
   margin: auto !important;
 }
 
-@media (max-width:950px) {
+/* @media (max-width:950px) {
   .cards-func {
     grid-template-columns: repeat(2, 1fr) !important;
   }
   
-}
+} */
 
 .card-body {
   padding: 48px 24px 16px 24px !important;
@@ -53,7 +40,11 @@ body {
   transform: translate(-50%, -50%);
 }
 
-
+.position-relative{
+  background: url("../assets/images/indeximage.png") top center no-repeat;
+  background-size: cover;
+  height: 550px;
+}
 
 /* func */
 .func {
@@ -66,12 +57,10 @@ body {
  
   flex-direction: column;
   align-items: center;
-  margin: 100px 0;
- 
 }
 
 .duvida details {
-  width: 700px;
+  /* width: 700px; */
   border-bottom: 1px solid #96BBA9;
    
   padding: 24px 0;
@@ -93,26 +82,20 @@ body {
   align-items: center;
  }
 
- footer .auto-footer {
+ /* footer .auto-footer {
   display: flex;
   gap: 100px;
   align-items: center;
-}
+} */
 
 footer .bottom-footer ::after {
   content: "";
   position: absolute;
   top: 0;
-  width: 100%;
   height: 5px;
   background-color: #dddddd;
   top: 0;
 }
-
-
-
-
-
 
 .--box-authentication {
     width: 450px;
@@ -143,6 +126,7 @@ footer .bottom-footer ::after {
     border-radius: 0;
     padding-left: 0;
     padding-right: 0;
+    background-color: transparent;
     border-bottom: 1px solid gray;
 }
 
@@ -180,4 +164,16 @@ footer .bottom-footer ::after {
 
 .--form-filter .form-select{
     width: auto;
+}
+
+.accordion{
+  --bs-accordion-bg: transparent;
+}
+
+.charts col{
+  width: 200px;
+}
+
+.chart > col > canvas{
+  position: relative;
 }

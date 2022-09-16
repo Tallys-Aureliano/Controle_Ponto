@@ -6,7 +6,7 @@
 
 @section('head')
 
-  <link rel="stylesheet" type="text/css" href="{{asset('storage/css/index.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('assets/css/index.css')}}">
 
 @endsection
 

@@ -1,0 +1,133 @@
+body {
+  background-color: #FAFAFA !important;
+  color: #050505;
+}
+
+#btn-header {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  gap: 12px;
+}
+
+@media (max-width:990px) {
+  #btn-header {
+    display: none;
+  }
+}
+
+
+#cards-func {
+  margin-top: 120px !important;
+}
+.card {
+  margin-bottom: 4em;
+}
+
+.icon-card {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 5px 2px #5366FF50;
+  background-image: linear-gradient(#5366FF, #46BB83);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bi {
+  color: white;
+  font-size: 1.3em;
+}
+
+.position-relative{
+  background: url("../assets/images/indeximage.png") top center no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+
+
+
+.--box-authentication {
+    width: 450px;
+    padding: 48px;
+}
+
+@media(max-width: 460px){
+    .--box-authentication{
+        width: 100%;
+        transition: 0.3s;
+    }
+}
+
+.--form-authentication-button button{
+    box-shadow: 0px 4px 10px rgba(83, 102, 255, 0.3);
+    position: relative;
+    width: 100% !important;
+    background-color: #5366FF;
+}
+
+.--form-authentication-button button:hover{
+    background-color: #4152d1 !important;
+    transition: 0;
+}
+
+.--form-authentication > input{
+    border: none;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+}
+
+.--form-authentication > input:hover{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom-color: black;
+    border-radius: 5px 5px 0px 0px;
+    transition: 0.4s;
+}
+
+.--box-authentication h1{
+    color: #5366FF;
+}
+
+.--box-authentication a{
+    font-weight: 300;
+    color: #46BB83;
+}
+
+.--brand > p{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    color: gray;
+}
+
+.--brand p > span{
+    font-family: 'Zen Antique Soft';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.--form-filter .form-select{
+    width: auto;
+}
+
+.accordion{
+  --bs-accordion-bg: transparent;
+}
+
+.charts col{
+  width: 200px;
+}
+
+.chart > col > canvas{
+  position: relative;
+}

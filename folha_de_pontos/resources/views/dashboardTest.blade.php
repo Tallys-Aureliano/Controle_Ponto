@@ -3,7 +3,7 @@
 Dashboard
 @endsection
 @section('head')
-<link rel="stylesheet" type="text/css" href="{{ asset('storage/css/sb-admin-2.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/sb-admin-2.css') }}">
 @endsection
 @section('content')
 <body id="page-top">

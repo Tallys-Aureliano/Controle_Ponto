@@ -9,8 +9,10 @@ Cadastro de usúario
 <form method="POST" action="{{ route('register') }}">
     @csrf
     <div class="--form-authentication">
-        <input type="email" name="email" class="form-control mt-3" placeholder="Entrar com Email">
-        <input type="password" name="password" class="form-control mt-3" placeholder="Sua senha">
+        <input type="text" name="name" class="form-control mt-3" placeholder="Digite seu nome">
+        <input type="email" name="email" class="form-control mt-3" placeholder="Digite seu email">
+        <input type="password" name="password" class="form-control mt-3" placeholder="Digite uma senha">
+        <input type="password" name="password_confirmation" class="form-control mt-3" placeholder="Confirme sua senha">
     </div>
     <div class="--other-things mt-3"></div>
     <div class="--form-authentication-button text-center mt-5">

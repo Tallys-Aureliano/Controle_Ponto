@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('business', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->
+            $table->string('name', 155);
+            $table->boolean('active')->default(true);
             $table->timestamps();
         });
     }

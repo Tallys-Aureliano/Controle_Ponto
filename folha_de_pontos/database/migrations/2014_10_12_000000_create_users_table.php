@@ -19,6 +19,12 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('cpf');
+            $table->biginteger('matricula')->nullable();
+            $table->string('photo')->nullable();
+            $table->integer('role');
+            $table->boolean('active');
+            $table->integer('auto_register');
             $table->rememberToken();
             $table->timestamps();
         });

@@ -355,6 +355,7 @@
                 0 => '*',
             ),
         ),
+<<<<<<< HEAD
         'laravel/breeze' => array(
             'pretty_version' => 'v1.13.0',
             'version' => '1.13.0.0',
@@ -364,6 +365,8 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+=======
+>>>>>>> b5ad2eda7277cb9a2362bdd77180d4d85ab651b2
         'laravel/framework' => array(
             'pretty_version' => 'v9.30.0',
             'version' => '9.30.0.0',
@@ -718,8 +721,13 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
+<<<<<<< HEAD
                 0 => '1.0.0 || 2.0.0 || 3.0.0',
                 1 => '1.0|2.0|3.0',
+=======
+                0 => '1.0|2.0|3.0',
+                1 => '1.0.0 || 2.0.0 || 3.0.0',
+>>>>>>> b5ad2eda7277cb9a2362bdd77180d4d85ab651b2
             ),
         ),
         'psr/simple-cache' => array(

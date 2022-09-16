@@ -1196,6 +1196,7 @@
             "install-path": "../hamcrest/hamcrest-php"
         },
         {
+<<<<<<< HEAD
             "name": "laravel/breeze",
             "version": "v1.13.0",
             "version_normalized": "1.13.0.0",
@@ -1260,6 +1261,8 @@
             "install-path": "../laravel/breeze"
         },
         {
+=======
+>>>>>>> b5ad2eda7277cb9a2362bdd77180d4d85ab651b2
             "name": "laravel/framework",
             "version": "v9.30.0",
             "version_normalized": "9.30.0.0",

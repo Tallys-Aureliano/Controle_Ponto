@@ -29,8 +29,11 @@ return new class extends Migration
             $table->timestamps();
             $table->unsignedBigInteger('business_id')->nullable();
             $table->foreign('business_id')->references('id')->on('business');
-            $table->unsignedBigInteger('position');
-            $table->foreign('position')->references('id')->on('positions');
+            $table->unsignedBigInteger('position_id')->default(1);
+            $table->foreign('position_id')->references('id')->on('positions')->onDelete('cascade');
+
+            // $table->unsignedBigInteger('position');
+            // $table->foreign('position')->references('id')->on('positions');
         });
     }
 

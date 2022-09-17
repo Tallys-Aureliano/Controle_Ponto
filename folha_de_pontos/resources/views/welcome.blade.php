@@ -17,6 +17,9 @@
 
 <section class="banner bg-tertiary position-relative overflow-hidden">
   <div class="container">
+
+    @include('partials.flash_messages')
+    
     <div class="row align-items-center justify-content-center">
       <div class="col-lg-6 mb-5 mb-lg-0">
         <div class="block text-center text-lg-start pe-0 pe-xl-5">

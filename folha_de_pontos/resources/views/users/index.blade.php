@@ -38,7 +38,11 @@ Lista de Funcionários
 				@foreach($users as $user)
 					<tr>
 						<td>{{ $user->name }}</td>
-						<td>{{ $user->matricula }}</td>
+						@if($user->matricula)
+							<td>{{ $user->matricula }}</td>
+						@else
+							<td>Não possui</td>
+						@endif
 						<td>{{ $user->position->name }}</td>
 					</tr>
 				@endforeach

@@ -47,7 +47,7 @@ class RegisteredUserController extends Controller
             'cpf' => $request->cpf,
             'auto_register' => true,
             'role' => 1,
-            'positions_id' => $request->position,
+            'positions_id' => 1,
         ]);
 
         event(new Registered($user));

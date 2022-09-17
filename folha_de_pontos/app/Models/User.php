@@ -49,4 +49,15 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function position()
+    {
+        // return $this->hasMany('App\Models\User');
+        return $this->belongsTo(Position::class, 'id');
+        // return $this->hasOne('App\Models\Position');
+    }
+
+//     public function locationid(){
+//     return $this->belongsTo(Location::class, 'location_id');
+// }
 }

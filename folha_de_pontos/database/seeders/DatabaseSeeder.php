@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
             'cpf' => '123.456.789-10',
             'auto_register' => true,
             'role' => 0,
-            'position' => $position,
+            'position_id' => $position,
         ])->save();
 
         // \App\Models\User::factory(10)->create();

@@ -19,18 +19,18 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('cpf')->unique();
+            $table->string('cpf', 14);
             $table->biginteger('matricula')->nullable();
             $table->string('photo', 555)->nullable();
             $table->integer('role');
             $table->boolean('active')->default(true);
-            $table->integer('auto_register');
+            $table->boolean('auto_register')->default(false);
             $table->rememberToken();
             $table->timestamps();
             $table->unsignedBigInteger('business_id')->nullable();
             $table->foreign('business_id')->references('id')->on('business');
-            $table->unsignedBigInteger('positions_id');
-            $table->foreign('positions_id')->references('id')->on('positions');
+            $table->unsignedBigInteger('position');
+            $table->foreign('position')->references('id')->on('positions');
         });
     }
 

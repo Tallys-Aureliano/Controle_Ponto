@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Position;
 
 class UserController extends Controller
 {
@@ -14,7 +15,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::with(['Position'])->get();
+        // $positions = Position::with(['sectors_id'])->get();
+
+        $users = User::with('position')->get();
+        // $users->
 
         return view('users.index', compact('users'));
     }

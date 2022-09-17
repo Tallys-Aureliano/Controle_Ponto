@@ -9,7 +9,7 @@ class Position extends Model
 {
 	protected $fillable = [
 		'name',
-		'sec_id'
+		'sectors_id'
 	];
 
     use HasFactory;

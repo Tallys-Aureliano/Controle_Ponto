@@ -1,13 +1,12 @@
 @extends('base')
 
 @section('title')
-
+Bem vindo
 @endsection
 
 @section('head')
   <!-- CSS INDEX -->
   <link rel="stylesheet" type="text/css" href="{{asset('assets/css/index.css')}}">
-
 @endsection
 
 @section('content')

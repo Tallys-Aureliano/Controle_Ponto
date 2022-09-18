@@ -45,6 +45,8 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+
+/* BUTTONS */
 *,
 *::before,
 *::after {
@@ -90,6 +92,21 @@
 .btn-secundary-m:active{
   box-shadow: none !important;
 }
+
+.btn-terciary-m{
+  border: 1px solid var(--color-font-secundary) !important;
+  background-color: transparent !important;
+  color: var(--color-font) !important;
+  transition: background-color .2s !important;
+}
+
+.btn-terciary-m:hover{
+  background-color: var(--color-secundary-dark) !important;
+  color: var(--color-font) !important;
+}
+
+
+/* ------- */
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -598,7 +615,7 @@ progress {
 
 footer {
   position: relative;
-  padding: 80px 0 0 0 !important;
+  padding: 64px 0 0 0 !important;
 }
 
 footer::after {
@@ -3557,7 +3574,7 @@ textarea.form-control-lg {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1rem 1rem;
+  padding: 2rem 1rem 1rem 1rem;
 }
 
 .card-title {

@@ -203,11 +203,11 @@ Bem vindo
       <div class="col-lg-6">
         <div class="section-title text-center">
           <h1 class="mb-4 color-primary">Sobre</h1>
-          <p class="lead mb-0 color-secundary">Conheça nossa equipe</p>
+          <h3 class="mb-0 color-secundary">Conheça nossa equipe</>
         </div>
       </div>
     </div>
-    <div class="row justify-content-center gap:24px mt-4">
+    <div class="row justify-content-center gap:24px mt-5">
       <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
         <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
         <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; height:220px; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">

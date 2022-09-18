@@ -37,7 +37,7 @@
 					<a class="mb-4" href="index.html">
 						<img loading="prelaod" decoding="async" class="img-fluid" width="160" src="{{ asset('assets/img/logo-media.png') }}" alt="Serido Ponto">
 					</a>
-					<button class="btn btn-lg btn-primary-m rounded-3">Comece Agora</button>
+					<button class="btn btn-lg btn-primary-m rounded-3">Comece Agora!</button>
 
 				</div>
 			</div>

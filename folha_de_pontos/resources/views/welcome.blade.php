@@ -29,7 +29,7 @@
           <h3 class="text-center mb-4 text-white">Conheça a melhor solução de controle de ponto</h3>
           <div class="text-center">
             <a type="button"
-              class="btn btn-lg btn-primary-m rounded-0" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Comece agora<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span>
+              class="btn btn-lg btn-primary-m rounded-3" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Comece Agora!<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span>
             </a>
           </div>
         </div>
@@ -92,64 +92,60 @@
         <h1 class="text-center color-primary">Um Departamento Pessoal Digital</h1>
       </div>
     </div> 
-    <div class="row gap-5 mb-5 justify-content-center">
-      <div class="col-lg-4 col-md-6 service-item mt-5 ">
+    <div class="row gap-5 mb-5 mt-5 justify-content-center">
+      <div class="col-lg-4 col-md-6 service-item mt-5 bg-white">
         <div class="text-black ">
-          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3">01</span>
-            <h3 class="mb-3 service-title text-center">Personal loans</h3>
-            <p class="mb-0 service-description text-captalize">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod</p>
+          <div class="block"> <span class="colored-box text-center h3 mb-4  rounded-3"><i class="bi bi-map"></i></span>
+            <h3 class="mb-3 service-title text-center">Acesso Global</h3>
+            <p class="mb-0 service-description text-center">Acesse de onde estiver, pelo celular, tablet ou pela web para bater ou controlar os pontos.</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 service-item mt-5">
+      <div class="col-lg-4 col-md-6 service-item mt-5 bg-white">
         <div class="text-black ">
-          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3">01</span>
-            <h3 class="mb-3 service-title text-center">Personal loans</h3>
-            <p class="mb-0 service-description text-captalize">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod</p>
+          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3"><i class="bi bi-clock"></i></span>
+            <h3 class="mb-3 service-title text-center">Banco de horas</h3>
+            <p class="mb-0 service-description text-center">Controle facilmente de forma simples e objetiva o banco de horas de seus colaboradores.</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 service-item mt-5">
+      <div class="col-lg-4 col-md-6 service-item mt-5 bg-white">
         <div class="text-black ">
-          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3">01</span>
-            <h3 class="mb-3 service-title text-center">Personal loans</h3>
-            <p class="mb-0 service-description text-captalize">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod</p>
+          <div class="block"> <span class="colored-box text-center h3 mb-4  rounded-3"><i class="bi bi-file-earmark-text"></i></i></span>
+            <h3 class="mb-3 service-title text-center">Relatórios completos</h3>
+            <p class="mb-0 service-description text-center">Controle facilmente ajustes, folgas e visualize a folha de ponto em tempo real.</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 service-item mt-5">
+      <div class="col-lg-4 col-md-6 service-item mt-5 bg-white">
         <div class="text-black ">
-          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3">01</span>
-            <h3 class="mb-3 service-title text-center">Personal loans</h3>
-            <p class="mb-0 service-description text-captalize">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod</p>
+          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3"><i class="bi bi-shield-check"></i></span>
+            <h3 class="mb-3 service-title text-center">Suporte online</h3>
+            <p class="mb-0 service-description text-center">Tenha todo o apoio de nossa equipe de atendimento para tirar todas suas dúvidas.</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 service-item mt-5">
+      <div class="col-lg-4 col-md-6 service-item mt-5 bg-white">
         <div class="text-black ">
-          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3">01</span>
-            <h3 class="mb-3 service-title text-center">Personal loans</h3>
-            <p class="mb-0 service-description text-captalize">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod</p>
+          <div class="block"> <span class="colored-box text-center h3 mb-4  rounded-3"><i class="bi bi-award"></i></span>
+            <h3 class="mb-3 service-title text-center">Seguro empresarial</h3>
+            <p class="mb-0 service-description text-center">Em caso de falha do sistema, perca de dados ou recurso a empresa será asegurada.</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 service-item mt-5">
+      <div class="col-lg-4 col-md-6 service-item mt-5 bg-white">
         <div class="text-black ">
-          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3">01</span>
-            <h3 class="mb-3 service-title text-center">Personal loans</h3>
-            <p class="mb-0 service-description text-captalize">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod</p>
+          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3"><i class="bi bi-bookmark-check"></i></span>
+            <h3 class="mb-3 service-title text-center">Tecnologias</h3>
+            <p class="mb-0 service-description text-center">Desenvolvido ultilizando as melhores tecnologias do mercado de desenvolvimento WEB.</p>
           </div>
         </div>
       </div>
+        
+      
     </div>
-   
   </div>
+  
 </section>
 
 <section class="section" id="ajuda">
@@ -160,40 +156,40 @@
           <h1 class="color-secundary">Dúvidas Frequentes</h1>
         </div>
       </div>
-      <div class="accordion" id="accordionExample">
+      <div class="accordion mt-5" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
+        Como funciona o Serido Ponto? 
       </button>
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <p>O controle de ponto online é uma tecnologia que, na prática, permite fazer a marcação de ponto digitalmente, ou seja, por meio do acesso à web via computador, tablet ou celular. Neste último caso, o registro de entrada e saída dos colaboradores é feito através de um aplicativo instalado no smartphone, por exemplo.</p>
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
+        Serido Ponto é de graça?
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <p>Oferecemos um período de 7 dias para teste e implantação de até 20 funcionários do sistema na sua empresa. Para empresas maiores, entre em contato.</p>
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
+        Como funciona o Serido Ponto no celular?
       </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <p>Bata o ponto no celular pelo site Serido Ponto colaborador (Android e iOS) Para registrar o horário de entrada, pausa para almoço ou saída, o colaborador terá que clicar na opção de bater ponto.</p>
       </div>
     </div>
   </div>

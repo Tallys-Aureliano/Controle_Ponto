@@ -62,8 +62,8 @@
 .btn-primary-m {
   background-color: var(--color-primary) !important;
   color: var(--bs-white)!important;
-  box-shadow: 0 7px 10px 2px #525FBF30;
-  transition: background-color .2s;
+  box-shadow: 0 7px 10px 2px #525FBF30 !important;
+  transition: background-color .2s !important;
 }
 
 .btn-primary-m:hover {
@@ -71,16 +71,24 @@
   color: var(--bs-white)!important;
 }
 
+.btn-primary-m:active {
+  box-shadow: none !important;
+}
+
 .btn-secundary-m {
   background-color: var(--color-secundary) !important;
   color: var(--color-font) !important;
-  box-shadow: 0 7px 10px 2px #62996D30;
-  transition: background-color .2s;
+  box-shadow: 0 7px 10px 2px #62996D30 !important;
+  transition: background-color .2s !important;
 }
 
 .btn-secundary-m:hover{
   background-color: var(--color-secundary-dark) !important;
   color: var(--color-font) !important;
+}
+
+.btn-secundary-m:active{
+  box-shadow: none !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -3762,6 +3770,7 @@ textarea.form-control-lg {
 
 .accordion-body {
   padding: 1rem 1.25rem;
+  color: #666666;
 }
 
 .accordion-flush .accordion-collapse {
@@ -8815,12 +8824,11 @@ blockquote::before {
 }
 
 .banner {
-  
   background-image: url('../img/banner.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 800px;
+  height: 680px;
   margin-top: 72px;
   padding: 90px 0;
   z-index: 5;
@@ -9063,6 +9071,7 @@ blockquote::before {
 }
 .accordion-item .accordion-button:not(.collapsed) {
   color: #040404;
+  font-size: 24px;
   background-color: transparent;
   box-shadow: none;
 }
@@ -9520,6 +9529,10 @@ textarea.form-control {
   padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
+
+#sobre {
+  background-color: #fafafa;
+}
 #sobre .card img {
   transition: all .3s;
   }
@@ -9527,4 +9540,9 @@ textarea.form-control {
 #sobre .card img:hover {
 transform: translate(-20px, -20px);
 box-shadow: 5px 5px 10px 2px #00000020;
+}
+
+
+#funcionalidades {
+  background-color: #fafafa;
 }

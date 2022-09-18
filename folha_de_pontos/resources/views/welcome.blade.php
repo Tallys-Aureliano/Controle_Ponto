@@ -144,7 +144,6 @@ Bem vindo
       
     </div>
   </div>
-  
 </section>
 
 <section class="section" id="ajuda">

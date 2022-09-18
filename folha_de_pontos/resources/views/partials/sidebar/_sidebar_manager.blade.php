@@ -51,6 +51,8 @@
 <li class="nav-item">
     <form action="{{ route('logout') }}" method="POST">
         @csrf
-        <input type="submit" value="Sair">
+        <div class="text-center">
+            <input class="btn btn-lg btn-sair" type="submit" value="Sair">
+        </div>
     </form>
 </li>

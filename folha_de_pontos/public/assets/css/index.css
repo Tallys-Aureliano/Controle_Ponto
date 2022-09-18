@@ -105,6 +105,42 @@
   color: var(--color-font) !important;
 }
 
+.btn-detalhar {
+  background-color: var(--color-secundary) !important;
+  color: var(--color-font) !important;
+  box-shadow: 0 7px 10px 2px #62996D30 !important;
+  transition: background-color .2s !important;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.btn-detalhar:hover {
+  background-color: var(--color-secundary-dark) !important;
+  color: var(--color-font) !important;
+}
+
+.btn-detalhar:active {
+    box-shadow: none !important; 
+}
+
+.btn-sair {
+  background-color: #ffffff30 !important;
+  color: var(--bs-white) !important;
+  transition: background-color .2s !important;
+}
+
+.btn-sair:hover {
+  background-color: #ffffff40 !important;
+}
+
+
+
+
+
+
+
 
 /* ------- */
 
@@ -8845,6 +8881,10 @@ blockquote::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
   height: 680px;
   margin-top: 72px;
   padding: 90px 0;

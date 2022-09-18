@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif !important;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -145,4 +145,19 @@ body {
 
 .chart > col > canvas{
   position: relative;
+}
+.alert {
+  width: 400px !important;
+  height: 60px !important;
+  position: absolute;
+  top: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* sidebar */
+
+#accordionSidebar {
+  background-color:#525FBF !important;
+  background-image: linear-gradient(#525FBF,#525FBF) !important;
 }

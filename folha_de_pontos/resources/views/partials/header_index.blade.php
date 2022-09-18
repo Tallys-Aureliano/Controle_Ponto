@@ -2,27 +2,33 @@
 
 @endsection
 <!-- navigation -->
-<header class="navigation bg-tertiary">
-	<nav class="navbar navbar-expand-xl navbar-light text-center py-3">
-		<div class="container">
+<header class="navigation fixed-top bg-white  bg-tertiary shadow-sm">
+	<nav class="navbar  navbar-expand-xl navbar-light text-center py-3">
+		<div class="container-fluid d-flex justify-content-between>
 			<a class="navbar-brand" href="index.html">
-				<img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/logo.png" alt="Wallet">
+				<img loading="prelaod" decoding="async" class="img-fluid" width="160" src="{{ asset('assets/img/logo-media.png') }}" alt="Serido Ponto">
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-					<li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a>
+			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+				<div class="ms-auto me-4">
+				<ul class="navbar-nav  mb-2 mb-lg-0">
+				<li class="nav-item"> <a class="nav-link" href="#inicio">Inicio</a>
 				</li>
-				<li class="nav-item "> <a class="nav-link" href="about.html">Funcionalidades</a>
+				<li class="nav-item "> <a class="nav-link" href="#funcionalidades">Funcionalidades</a>
 				</li>
-				<li class="nav-item "> <a class="nav-link" href="about.html">Ajuda</a>
+				<li class="nav-item "> <a class="nav-link" href="#ajuda">Ajuda</a>
 				</li>
-				<li class="nav-item "> <a class="nav-link" href="about.html">Sobre</a>
+				<li class="nav-item "> <a class="nav-link" href="#sobre">Sobre</a>
 				</li>
-		</ul>
-		<!-- account btn --> <a href="{{ route('login') }}" class="btn btn-outline-primary">Login</a>
-		<!-- account btn --> <a href="{{ route('register') }}" class="btn btn-primary ms-2 ms-lg-3">Cadastre-se</a>
+			</ul>
+				</div>
+			
+		<div>
+			<!-- account btn --> <a href="{{ route('login') }}" class="btn btn-lg btn-secundary-m rounded-3">Entrar</a>
+			<!-- account btn --> <a href="{{ route('register') }}" class="btn btn-lg btn-primary-m rounded-3 ms-2 ms-lg-3">Cadastre-se</a>
+
+		</div>
 	</div>
 </div>
 </nav>

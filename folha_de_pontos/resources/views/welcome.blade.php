@@ -5,38 +5,36 @@
 @endsection
 
 @section('head')
-
+  <!-- CSS INDEX -->
   <link rel="stylesheet" type="text/css" href="{{asset('assets/css/index.css')}}">
 
 @endsection
 
 @section('content')
 <body>
-
+<!-- HEADER -->
 @include('partials.header_index')
 
-<section class="banner bg-tertiary position-relative overflow-hidden">
-  <div class="container">
+<!-- BANNER -->
+<section class="banner d-flex bg-tertiary position-relative overflow-hidden" id="inicio">
+  <div class="container d-flex">
 
     @include('partials.flash_messages')
     
     <div class="row align-items-center justify-content-center">
-      <div class="col-lg-6 mb-5 mb-lg-0">
-        <div class="block text-center text-lg-start pe-0 pe-xl-5">
-          <h1 class="text-capitalize mb-4">get a fastest loan with a smart way by seating at home</h1>
-          <p class="mb-4">We have collected the best offers of credit institutions and banks
-            <br>of Colombia. It remains to choose what suits you as fast as you.</p> <a type="button"
-            class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Apply
-            Loan Now <span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span></a>
+      <div class="col-12 col-lg-10">
+        <div class="block text-center text-lg-start">
+          <h1 class="text-center mb-4 text-white">Controle de ponto online</h1>
+          <h3 class="text-center mb-3 text-white">Gestão da jornada de trabalho e controle da folha de ponto eletrônico, de forma segura, online e econômica.</h3>
+          <h3 class="text-center mb-4 text-white">Conheça a melhor solução de controle de ponto</h3>
+          <div class="text-center">
+            <a type="button"
+              class="btn btn-lg btn-primary-m rounded-0" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Comece agora<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="ps-lg-5 text-center">
-          <img loading="lazy" decoding="async"
-            src="images/banner/banner.png"
-            alt="banner image" class="w-100">
-        </div>
-      </div>
+      
     </div>
   </div>
   <div class="has-shapes">
@@ -86,339 +84,210 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="funcionalidades">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="section-title pt-4">
-          <p class="text-primary text-uppercase fw-bold mb-3">Our Services</p>
-          <h1>Our online and offline services</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipreiscing elit. Lacus penatibus tincidunt</p>
+      <div class="section-title pt-4">
+        <h3 class="text-center text-uppercase fw-bold mb-3 color-secundary">UM NOVO DEPARTAMENTO PESSOAL</h3>
+        <h1 class="text-center color-primary">Um Departamento Pessoal Digital</h1>
+      </div>
+    </div> 
+    <div class="row gap-5 mb-5 justify-content-center">
+      <div class="col-lg-4 col-md-6 service-item mt-5 ">
+        <div class="text-black ">
+          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3">01</span>
+            <h3 class="mb-3 service-title text-center">Personal loans</h3>
+            <p class="mb-0 service-description text-captalize">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+              eirmod</p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 service-item">
-        <a class="text-black" href="service-details.html">
-          <div class="block"> <span class="colored-box text-center h3 mb-4">01</span>
-            <h3 class="mb-3 service-title">Personal loans</h3>
-            <p class="mb-0 service-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      <div class="col-lg-4 col-md-6 service-item mt-5">
+        <div class="text-black ">
+          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3">01</span>
+            <h3 class="mb-3 service-title text-center">Personal loans</h3>
+            <p class="mb-0 service-description text-captalize">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
               eirmod</p>
           </div>
-        </a>
+        </div>
       </div>
-      <div class="col-lg-4 col-md-6 service-item">
-        <a class="text-black" href="service-details.html">
-          <div class="block"> <span class="colored-box text-center h3 mb-4">02</span>
-            <h3 class="mb-3 service-title">Home Equity Loans</h3>
-            <p class="mb-0 service-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      <div class="col-lg-4 col-md-6 service-item mt-5">
+        <div class="text-black ">
+          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3">01</span>
+            <h3 class="mb-3 service-title text-center">Personal loans</h3>
+            <p class="mb-0 service-description text-captalize">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
               eirmod</p>
           </div>
-        </a>
+        </div>
       </div>
-      <div class="col-lg-4 col-md-6 service-item">
-        <a class="text-black" href="service-details.html">
-          <div class="block"> <span class="colored-box text-center h3 mb-4">
-
-
-              03
-
-            </span>
-            <h3 class="mb-3 service-title">Student Loans</h3>
-            <p class="mb-0 service-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      <div class="col-lg-4 col-md-6 service-item mt-5">
+        <div class="text-black ">
+          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3">01</span>
+            <h3 class="mb-3 service-title text-center">Personal loans</h3>
+            <p class="mb-0 service-description text-captalize">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
               eirmod</p>
           </div>
-        </a>
+        </div>
       </div>
-      <div class="col-lg-4 col-md-6 service-item">
-        <a class="text-black" href="service-details.html">
-          <div class="block"> <span class="colored-box text-center h3 mb-4">
-
-
-              04
-
-            </span>
-            <h3 class="mb-3 service-title">Mortgage Loans</h3>
-            <p class="mb-0 service-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      <div class="col-lg-4 col-md-6 service-item mt-5">
+        <div class="text-black ">
+          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3">01</span>
+            <h3 class="mb-3 service-title text-center">Personal loans</h3>
+            <p class="mb-0 service-description text-captalize">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
               eirmod</p>
           </div>
-        </a>
+        </div>
       </div>
-      <div class="col-lg-4 col-md-6 service-item">
-        <a class="text-black" href="service-details.html">
-          <div class="block"> <span class="colored-box text-center h3 mb-4">
-
-
-              05
-
-            </span>
-            <h3 class="mb-3 service-title">Payday Loans</h3>
-            <p class="mb-0 service-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      <div class="col-lg-4 col-md-6 service-item mt-5">
+        <div class="text-black ">
+          <div class="block"> <span class="colored-box text-center h3 mb-4 rounded-3">01</span>
+            <h3 class="mb-3 service-title text-center">Personal loans</h3>
+            <p class="mb-0 service-description text-captalize">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
               eirmod</p>
           </div>
-        </a>
+        </div>
       </div>
     </div>
+   
   </div>
 </section>
 
-<section class="section testimonials overflow-hidden bg-tertiary">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-6">
-        <div class="section-title text-center">
-          <p class="text-primary text-uppercase fw-bold mb-3">Our Service Holders</p>
-          <h1 class="mb-4">Trusted By 1.2K+ Peoples</h1>
-          <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing. egestas cursus pellentesque dignissim
-            dui, congue. Vel etiam ut</p>
-        </div>
-      </div>
-    </div>
-    <div class="row position-relative">
-      <div class="col-lg-4 col-md-6 pt-1">
-        <div class="shadow rounded bg-white p-4 mt-4">
-          <div class="d-block d-sm-flex align-items-center mb-3">
-            <img loading="lazy" decoding="async"
-              src="images/testimonials/01.jpg"
-              alt="Leslie Alexander" class="img-fluid" width="65" height="66">
-            <div class="mt-3 mt-sm-0 ms-0 ms-sm-3">
-              <h4 class="h5 mb-1">Leslie Alexander</h4>
-              <p class="mb-0">Web Designer</p>
-            </div>
-          </div>
-          <div class="content">Lorem ipsum dolor <a href="http://google.com">@reamansimond</a> demina egestas sit purus
-            felis arcu. Vitae, turpisds tortr etiam faucibus ac suspendisse.</div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 pt-1">
-        <div class="shadow rounded bg-white p-4 mt-4">
-          <div class="d-block d-sm-flex align-items-center mb-3">
-            <img loading="lazy" decoding="async"
-              src="images/testimonials/02.jpg"
-              alt="Arlene McCoy" class="img-fluid" width="65" height="66">
-            <div class="mt-3 mt-sm-0 ms-0 ms-sm-3">
-              <h4 class="h5 mb-1">Arlene McCoy</h4>
-              <p class="mb-0">Content Strategist</p>
-            </div>
-          </div>
-          <div class="content">Lorem ipsum dolor <a href="http://google.com">@reamansimond</a> demina egestas sit purus
-            felis arcu. Vitae, turpisds tortr etiam faucibus ac suspendisse.</div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 pt-1">
-        <div class="shadow rounded bg-white p-4 mt-4">
-          <div class="d-block d-sm-flex align-items-center mb-3">
-            <img loading="lazy" decoding="async"
-              src="images/testimonials/03.jpg"
-              alt="Marvin McKinney" class="img-fluid" width="65" height="66">
-            <div class="mt-3 mt-sm-0 ms-0 ms-sm-3">
-              <h4 class="h5 mb-1">Marvin McKinney</h4>
-              <p class="mb-0">Video Game Writer</p>
-            </div>
-          </div>
-          <div class="content">Lorem ipsum dolor <a href="http://google.com">@reamansimond</a> demina egestas sit purus
-            felis arcu. Vitae, turpisds tortr etiam faucibus ac suspendisse.</div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 pt-1">
-        <div class="shadow rounded bg-white p-4 mt-4">
-          <div class="d-block d-sm-flex align-items-center mb-3">
-            <img loading="lazy" decoding="async"
-              src="images/testimonials/04.jpg"
-              alt="Devon Lane" class="img-fluid" width="65" height="66">
-            <div class="mt-3 mt-sm-0 ms-0 ms-sm-3">
-              <h4 class="h5 mb-1">Devon Lane</h4>
-              <p class="mb-0">Nursing Assistant</p>
-            </div>
-          </div>
-          <div class="content">Lorem ipsum dolor <a href="http://google.com">@reamansimond</a> demina egestas sit purus
-            felis arcu. Vitae, turpisds tortr etiam faucibus ac suspendisse.</div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 pt-1">
-        <div class="shadow rounded bg-white p-4 mt-4">
-          <div class="d-block d-sm-flex align-items-center mb-3">
-            <img loading="lazy" decoding="async"
-              src="images/testimonials/05.jpg"
-              alt="Bessie Cooper" class="img-fluid" width="65" height="66">
-            <div class="mt-3 mt-sm-0 ms-0 ms-sm-3">
-              <h4 class="h5 mb-1">Bessie Cooper</h4>
-              <p class="mb-0">Video Game Writer</p>
-            </div>
-          </div>
-          <div class="content">Lorem ipsum dolor <a href="http://google.com">@reamansimond</a> demina egestas sit purus
-            felis arcu. Vitae, turpisds tortr etiam faucibus ac suspendisse.</div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 pt-1">
-        <div class="shadow rounded bg-white p-4 mt-4">
-          <div class="d-block d-sm-flex align-items-center mb-3">
-            <img loading="lazy" decoding="async"
-              src="images/testimonials/06.jpg"
-              alt="Kathryn Murphy" class="img-fluid" width="65" height="66">
-            <div class="mt-3 mt-sm-0 ms-0 ms-sm-3">
-              <h4 class="h5 mb-1">Kathryn Murphy</h4>
-              <p class="mb-0">Film Critic</p>
-            </div>
-          </div>
-          <div class="content">Lorem ipsum dolor <a href="http://google.com">@reamansimond</a> demina egestas sit purus
-            felis arcu. Vitae, turpisds tortr etiam faucibus ac suspendisse.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="has-shapes">
-    <svg class="shape shape-left text-light" width="290" height="709" viewBox="0 0 290 709" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M-119.511 58.4275C-120.188 96.3185 -92.0001 129.539 -59.0325 148.232C-26.0649 166.926 11.7821 174.604 47.8274 186.346C83.8726 198.088 120.364 215.601 141.281 247.209C178.484 303.449 153.165 377.627 149.657 444.969C144.34 546.859 197.336 649.801 283.36 704.673"
-        stroke="currentColor" stroke-miterlimit="10" />
-      <path
-        d="M-141.434 72.0899C-142.111 109.981 -113.923 143.201 -80.9554 161.895C-47.9878 180.588 -10.1407 188.267 25.9045 200.009C61.9497 211.751 98.4408 229.263 119.358 260.872C156.561 317.111 131.242 391.29 127.734 458.631C122.417 560.522 175.414 663.463 261.437 718.335"
-        stroke="currentColor" stroke-miterlimit="10" />
-      <path
-        d="M-163.379 85.7578C-164.056 123.649 -135.868 156.869 -102.901 175.563C-69.9331 194.256 -32.086 201.934 3.9592 213.677C40.0044 225.419 76.4955 242.931 97.4127 274.54C134.616 330.779 109.296 404.957 105.789 472.299C100.472 574.19 153.468 677.131 239.492 732.003"
-        stroke="currentColor" stroke-miterlimit="10" />
-      <path
-        d="M-185.305 99.4208C-185.982 137.312 -157.794 170.532 -124.826 189.226C-91.8589 207.919 -54.0118 215.597 -17.9666 227.34C18.0787 239.082 54.5697 256.594 75.4869 288.203C112.69 344.442 87.3706 418.62 83.8633 485.962C78.5463 587.852 131.542 690.794 217.566 745.666"
-        stroke="currentColor" stroke-miterlimit="10" />
-    </svg>
-    <svg class="shape shape-right text-light" width="731" height="429" viewBox="0 0 731 429" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M12.1794 428.14C1.80036 390.275 -5.75764 349.015 8.73984 312.537C27.748 264.745 80.4729 237.968 131.538 231.843C182.604 225.703 234.032 235.841 285.323 239.748C336.615 243.64 391.543 240.276 433.828 210.964C492.452 170.323 511.701 91.1227 564.607 43.2553C608.718 3.35334 675.307 -9.81661 731.29 10.323"
-        stroke="currentColor" stroke-miterlimit="10" />
-      <path
-        d="M51.0253 428.14C41.2045 392.326 34.0538 353.284 47.7668 318.783C65.7491 273.571 115.623 248.242 163.928 242.449C212.248 236.641 260.884 246.235 309.4 249.931C357.916 253.627 409.887 250.429 449.879 222.701C505.35 184.248 523.543 109.331 573.598 64.0588C615.326 26.3141 678.324 13.8532 731.275 32.9066"
-        stroke="currentColor" stroke-miterlimit="10" />
-      <path
-        d="M89.8715 428.14C80.6239 394.363 73.8654 357.568 86.8091 325.028C103.766 282.396 150.788 258.515 196.347 253.054C241.906 247.578 287.767 256.629 333.523 260.099C379.278 263.584 428.277 260.567 465.976 234.423C518.279 198.172 535.431 127.525 582.62 84.8317C621.964 49.2292 681.356 37.4924 731.291 55.4596"
-        stroke="currentColor" stroke-miterlimit="10" />
-      <path
-        d="M128.718 428.14C120.029 396.414 113.678 361.838 125.837 331.274C141.768 291.221 185.939 268.788 228.737 263.659C271.536 258.515 314.621 267.008 357.6 270.282C400.58 273.556 446.607 270.719 482.028 246.16C531.163 212.111 547.275 145.733 591.612 105.635C628.572 72.19 684.375 61.1622 731.276 78.0432"
-        stroke="currentColor" stroke-miterlimit="10" />
-      <path
-        d="M167.564 428.14C159.432 398.451 153.504 366.107 164.863 337.519C179.753 300.046 221.088 279.062 261.126 274.265C301.164 269.452 341.473 277.402 381.677 280.465C421.88 283.527 464.95 280.872 498.094 257.896C544.061 226.035 559.146 163.942 600.617 126.423C635.194 95.1355 687.406 84.8167 731.276 100.612"
-        stroke="currentColor" stroke-miterlimit="10" />
-    </svg>
-  </div>
-</section>
-
-<section class="section">
+<section class="section" id="ajuda">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12">
         <div class="section-title text-center mb-5 pb-2">
-          <p class="text-primary text-uppercase fw-bold mb-3">Questions You Have</p>
-          <h1>Frequently Asked Questions</h1>
+          <h1 class="color-secundary">Dúvidas Frequentes</h1>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="accordion shadow rounded py-5 px-0 px-lg-4 bg-white position-relative" id="accordionFAQ">
-          <div class="accordion-item p-1 mb-2">
-            <h2 class="accordion-header accordion-button h5 border-0 active"
-              id="heading-ebd23e34fd2ed58299b32c03c521feb0b02f19d9" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse-ebd23e34fd2ed58299b32c03c521feb0b02f19d9" aria-expanded="true"
-              aria-controls="collapse-ebd23e34fd2ed58299b32c03c521feb0b02f19d9">Can I apply if my credit isn&rsquo;t
-              perfect?
-            </h2>
-            <div id="collapse-ebd23e34fd2ed58299b32c03c521feb0b02f19d9"
-              class="accordion-collapse collapse border-0 show"
-              aria-labelledby="heading-ebd23e34fd2ed58299b32c03c521feb0b02f19d9" data-bs-parent="#accordionFAQ">
-              <div class="accordion-body py-0 content">The difference between and premium product consist number of
-                components, plugins, page in each. The Free versions contain only a few elements and pages that.</div>
-            </div>
-          </div>
-          <div class="accordion-item p-1 mb-2">
-            <h2 class="accordion-header accordion-button h5 border-0 "
-              id="heading-a443e01b4db47b3f4a1267e10594576d52730ec1" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse-a443e01b4db47b3f4a1267e10594576d52730ec1" aria-expanded="false"
-              aria-controls="collapse-a443e01b4db47b3f4a1267e10594576d52730ec1">How do I know that I have been
-              approved?
-            </h2>
-            <div id="collapse-a443e01b4db47b3f4a1267e10594576d52730ec1" class="accordion-collapse collapse border-0 "
-              aria-labelledby="heading-a443e01b4db47b3f4a1267e10594576d52730ec1" data-bs-parent="#accordionFAQ">
-              <div class="accordion-body py-0 content">The difference between and premium product consist number of
-                components, plugins, page in each. The Free versions contain only a few elements and pages that.</div>
-            </div>
-          </div>
-          <div class="accordion-item p-1 mb-2">
-            <h2 class="accordion-header accordion-button h5 border-0 "
-              id="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd" aria-expanded="false"
-              aria-controls="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd">Do I need to fax or email any
-              documents?
-            </h2>
-            <div id="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd" class="accordion-collapse collapse border-0 "
-              aria-labelledby="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd" data-bs-parent="#accordionFAQ">
-              <div class="accordion-body py-0 content">The difference between and premium product consist number of
-                components, plugins, page in each. The Free versions contain only a few elements and pages that.</div>
-            </div>
-          </div>
-          <div class="accordion-item p-1 mb-2">
-            <h2 class="accordion-header accordion-button h5 border-0 "
-              id="heading-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" aria-expanded="false"
-              aria-controls="collapse-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3">Do you provide loans to military
-              personnel?
-            </h2>
-            <div id="collapse-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" class="accordion-collapse collapse border-0 "
-              aria-labelledby="heading-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" data-bs-parent="#accordionFAQ">
-              <div class="accordion-body py-0 content">The difference between and premium product consist number of
-                components, plugins, page in each. The Free versions contain only a few elements and pages that.</div>
-            </div>
-          </div>
-          <div class="accordion-item p-1 mb-2">
-            <h2 class="accordion-header accordion-button h5 border-0 "
-              id="heading-0c2f829793a1f0562fea97120357dd2d43319164" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse-0c2f829793a1f0562fea97120357dd2d43319164" aria-expanded="false"
-              aria-controls="collapse-0c2f829793a1f0562fea97120357dd2d43319164">Can I remove footer credit purchase ?
-            </h2>
-            <div id="collapse-0c2f829793a1f0562fea97120357dd2d43319164" class="accordion-collapse collapse border-0 "
-              aria-labelledby="heading-0c2f829793a1f0562fea97120357dd2d43319164" data-bs-parent="#accordionFAQ">
-              <div class="accordion-body py-0 content">The difference between and premium product consist number of
-                components, plugins, page in each. The Free versions contain only a few elements and pages that.</div>
-            </div>
-          </div>
-          <div class="accordion-item p-1 mb-2">
-            <h2 class="accordion-header accordion-button h5 border-0 "
-              id="heading-8fe6730e26db16f15763887c30a614caa075f518" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse-8fe6730e26db16f15763887c30a614caa075f518" aria-expanded="false"
-              aria-controls="collapse-8fe6730e26db16f15763887c30a614caa075f518">What is the difference the free
-              versions?
-            </h2>
-            <div id="collapse-8fe6730e26db16f15763887c30a614caa075f518" class="accordion-collapse collapse border-0 "
-              aria-labelledby="heading-8fe6730e26db16f15763887c30a614caa075f518" data-bs-parent="#accordionFAQ">
-              <div class="accordion-body py-0 content">The difference between and premium product consist number of
-                components, plugins, page in each. The Free versions contain only a few elements and pages that.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mt-4 mt-lg-0">
-        <div class="shadow rounded py-5 px-4 ms-0 ms-lg-4 bg-white position-relative">
-          <div class="block mx-0 mx-lg-3 mt-0">
-            <h4 class="h5">Still Have Questions?</h4>
-            <div class="content">Call Us We Will Be Happy To Help
-              <br> <a href="tel:+3301563965">+3301563965</a>
-              <br>Monday - Friday
-              <br>9AM TO 8PM Eastern Time</div>
-          </div>
-          <div class="block mx-0 mx-lg-3 mt-4">
-            <h4 class="h5">Canada Office</h4>
-            <div class="content">231 Ross Street.
-              <br>K7A 1C2.
-              <br>Smiths Falls</div>
-          </div>
-          <div class="block mx-0 mx-lg-3 mt-4">
-            <h4 class="h5">UK Office</h4>
-            <div class="content">57 Folkestone Road.
-              <br>AB54 5XQ,
-              <br>Winston</div>
-          </div>
-        </div>
+      <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
       </div>
     </div>
   </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
 </section>
+
+<section class="section testimonials overflow-hidden bg-tertiary" id="sobre">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="section-title text-center">
+          <h1 class="mb-4 color-primary">Sobre</h1>
+          <p class="lead mb-0 color-secundary">Conheça nossa equipe</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center gap:24px mt-4">
+      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
+        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
+        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; height:220px; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
+          <img class="card-img-top "  src="{{ asset('assets/img/banner.png') }}" alt="Imagem de capa do card" style="position: absolute; top:0;left:0; border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
+          </div>
+            <div class="card-body">
+            <h2 class="text-center color-secundary mb-3 mt-3">Fulano de tal</h2>
+            <h3 class="text-center color-font-secundary mb-4">Designer</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
+        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
+        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; height:220px; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
+          <img class="card-img-top "  src="{{ asset('assets/img/banner.png') }}" alt="Imagem de capa do card" style="position: absolute; top:0;left:0; border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
+          </div>
+            <div class="card-body">
+            <h2 class="text-center color-secundary mb-3 mt-3">Fulano de tal</h2>
+            <h3 class="text-center color-font-secundary mb-4">Designer</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
+        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
+        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; height:220px; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
+          <img class="card-img-top "  src="{{ asset('assets/img/banner.png') }}" alt="Imagem de capa do card" style="position: absolute; top:0;left:0; border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
+          </div>
+            <div class="card-body">
+            <h2 class="text-center color-secundary mb-3 mt-3">Fulano de tal</h2>
+            <h3 class="text-center color-font-secundary mb-4">Designer</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
+        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
+        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; height:220px; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
+          <img class="card-img-top "  src="{{ asset('assets/img/banner.png') }}" alt="Imagem de capa do card" style="position: absolute; top:0;left:0; border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
+          </div>
+            <div class="card-body">
+            <h2 class="text-center color-secundary mb-3 mt-3">Fulano de tal</h2>
+            <h3 class="text-center color-font-secundary mb-4">Designer</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
+        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
+        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; height:220px; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
+          <img class="card-img-top "  src="{{ asset('assets/img/banner.png') }}" alt="Imagem de capa do card" style="position: absolute; top:0;left:0; border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
+          </div>
+            <div class="card-body">
+            <h2 class="text-center color-secundary mb-3 mt-3">Fulano de tal</h2>
+            <h3 class="text-center color-font-secundary mb-4">Designer</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
+        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
+        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; height:220px; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
+          <img class="card-img-top "  src="{{ asset('assets/img/banner.png') }}" alt="Imagem de capa do card" style="position: absolute; top:0;left:0; border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
+          </div>
+            <div class="card-body">
+            <h2 class="text-center color-secundary mb-3 mt-3">Fulano de tal</h2>
+            <h3 class="text-center color-font-secundary mb-4">Designer</h3>
+          </div>
+        </div>
+      </div>
+      
+     
+      
+      
+    </div>
+  </div>
+</section>
+
+
 
 @include('partials/footer_index')
 </body>

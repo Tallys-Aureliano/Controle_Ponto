@@ -5,7 +5,7 @@
     <a class="nav-link" href=""><span>Perfil</span></a>
 </li>
 <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
         aria-expanded="true" aria-controls="collapseOne">
         <i class="fas fa-fw fa-cog"></i>
         <span>Funcionarios</span>
@@ -35,24 +35,14 @@
     <a class="nav-link" href=""><span>Justificativas</span></a>
 </li>
 <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
         aria-expanded="true" aria-controls="collapseTwo">
         <i class="fas fa-fw fa-cog"></i>
         <span>Configurações</span>
     </a>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+    <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="buttons.html">Minha empresa</a>
         </div>
     </div>
-</li>
-<!-- Divider -->
-<hr class="sidebar-divider">
-<li class="nav-item">
-    <form action="{{ route('logout') }}" method="POST">
-        @csrf
-        <div class="text-center">
-            <input class="btn btn-lg btn-sair" type="submit" value="Sair">
-        </div>
-    </form>
 </li>

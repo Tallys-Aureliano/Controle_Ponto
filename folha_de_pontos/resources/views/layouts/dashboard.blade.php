@@ -86,11 +86,7 @@
                 <!-- End of Topbar -->
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    @if(auth()->user()->role == 1)
-                    @include('partials.dashboard-content._content_manager')
-                    @else
-                    @include('partials.sidebar._sidebar_employe')
-                    @endif
+                    @yield('content-dashboard')
                 </div>
             </div>
             <!-- /.container-fluid -->

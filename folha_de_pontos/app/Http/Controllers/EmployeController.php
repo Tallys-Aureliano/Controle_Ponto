@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class EmployeController extends Controller
 {
@@ -45,7 +46,9 @@ class EmployeController extends Controller
      */
     public function show()
     {
-        return view('users.employe.profile');
+        $user = User::with('position')->find(auth()->user()->id);
+
+        return view('users.employe.profile', compact('user'));
     }
 
     /**
@@ -56,7 +59,9 @@ class EmployeController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+
+        return view('users.employe.manager.edit_employe', compact('user'));
     }
 
     /**

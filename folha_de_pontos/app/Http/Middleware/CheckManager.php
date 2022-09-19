@@ -22,6 +22,8 @@ class CheckManager
             return redirect()->route('dashboard')->with('error', 'Você não tem autorização para acessar essa página.');
         }
 
+        // VERIFICAR SE GERENTE TEM EMPRESA
+
         return $next($request);
     }
 }

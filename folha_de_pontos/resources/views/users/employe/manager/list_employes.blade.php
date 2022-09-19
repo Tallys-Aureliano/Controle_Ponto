@@ -38,7 +38,7 @@ Lista de funcionários
 			@foreach($users as $user)
 			@if(!$user->role == 0)
 			<tr>
-				<td>{{ $user->name }}</td>
+				<td><a href="{{ route('manager.show.employe', ['id'=>$user->id]) }}">{{ $user->name }}</a></td>
 				<td>
 					@if($user->matricula)
 						{{ $user->matricula }}

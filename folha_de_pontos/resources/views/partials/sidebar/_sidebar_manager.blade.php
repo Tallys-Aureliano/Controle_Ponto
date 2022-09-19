@@ -21,7 +21,7 @@
             <a class="collapse-item" href="{{ route('manager.create.employe') }}">Novo</a>
         </div>
         <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="">Editar</a>
+            <a class="collapse-item" href="{{ route('manager.list_employes') }}">Editar</a>
         </div>
         <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="{{ route('manager.list_employes') }}">Pesquisar</a>

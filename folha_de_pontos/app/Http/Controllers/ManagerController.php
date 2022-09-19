@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use App\Models\Position;
 
 class ManagerController extends Controller
 {
@@ -85,4 +84,28 @@ class ManagerController extends Controller
     {
         //
     }
+
+    // listar apenas usuarios com relacao a empresa
+    public function listEmployes()
+    {
+        $users = User::with(['position'])->get();
+
+        return view('users.employe.manager.list_employes', compact('users'));
+
+    }
+
+    public function createIndividualReport()
+    {
+        $users = User::with(['position'])->get();
+        
+        return view('users.employe.manager.reports.individual_report', compact('users'));
+    }
+
+    public function createGeneralReport()
+    {
+        $users = User::with(['position'])->get();
+
+        return view('users.employe.manager.reports.general_report', compact('users'));
+    }
+
 }

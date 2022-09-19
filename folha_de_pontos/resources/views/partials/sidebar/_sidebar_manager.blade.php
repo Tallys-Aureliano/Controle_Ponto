@@ -18,13 +18,13 @@
     </a>
     <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Novo</a>
+            <a class="collapse-item" href="{{ route('manager.create.employe') }}">Novo</a>
         </div>
         <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Editar</a>
+            <a class="collapse-item" href="">Editar</a>
         </div>
         <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Pesquisar</a>
+            <a class="collapse-item" href="{{ route('manager.list_employes') }}">Pesquisar</a>
         </div>
     </div>
 </li>
@@ -36,10 +36,10 @@
     </a>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Geral</a>
+            <a class="collapse-item" href="{{ route('manager.create.report.general') }}">Geral</a>
         </div>
         <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Individual</a>
+            <a class="collapse-item" href="{{ route('manager.create.report.individual') }}">Individual</a>
         </div>
     </div>
 </li>

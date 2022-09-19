@@ -23,7 +23,7 @@ class EmployeController extends Controller
      */
     public function create()
     {
-        //
+        return view('users.employe.manager.create_employe');
     }
 
     /**
@@ -45,7 +45,7 @@ class EmployeController extends Controller
      */
     public function show()
     {
-        return view('users.employe.profile')
+        return view('users.employe.profile');
     }
 
     /**

@@ -4,3 +4,6 @@
 Dashboard - Gerente
 @endsection
 
+@section('content-dashboard')
+
+@endsection

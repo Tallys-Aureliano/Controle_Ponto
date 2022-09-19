@@ -9,8 +9,9 @@ Relatório geral
 	<h1 class="text-center">Relatório geral</h1>
 
 	<div class="--form-filter mt-5 mb-3">
-	<form action="" class="get">
+	<form action="" class="get" class="-form-authentication">
 		<div class="d-flex flex-wrap gap-3 mt-5">
+			<label for="">Filtro:</label>
 			<select class="form-select form-control-sm shadow-sm" aria-label="Funcionario">
 				<option selected>Mês</option>
 				<option value="1">Janeiro</option>
@@ -18,14 +19,14 @@ Relatório geral
 				<option value="2">...</option>
 			</select>
 			
-			<button class="btn btn-sm btn-outline-success shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
+			<button class="btn btn-sm btn-secundary-m" aria-placeholder="Pesquisar">Pesquisar</button>
 		</div>
 	</form>
 </div>
 
-	<button class="btn btn-success btn-sm">Gerar</button>
+	<button class="btn btn-primary-m">Gerar Relatório</button>
 
-	<div class="table-responsive">
+	<div class="table-responsive mt-3">
 	<table class="table">
 		<thead>
 			<tr>
@@ -55,6 +56,20 @@ Relatório geral
 			
 		</tbody>
 	</table>
+	</div>
 </div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
 
 @endsection

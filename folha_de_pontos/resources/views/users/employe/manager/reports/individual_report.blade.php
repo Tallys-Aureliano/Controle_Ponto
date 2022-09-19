@@ -51,7 +51,7 @@ Relatório individual
 				<td>{{ $user->email }}</td>
 				<td>{{ $user->position->name }}</td>
 				<td>
-					<button class="btn btn-success mx-auto btn-sm">Gerar</button>
+					<button class="btn btn-primary-m mx-auto btn-sm">Gerar Relatório</button>
 				</td>
 			</tr>
 			@endif

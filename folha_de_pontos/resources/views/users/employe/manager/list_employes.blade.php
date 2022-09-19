@@ -8,7 +8,7 @@ Lista de funcionários
 <h1 class="text-center">Lista de Funcionários</h1>
 
 <div class="--form-filter mt-5 mb-3">
-	<form action="" class="get">
+	<form action="" class="get" class="--form-authentication">
 		<div class="d-flex flex-wrap gap-3 mt-5">
 			<label for="">Consulta:</label>
 			<input class="form-control form-control-lg" type="text" placeholder="Nome ou Matricula" name="consult">
@@ -54,5 +54,15 @@ Lista de funcionários
 			
 		</tbody>
 	</table>
+	
 </div>
+<nav aria-label="Page navigation example">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+	</nav>
 @endsection

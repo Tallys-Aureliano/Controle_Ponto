@@ -16,7 +16,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-4 col-lg-2 col-md-4 col-xl-4 mb-4 d-flex justify-content-center">
+			<div class="col-sm-4 col-lg-2 col-md-4 col-xl-4 mb-4 d-flex justify-content-center" style="margin-left:-14px">
 				<div class="footer-widget d-flex flex-column align-items-start">
 					<h5 class="mb-4 text-primary font-secondary">Serido Soft</h5>
 					<ul class="list-unstyled">

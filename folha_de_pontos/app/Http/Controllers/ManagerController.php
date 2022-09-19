@@ -51,6 +51,12 @@ class ManagerController extends Controller
         return view('users.employe.profile', compact('user'));
     }
 
+    public function showEmploye($id)
+    {
+        $user = User::find($id);
+        return view('users.employe.profile', compact('user'));
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

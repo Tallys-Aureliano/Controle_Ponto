@@ -6,30 +6,32 @@ Criar funcionario
 
 @section('content-dashboard')
 
-<h1 class="text-center">Criar funcionario</h1>
+<h1 class="text-center">Criar funcionário</h1>
 
-<form action="" method="POST" class="container mt-5">
-	<div class="input-group mb-3">
-	<label class="input-group-text" for="inputGroupFile01">Upload</label>
+<form action="" method="POST" class="container mt-5 text-center">
+	<div class="input-group mb-3 --form-authentication">
 	<input type="file" class="form-control" id="inputGroupFile01">
 	</div>
-	<div class="input-group mb-3">
-	  <span class="input-group-text" id="basic-addon1">@</span>
+
+	<div class="input-group mb-3 --form-authentication">
 	  <input type="text" name="name" class="form-control" placeholder="Nome" required>
 	</div>
 
-	<div class="input-group mb-3">
+	<div class="input-group mb-3 --form-authentication">
 	  <input type="email" class="form-control" name="email" placeholder="Email" required>
-	  <span class="input-group-text" id="basic-addon2">@exemplo.com</span>
+
+	</div>
+	<div class="--form-authentication">
+		<input type="text" class="form-control mb-3 --form-authentication" name="matricula" placeholder="Matricula" maxlength="19">
 	</div>
 
-	<input type="text" class="form-control mb-3" name="matricula" placeholder="Matricula" maxlength="19">
-
-	<input type="password" class="form-control mb-3" name="password" placeholder="Senha" minlength="8" required>
-
-	<input type="password" class="form-control mb-3" name="password-confirmation" placeholder="Confirmar senha" required>
-
-	<button class="btn btn-outline-success">Criar</button>
-
+	<div class="--form-authentication">
+		<input type="password" class="form-control mb-3 --form-authentication" name="password" placeholder="Senha" minlength="8" required>
+	</div>
+	<div class="--form-authentication">
+		<input type="password" class="form-control mb-3 --form-authentication" name="password-confirmation" placeholder="Confirmar senha" required>
+	</div>
+	
+	<button class="btn btn-primary-m btn-lg">Criar Funcionário</button>
 </form>
 @endsection

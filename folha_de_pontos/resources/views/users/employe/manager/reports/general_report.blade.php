@@ -58,16 +58,18 @@ Relatório geral
 	</table>
 	</div>
 </div>
-<nav aria-label="Page navigation example">
+<nav aria-label="...">
   <ul class="pagination justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link">Previous</a>
+    <li class="page-item disabled rounded">
+      <a class="page-link">Anterior</a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2</a>
+    </li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item">
-      <a class="page-link" href="#">Next</a>
+      <a class="page-link" href="#">Próxima</a>
     </li>
   </ul>
 </nav>

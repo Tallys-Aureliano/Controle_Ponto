@@ -8,24 +8,30 @@ Editar funcionario
 
 <h1 class="text-center">Editar funcionario</h1>
 
-<form action="" method="POST">
-	<div class="input-group mb-3">
-	  <span class="input-group-text" id="basic-addon1">@</span>
-	  <input type="text" name="name" class="form-control" placeholder="Nome" value="{{ $user->name }}" required>
+<form action="" method="POST" class="container mt-5 text-center">
+	<div class="input-group mb-3 --form-authentication">
+	<input type="file" class="form-control" id="inputGroupFile01">
 	</div>
 
-	<div class="input-group mb-3">
-	  <input type="email" class="form-control" name="email" placeholder="Email" value="{{ $user->email }}" required>
-	  <span class="input-group-text" id="basic-addon2">@exemplo.com</span>
+	<div class="input-group mb-3 --form-authentication">
+	  <input type="text" name="name" class="form-control" placeholder="Nome" required>
 	</div>
 
-	<input type="text" class="form-control mb-3" name="matricula" value="{{ $user->matricula }}" placeholder="Matricula" maxlength="19">
+	<div class="input-group mb-3 --form-authentication">
+	  <input type="email" class="form-control" name="email" placeholder="Email" required>
 
-	<input type="password" class="form-control mb-3" name="password" placeholder="Senha" minlength="8" required>
+	</div>
+	<div class="--form-authentication">
+		<input type="text" class="form-control mb-3 --form-authentication" name="matricula" placeholder="Matricula" maxlength="19">
+	</div>
 
-	<input type="password" class="form-control mb-3" name="password-confirmation" placeholder="Confirmar senha" required>
-
-	<button class="btn btn-outline-success">Salvar</button>
-
+	<div class="--form-authentication">
+		<input type="password" class="form-control mb-3 --form-authentication" name="password" placeholder="Senha" minlength="8" required>
+	</div>
+	<div class="--form-authentication">
+		<input type="password" class="form-control mb-3 --form-authentication" name="password-confirmation" placeholder="Confirmar senha" required>
+	</div>
+	
+	<button class="btn btn-secundary-m btn-lg">Salvar Alterações</button>
 </form>
 @endsection

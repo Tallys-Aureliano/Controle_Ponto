@@ -12,10 +12,10 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                <div class="sidebar-brand-icon ">
+                <img src="{{ asset('assets/img/logo-media-cinza.png') }}" alt="">
                 </div>
-                <div class="text-center mx-3"><img src="{{ asset('assets/img/logo-media-cinza.png') }}" alt=""></div>
+             
             </a>
 
             @if(auth()->user()->role == 1)
@@ -37,8 +37,8 @@
                 <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow">
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                    <i class="fa fa-bars"></i> 
-                        {{-- <i class="fa fa-bars"></i> --}}
+                    <i class="bi bi-list"></i>
+                        {{-- <i class="bi bi-list"></i> --}}
                     </button>
 
                     <!-- Topbar Navbar -->

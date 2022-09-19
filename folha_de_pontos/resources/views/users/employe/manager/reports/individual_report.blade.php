@@ -10,17 +10,17 @@ Relatório individual
 
 	<div class="--form-filter mt-5 mb-3">
 	<form action="" class="get">
-		<div class="d-flex flex-wrap gap-3 mt-5">
+		<div class="d-flex flex-wrap gap-3 mt-5 --form-authentication">
 			<label for="">Consulta:</label>
 			<input class="form-control form-control-lg" type="text" placeholder="Nome ou Matricula" name="consult">
-			<label for="">Por</label>
+			<label for="">Consultar Por:</label>
 			<select class="form-select form-control-sm shadow-sm" aria-label="Funcionario">
 				<option selected>Tipo</option>
 				<option value="1">Nome</option>
 				<option value="2">Matricula</option>
 			</select>
 			
-			<button class="btn btn-sm btn-outline-success shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
+			<button class="btn btn-sm btn-secundary-m shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
 		</div>
 	</form>
 </div>
@@ -60,5 +60,20 @@ Relatório individual
 		</tbody>
 	</table>
 </div>
+<nav aria-label="...">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled rounded">
+      <a class="page-link">Anterior</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Próxima</a>
+    </li>
+  </ul>
+</nav>
 
 @endsection

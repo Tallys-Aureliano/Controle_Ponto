@@ -59,7 +59,7 @@
     </a>
     <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Minha empresa</a>
+            <a class="collapse-item" href="{{ route('manager.show.business') }}">Minha empresa</a>
         </div>
     </div>
 </li>

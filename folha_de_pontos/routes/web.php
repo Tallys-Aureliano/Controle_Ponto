@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BusinessController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,9 +19,11 @@ Route::get('/dashboard', function () {
 	return redirect('/')->with('error', 'Não sabemos se você é um admin, gerente ou algum outro funcionário. Contate o administrador.');
 })->middleware(['auth'])->name('dashboard');
 
-// 'check.admin' => \App\Http\Middleware\CheckAdmin::class,
-// 'check.manager' => \App\Http\Middleware\CheckManager::class,
-// 'check.employe' => \App\Http\Middleware\CheckEmploye::class,
+Route::get('business/create', [BusinessController::class, 'create'])
+        ->middleware(['auth'])->name('business.create');
+
+Route::post('business/store', [BusinessController::class, 'store'])
+		->middleware(['auth'])->name('business.store');
 
 
 require __DIR__.'/auth.php';

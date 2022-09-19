@@ -53,7 +53,7 @@ class User extends Authenticatable
     public function position()
     {
         // return $this->hasMany('App\Models\User');
-        return $this->belongsTo(Position::class, 'id');
+        return $this->belongsTo(Position::class, 'position_id');
         // return $this->hasOne('App\Models\Position');
     }
 

@@ -27,7 +27,7 @@ class User extends Authenticatable
         'photo',
         'role',
         'auto_register',
-        'bus_id',
+        'business_id',
         'active'
     ];
 
@@ -52,12 +52,12 @@ class User extends Authenticatable
 
     public function position()
     {
-        // return $this->hasMany('App\Models\User');
         return $this->belongsTo(Position::class, 'position_id');
-        // return $this->hasOne('App\Models\Position');
     }
 
-//     public function locationid(){
-//     return $this->belongsTo(Location::class, 'location_id');
-// }
+    public function business()
+    {
+        return $this->hasMany(Busines::class, 'business_id');
+    }
+
 }

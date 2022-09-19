@@ -51,7 +51,7 @@
     <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Opções</h6>
-            <a class="collapse-item" href="#">Minha empresa</a>
+            <a class="collapse-item" href="{{ route('manager.show.business') }}">Minha empresa</a>
         </div>
     </div>
 </li>

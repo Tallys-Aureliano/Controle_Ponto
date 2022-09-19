@@ -77,6 +77,9 @@
                 <!-- End of Topbar -->
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    
+                    @include('partials.flash_messages')
+
                     @yield('content-dashboard')
                 </div>
             </div>

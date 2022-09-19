@@ -53,94 +53,7 @@
   box-sizing: border-box;
 }
 
-.color-primary {
-  color: var(--color-primary);
-}
-
-.color-secundary {
-  color: var(--color-secundary) !important;
-}
-
-.btn-primary-m {
-  background-color: var(--color-primary) !important;
-  color: var(--bs-white)!important;
-  box-shadow: 0 7px 10px 2px #525FBF30 !important;
-  transition: background-color .2s !important;
-}
-
-.btn-primary-m:hover {
-  background-color: var(--color-primary-dark) !important;
-  color: var(--bs-white)!important;
-}
-
-.btn-primary-m:active {
-  box-shadow: none !important;
-}
-
-.btn-secundary-m {
-  background-color: var(--color-secundary) !important;
-  color: var(--color-font) !important;
-  box-shadow: 0 7px 10px 2px #62996D30 !important;
-  transition: background-color .2s !important;
-}
-
-.btn-secundary-m:hover{
-  background-color: var(--color-secundary-dark) !important;
-  color: var(--color-font) !important;
-}
-
-.btn-secundary-m:active{
-  box-shadow: none !important;
-}
-
-.btn-terciary-m{
-  border: 1px solid var(--color-font-secundary) !important;
-  background-color: transparent !important;
-  color: var(--color-font) !important;
-  transition: background-color .2s !important;
-}
-
-.btn-terciary-m:hover{
-  background-color: var(--color-secundary-dark) !important;
-  color: var(--color-font) !important;
-}
-
-.btn-detalhar {
-  background-color: var(--color-secundary) !important;
-  color: var(--color-font) !important;
-  box-shadow: 0 7px 10px 2px #62996D30 !important;
-  transition: background-color .2s !important;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-}
-
-.btn-detalhar:hover {
-  background-color: var(--color-secundary-dark) !important;
-  color: var(--color-font) !important;
-}
-
-.btn-detalhar:active {
-    box-shadow: none !important; 
-}
-
-.btn-sair {
-  background-color: #ffffff30 !important;
-  color: var(--bs-white) !important;
-  transition: background-color .2s !important;
-}
-
-.btn-sair:hover {
-  background-color: #ffffff40 !important;
-}
-
-
-
-
-
-
-
+.
 
 /* ------- */
 
@@ -9282,47 +9195,6 @@ blockquote::before {
   line-height: 70px !important;
 }
 
-.form-control {
-  color: #233242 !important;
-}
-
-.form-control::-moz-placeholder {
-  opacity: 0.5;
-}
-
-.form-control::placeholder {
-  opacity: 0.5;
-}
-
-.form-control:disabled, .form-control[readonly] {
-  background-color: #fff;
-  cursor: no-drop;
-}
-
-.form-control:not(textarea) {
-  height: 55px;
-}
-
-textarea.form-control {
-  height: 140px;
-}
-
-.form-control:focus {
-  border-color: #51B56D;
-}
-
-.form-group {
-  position: relative;
-  margin-top: 8px;
-}
-.form-group label {
-  position: absolute;
-  background-color: #fff;
-  top: -13px;
-  left: 12px;
-  padding: 0 9px;
-}
-
 .contact-info {
   padding-left: 50px;
 }
@@ -9595,7 +9467,7 @@ textarea.form-control {
   }
   
 #sobre .card img:hover {
-transform: translate(-20px, -20px);
+transform: translate(-15px, -15px);
 box-shadow: 5px 5px 10px 2px #00000020;
 }
 

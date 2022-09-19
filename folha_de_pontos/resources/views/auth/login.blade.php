@@ -1,15 +1,15 @@
-@section('head')
-<!-- CSS AUTH -->
-<link rel="stylesheet" href="{{ asset('assets/css/auth.css') }}">
-@endsection
 
 @extends('partials.auth._auth')
+
+
 @section('title')
 Login
 @endsection
 
+
+
 @section('auth-content')
-<div class="text-center mb-5">
+<div class="text-center">
     <img src="{{ asset('assets/img/logo-grande.png') }}" alt="">
 </div>
 <form method="POST" action="{{ route('login') }}">

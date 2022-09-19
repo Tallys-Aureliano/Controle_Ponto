@@ -10177,13 +10177,8 @@ a:focus {
   background-color: #5D6CD9;
 }
 
-.topbar #sidebarToggleTop {
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
 .topbar #sidebarToggleTop:hover {
-  background-color: #eaecf4;
+  background-color: #eaecf430;
 }
 
 .topbar #sidebarToggleTop:active {

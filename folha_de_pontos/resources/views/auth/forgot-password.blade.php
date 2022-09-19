@@ -1,8 +1,3 @@
-@section('head')
-<!-- CSS AUTH -->
-<link rel="stylesheet" href="{{ asset('assets/css/auth.css') }}">
-@endsection
-
 
 @extends('partials.auth._auth')
 @section('title')

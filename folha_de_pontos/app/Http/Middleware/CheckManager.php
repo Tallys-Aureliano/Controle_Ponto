@@ -19,7 +19,7 @@ class CheckManager
         $role = auth()->user()->role;
 
         if ($role != 1){
-            return redirect()->route('dashboard');
+            return redirect()->route('dashboard')->with('error', 'Você não tem autorização para acessar essa página.');
         }
 
         return $next($request);

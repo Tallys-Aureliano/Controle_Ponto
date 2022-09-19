@@ -7,6 +7,8 @@
 @section('content')
 
 <main>
+@include('partials.flash_messages')
+
 <div class="--box-authentication shadow-lg mx-auto rounded-2">
     @yield('auth-content')
             

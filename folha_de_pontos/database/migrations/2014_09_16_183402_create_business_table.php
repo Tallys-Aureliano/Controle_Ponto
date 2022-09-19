@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('business', function (Blueprint $table) {
             $table->id();
             $table->string('name', 155);
+            $table->string('cnpj', 22);
             $table->boolean('active')->default(true);
             $table->timestamps();
         });

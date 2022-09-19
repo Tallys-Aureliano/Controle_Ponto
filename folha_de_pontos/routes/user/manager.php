@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\EmployeController;
+use App\Http\Controllers\BusinessController;
 
 Route::middleware(['auth', 'check.manager'])->group(function () {
 

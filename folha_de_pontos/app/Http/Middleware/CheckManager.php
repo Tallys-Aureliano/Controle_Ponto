@@ -17,12 +17,16 @@ class CheckManager
     public function handle(Request $request, Closure $next)
     {
         $role = auth()->user()->role;
+        $business = auth()->user()->business_id;
 
         if ($role != 1){
             return redirect()->route('dashboard')->with('error', 'Você não tem autorização para acessar essa página.');
         }
 
-        // VERIFICAR SE GERENTE TEM EMPRESA
+        if (!$business){
+            return redirect()->route('business.create')
+                ->with('info', 'Antes de continuar, é necessário criar uma empresa.');
+        }
 
         return $next($request);
     }

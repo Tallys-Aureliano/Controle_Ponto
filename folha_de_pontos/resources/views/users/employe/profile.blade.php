@@ -6,7 +6,7 @@ Meu perfil
 
 @section('content-dashboard')
 	
-	<h1 class="text-center">Meu perfil</h1>
+	<h1 class="text-center">Perfil</h1>
 	<div class="mt-3">
 	</div>
 	<div class="text-center mx-auto" style="width:400px;">
@@ -19,7 +19,7 @@ Meu perfil
 				<li class="mt-4"><h5>Cpf: {{ $user->cpf }}</h5></li>
 				<li class="mt-4"><h5>Cargo: {{ $user->position->name }}</h5></li>
 			</ul>
-			<a href="" class="btn btn-primary-m mt-5 btn-lg">Editar</a>
+			<a href="{{ route('manager.edit.employe', ['id'=>$user->id]) }}" class="btn btn-primary-m mt-5 btn-lg">Editar</a>
 			
 		</div>
 	</div>

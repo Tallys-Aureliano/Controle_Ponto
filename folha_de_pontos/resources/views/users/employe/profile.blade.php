@@ -6,7 +6,7 @@ Meu perfil
 
 @section('content-dashboard')
 
-	<h1 class="text-center">MEU PERFIL</h1>
+	<h1 class="text-center">Meu perfil</h1>
 
 	<a href="" class="btn btn-primary">Editar</a>
 	<br>

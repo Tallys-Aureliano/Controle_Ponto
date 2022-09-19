@@ -19,4 +19,9 @@ Route::middleware(['auth', 'check.manager'])->group(function () {
     Route::get('manager/employe/report/individual', [ManagerController::class, 'createIndividualReport'])->name('manager.create.report.individual');
 
     Route::get('manager/employe/report/general', [ManagerController::class, 'createGeneralReport'])->name('manager.create.report.general');
+
+    Route::get('manager/employe/show/{id}', [ManagerController::class, 'showEmploye'])->name('manager.show.employe');
+
+    Route::get('manager/employe/edit/{id}', [EmployeController::class, 'edit'])->name('manager.edit.employe');
+
 });

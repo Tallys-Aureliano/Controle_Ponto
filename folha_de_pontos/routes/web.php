@@ -19,10 +19,10 @@ Route::get('/dashboard', function () {
 	return redirect('/')->with('error', 'Não sabemos se você é um admin, gerente ou algum outro funcionário. Contate o administrador.');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('business/create', [BusinessController::class, 'create'])
+Route::get('manager/business/create', [BusinessController::class, 'create'])
         ->middleware(['auth'])->name('business.create');
 
-Route::post('business/store', [BusinessController::class, 'store'])
+Route::post('manager/business/store', [BusinessController::class, 'store'])
 		->middleware(['auth'])->name('business.store');
 
 

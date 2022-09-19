@@ -1,4 +1,4 @@
-/*!
+/* /* !
  * Start Bootstrap - SB Admin 2 v4.1.3 (https://startbootstrap.com/theme/sb-admin-2)
  * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin-2/blob/master/LICENSE)
@@ -10,6 +10,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ 
 :root {
   --blue: #4e73df;
   --indigo: #6610f2;
@@ -10169,6 +10170,7 @@ a:focus {
 
 .topbar {
   height: 4.375rem;
+  background-color: #5D6CD9;
 }
 
 .topbar #sidebarToggleTop {

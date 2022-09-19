@@ -1,6 +1,6 @@
 <section class="section p-0">
     <div class="container-fluid">
-        <h1>Dashboard</h1>
+        <h1 class="text-center">Dashboard</h1>
         <div class="row gap-5 mb-5 mt-5 justify-content-center">
             <div class="col-lg-3 col-md-5 service-item mt-5 bg-white">
                 <div class="text-black ">

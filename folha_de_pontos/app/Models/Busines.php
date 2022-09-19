@@ -9,8 +9,11 @@ class Busines extends Model
 {
 	protected $fillable = [
         'name',
+        'cnpj',
         'active'
     ];
+
+    protected $table = 'business';
 
     use HasFactory;
 }

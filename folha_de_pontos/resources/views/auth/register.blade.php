@@ -19,9 +19,11 @@ Cadastro de usúario
     <div class="--other-things mt-3"></div>
     <div class="--form-authentication-button text-center mt-5">
         <button class="btn btn-lg btn-primary-m">Cadastrar</button>
-        <button onclick="history.back()" class="btn btn-lg btn-terciary-m mt-2">Voltar</button>
     </div>
 </form>
+<div class="--form-authentication-button text-center">
+    <button onclick="history.back()" class="btn btn-lg btn-terciary-m mt-2">Voltar</button>
+</div>
 <div class="--link-register mt-3">
     <p class="text-center">Já possui uma conta? <a href="{{ route('login') }}">Entre agora</a></p>
 </div>

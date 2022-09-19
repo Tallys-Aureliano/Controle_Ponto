@@ -239,15 +239,25 @@ body {
 .chart > col > canvas{
   position: relative;
 }
+
 .alert {
-  width: 400px !important;
-  height: 60px !important;
+  width: 500px !important;
+  padding-right: 24px;
+  height: auto !important;
   position: absolute !important;
-  top: 64px;
+  z-index: 100 !important;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
 }
 
+@media (max-width:800px) {
+  .alert {
+    width: 80% !important;
+
+  }
+  
+}
 
 
 /* sidebar */

@@ -23,9 +23,11 @@ Login
     </div>
     <div class="--form-authentication-button text-center mt-4">
         <button class="btn btn-lg btn-primary-m">Entrar</button>
-        <button onclick="history.back()" class="btn btn-lg btn-terciary-m mt-2">Voltar</button>
     </div>
 </form>
+<div class="--form-authentication-button text-center">
+    <button onclick="history.back()" class="btn btn-lg btn-terciary-m mt-2">Voltar</button>
+</div>
 <div class="--link-register mt-4">
     <p class="text-center">Ainda não tem conta? <a href="{{ route('register') }}">Cadastrar agora</a></p>
 </div>

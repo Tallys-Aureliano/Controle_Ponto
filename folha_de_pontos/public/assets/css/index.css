@@ -46,16 +46,13 @@
 }
 
 
-/* BUTTONS */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-.
-
-/* ------- */
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -8802,6 +8799,7 @@ blockquote::before {
   margin-top: 72px;
   padding: 90px 0;
   z-index: 5;
+  box-shadow: 1px -8px 20px rgb(0 0 0 / 30%) inset
 }
 
 @media (min-width:1200px) {

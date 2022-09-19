@@ -11,12 +11,14 @@
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
             <!-- Sidebar - Brand -->
+
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon ">
-                <img src="{{ asset('assets/img/logo-media-cinza.png') }}" alt="">
-                </div>
-             
+                        <div class="sidebar-brand-icon rotate-n-15">
+                            <img src="{{ asset('assets/img/logo-media-cinza.png') }}" alt="" class="fas fa-laugh-wink">
+                            {{-- <i class="bi bi-list"></i> --}}
+                        </div>
             </a>
+                    
 
             @if(auth()->user()->role == 1)
             @include('partials.sidebar._sidebar_manager')
@@ -37,9 +39,12 @@
                 <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow">
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                    <i class="bi bi-list"></i>
+                        <i class="bi bi-list"></i>
                         {{-- <i class="bi bi-list"></i> --}}
                     </button>
+
+
+
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -66,9 +71,9 @@
                                 <div class="dropdown-divider"></div>
                                 <form action="{{ route('logout') }}" method="POST" class="text-center">
                                     @csrf
-                                    
+
                                     <input class="dropdown-item btn-sair" type="submit" value="Sair">
-                                    
+
                                 </form>
                             </div>
                         </li>

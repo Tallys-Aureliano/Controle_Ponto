@@ -14,9 +14,11 @@ Login
     <div class="--other-things mt-3"></div>
     <div class="--form-authentication-button text-center mt-5">
         <button class="btn btn-lg btn-primary-m">Enviar</button>
-        <button onclick="history.back()" class="btn btn-lg btn-terciary-m mt-2">Voltar</button>
     </div>
 </form>
+<div class="--form-authentication-button text-center">
+    <button onclick="history.back()" class="btn btn-lg btn-terciary-m mt-2">Voltar</button>
+</div>
 @endsection
 
 

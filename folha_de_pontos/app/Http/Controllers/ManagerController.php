@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\Position;
 
 class ManagerController extends Controller
 {
@@ -13,7 +15,7 @@ class ManagerController extends Controller
      */
     public function index()
     {
-        //
+        return view('users.employe.dashboard');
     }
 
     /**
@@ -43,9 +45,11 @@ class ManagerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $user = User::with(['position'])->get()->find(auth()->user()->id);
+
+        return view('users.employe.profile', compact('user'));
     }
 
     /**

@@ -73,7 +73,6 @@
                                     @csrf
 
                                     <input class="dropdown-item btn-sair" type="submit" value="Sair">
-
                                 </form>
                             </div>
                         </li>

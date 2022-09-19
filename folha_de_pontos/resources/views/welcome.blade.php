@@ -23,9 +23,9 @@ Bem vindo
     <div class="row align-items-center justify-content-center">
       <div class="col-12 col-lg-10">
         <div class="block text-center text-lg-start">
-          <h1 class="text-center mb-4 text-white">Controle de ponto online</h1>
-          <h3 class="text-center mb-3 text-white">Gestão da jornada de trabalho e controle da folha de ponto eletrônico, de forma segura, online e econômica.</h3>
-          <h3 class="text-center mb-4 text-white">Conheça a melhor solução de controle de ponto</h3>
+          <h1 class="text-center mb-4 text-white" style="text-shadow: 3px 3px 5px rgba(0,0,0, .25);">Controle de ponto online</h1>
+          <h3 class="text-center mb-3 text-white" style="text-shadow: 3px 3px 5px rgba(0,0,0, .25);">Gestão da jornada de trabalho e controle da folha de ponto eletrônico, de forma segura, online e econômica.</h3>
+          <h3 class="text-center mb-4 text-white" style="text-shadow: 3px 3px 5px rgba(0,0,0, .25);">Conheça a melhor solução de controle de ponto</h3>
           <div class="text-center">
             <a type="button"
               class="btn btn-lg btn-primary-m rounded-3" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Comece Agora!<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span>

@@ -1,8 +1,8 @@
 <li class="nav-item">
-    <a class="nav-link" href=""><span>Inicio</span></a>
+    <a class="nav-link" href="{{ route('manager.dashboard') }}"><span>Inicio</span></a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href=""><span>Perfil</span></a>
+    <a class="nav-link" href="{{ route('manager.profile') }}"><span>Perfil</span></a>
 </li>
 <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"

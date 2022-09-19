@@ -1,3 +1,9 @@
+@section('head')
+<!-- CSS AUTH -->
+<link rel="stylesheet" href="{{ asset('assets/css/auth.css') }}">
+@endsection
+
+
 @extends('partials.auth._auth')
 @section('title')
 Login
@@ -12,12 +18,10 @@ Login
     </div>
     <div class="--other-things mt-3"></div>
     <div class="--form-authentication-button text-center mt-5">
-        <button class="btn btn-primary">Enviar</button>
+        <button class="btn btn-lg btn-primary-m">Enviar</button>
+        <button onclick="history.back()" class="btn btn-lg btn-terciary-m mt-2">Voltar</button>
     </div>
 </form>
-<div class="--link-register mt-3">
-    <p class="text-center">Ainda não tem conta? <a href="{{ route('register') }}">Cadastrar agora</a></p>
-</div>
 @endsection
 
 

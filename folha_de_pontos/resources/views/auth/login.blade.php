@@ -1,10 +1,17 @@
+@section('head')
+<!-- CSS AUTH -->
+<link rel="stylesheet" href="{{ asset('assets/css/auth.css') }}">
+@endsection
+
 @extends('partials.auth._auth')
 @section('title')
 Login
 @endsection
 
 @section('auth-content')
-<h1 class="text-center pb-4">Login</h1>
+<div class="text-center mb-5">
+    <img src="{{ asset('assets/img/logo-grande.png') }}" alt="">
+</div>
 <form method="POST" action="{{ route('login') }}">
     @csrf
     <div class="--form-authentication">
@@ -14,11 +21,12 @@ Login
     <div class="--other-things mt-3">
         <a href="{{ route('password.request') }}">Esqueci minha senha</a>
     </div>
-    <div class="--form-authentication-button text-center mt-5">
-        <button class="btn btn-primary">Entrar</button>
+    <div class="--form-authentication-button text-center mt-4">
+        <button class="btn btn-lg btn-primary-m">Entrar</button>
+        <button onclick="history.back()" class="btn btn-lg btn-terciary-m mt-2">Voltar</button>
     </div>
 </form>
-<div class="--link-register mt-3">
+<div class="--link-register mt-4">
     <p class="text-center">Ainda não tem conta? <a href="{{ route('register') }}">Cadastrar agora</a></p>
 </div>
 @endsection

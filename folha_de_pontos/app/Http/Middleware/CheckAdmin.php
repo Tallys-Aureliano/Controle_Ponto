@@ -16,7 +16,7 @@ class CheckAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        $role = Auth::user()->role;
+        $role = auth()->user()->role;
 
         if ($role != 0){
             return redirect()->route('dashboard')->with('error', 'Você não tem autorização para acessar essa página.');

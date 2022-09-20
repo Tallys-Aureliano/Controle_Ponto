@@ -213,7 +213,7 @@ Bem vindo
           <img class="card-img-top "  src="{{ asset('assets/img/ariane.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
           </div>
             <div class="card-body">
-            <h2 class="text-center color-secundary mb-3 mt-3">Ariane</h2>
+            <h2 class="text-center color-secundary mb-3 mt-3">Ari Ane</h2>
             <h3 class="text-center color-font-secundary mb-4">Sub-gerente</h3>
           </div>
         </div>

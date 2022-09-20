@@ -15,7 +15,7 @@ Login
 <form method="POST" action="{{ route('login') }}">
     @csrf
     <div class="--form-authentication">
-        <input type="email" name="email" class="form-control mt-3" placeholder="Entrar com Email">
+        <input type="email" name="email" class="form-control mt-3" placeholder="Entre com seu Email">
         <input type="password" name="password" class="form-control mt-3" placeholder="Sua senha">
     </div>
     <div class="--other-things mt-3">
@@ -29,6 +29,6 @@ Login
     <button onclick="history.back()" class="btn btn-lg btn-terciary-m mt-2">Voltar</button>
 </div>
 <div class="--link-register mt-4">
-    <p class="text-center">Ainda não tem conta? <a href="{{ route('register') }}">Cadastrar agora</a></p>
+    <p class="text-center">Ainda não possui conta? <a href="{{ route('register') }}">Cadastre-se agora!</a></p>
 </div>
 @endsection

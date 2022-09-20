@@ -10,11 +10,11 @@ Cadastro de usúario
 <form method="POST" action="{{ route('register') }}">
     @csrf
     <div class="--form-authentication">
-        <input type="text" name="name" class="form-control mt-3" placeholder="Digite seu nome" required>
-        <input type="email" name="email" class="form-control mt-3" placeholder="Digite seu email" required>
-        <input type="text" name="cpf" class="form-control mt-3" placeholder="Digite seu cpf" required maxlength="14">
-        <input type="password" name="password" class="form-control mt-3" placeholder="Digite sua senha" required>
-        <input type="password" name="password_confirmation" class="form-control mt-3" placeholder="Confirme sua senha" required minlength="8">
+        <input type="text" name="name" class="form-control mt-3" placeholder="Nome" required>
+        <input type="email" name="email" class="form-control mt-3" placeholder="Email" required>
+        <input type="text" name="cpf" class="form-control mt-3" placeholder="CPF" required maxlength="14">
+        <input type="password" name="password" class="form-control mt-3" placeholder="Crie uma senha" required>
+        <input type="password" name="password_confirmation" class="form-control mt-3" placeholder="Confirme senha" required minlength="8">
     </div>
     <div class="--other-things mt-3"></div>
     <div class="--form-authentication-button text-center mt-5">
@@ -25,6 +25,6 @@ Cadastro de usúario
     <button onclick="history.back()" class="btn btn-lg btn-terciary-m mt-2">Voltar</button>
 </div>
 <div class="--link-register mt-3">
-    <p class="text-center">Já possui uma conta? <a href="{{ route('login') }}">Entre agora</a></p>
+    <p class="text-center">Já possui conta? <a href="{{ route('login') }}">Entre agora!</a></p>
 </div>
 @endsection

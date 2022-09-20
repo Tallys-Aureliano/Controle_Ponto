@@ -3,6 +3,8 @@
 	<head>
 		<meta name="author" content="Serido Soft">
 		<title>@yield('title')</title>
+		<!-- FONT AWESOME -->
+		<script src="https://kit.fontawesome.com/9f22424b2c.js" crossorigin="anonymous"></script>
 		<!-- CSS GLOBAL -->
 		<link rel="stylesheet" type="text/css" href="{{asset('assets/css/global.css')}}">
 		<!-- CSS BOOTSTRAP -->

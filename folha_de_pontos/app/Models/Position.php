@@ -18,4 +18,9 @@ class Position extends Model
     {
         return $this->belongsTo(Sector::class, 'sectors_id');
     }
+
+    public function users()
+	{
+	    return $this->hasMany(User::class, 'id');
+	}
 }

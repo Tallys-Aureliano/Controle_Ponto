@@ -19,9 +19,9 @@
     <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Opções</h6>
-            <a class="collapse-item" href="#">Ver todos</a>
-            <a class="collapse-item" href="#">Novo</a>
-            <a class="collapse-item" href="#">Editar</a>
+            <a class="collapse-item" href="{{ route('manager.list_employes') }}">Ver todos</a>
+            <a class="collapse-item" href="{{ route('manager.create.employe') }}">Novo</a>
+            <a class="collapse-item" href="{{ route('manager.list_employes') }}">Editar</a>
         </div>
     </div>
 </li>

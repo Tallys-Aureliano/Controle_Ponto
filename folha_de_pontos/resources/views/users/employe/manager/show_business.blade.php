@@ -13,7 +13,6 @@ Dados da empresa
 		<div class="mx-auto" >
 			<ul class="list-unstyled text-left mt-5">
 				<li class=""><h5>Nome: {{ $business->name }}</h5></li>
-				<li class="mt-4"><h5>Cnpj: {{ $business->cnpj }}</h5></li>
 			</ul>
 		</div>
 		</div>

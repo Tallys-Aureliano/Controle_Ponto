@@ -85,6 +85,7 @@
                     @include('partials.flash_messages')
 
                     @yield('content-dashboard')
+                    
                 </div>
             </div>
             <!-- /.container-fluid -->

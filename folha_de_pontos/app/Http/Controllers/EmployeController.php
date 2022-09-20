@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Justification;
 
 class EmployeController extends Controller
 {
@@ -36,6 +37,19 @@ class EmployeController extends Controller
     public function store(Request $request)
     {
         //
+    }
+
+    public function createJustifications()
+    {
+        return view('users.employe.employe.create_justification');
+    }
+
+    public function showJustifications()
+    {
+        $justifications = Justification::all()
+            ->where('use_id', auth()->user()->id);
+
+        return view('users.employe.employe.show_justification', compact('justifications'));
     }
 
     /**

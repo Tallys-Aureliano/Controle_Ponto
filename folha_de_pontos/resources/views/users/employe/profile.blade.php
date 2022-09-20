@@ -9,7 +9,10 @@ Meu perfil
 	<div class="mt-3">
 	</div>
 	<div class="text-center mx-auto d-flex flex-column align-items-center">
+
+	@if(auth()->user()->role == 1)
 	<a href="{{ route('manager.edit.employe', ['id'=>$user->id]) }}" class="btn btn-secundary-m mt-5 ">Editar</a>
+	@endif
 		<img src="{{ asset('assets/img/banner.png') }} alt="Foto do usuario" class="mb-4 mt-5" style="width: 150px; height:150px;border-radius:50%">
 		<div class="mx-auto" >
 			<ul class="list-unstyled text-left mt-5">

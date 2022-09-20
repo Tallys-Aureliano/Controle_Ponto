@@ -44,12 +44,6 @@ class ManagerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
-    {
-        $user = User::with(['position'])->get()->find(auth()->user()->id);
-
-        return view('users.employe.profile', compact('user'));
-    }
 
     public function showEmploye($id)
     {

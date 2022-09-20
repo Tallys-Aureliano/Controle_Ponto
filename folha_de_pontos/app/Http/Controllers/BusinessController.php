@@ -10,9 +10,9 @@ use Illuminate\Support\Facades\Validator;
 class BusinessController extends Controller
 {
 	public function show($id){
-		$role = auth()->user()->role;
+		$business = Busines::with(['users'])->findOrFail($id);
 
-		return view('dashboard'); // tem que mudar
+		return view('users.admin.business.show', compact('business')); // tem que mudar
 	}
 
 	public function showMyBusiness(){
@@ -87,6 +87,11 @@ class BusinessController extends Controller
 
         return redirect()->route('manager.show.business')
         	->with('success', 'Empresa atualizada com sucesso.');
+	}
+
+	public function list(){
+		$businesss = Busines::all();
+		return view('users.admin.business.list', compact('businesss'));
 	}
 
 }

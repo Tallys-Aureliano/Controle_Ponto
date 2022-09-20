@@ -8,6 +8,8 @@ Empresa: {{ $business->name }}
 
 <h1 class="text-center">Empresa: {{ $business->name }}</h1>
 	<h2 class="text-center text-secondary mt-5">Funcionários</h2>
+
+	<a href="{{ route('admin.business.edit', ['id' => $business->id]) }}"><button class="btn btn-sm btn-outline-success">Editar</button></a>
 	{{-- Aqui ainda vem a lista de funcionarios dessa empresa --}}
 	<div class="table-responsive mt-3">
 		<table class="table">

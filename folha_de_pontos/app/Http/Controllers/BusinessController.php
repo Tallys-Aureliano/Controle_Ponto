@@ -39,7 +39,6 @@ class BusinessController extends Controller
 
 		$validator = Validator::make($request->all(), [
             'name' => 'required|string|max:45',
-            'cnpj' => 'required|string|unique:business|max:22',
         ]);
  
         if ($validator->fails()) {
@@ -50,7 +49,6 @@ class BusinessController extends Controller
 
         $business_id = Busines::create([
         	'name' => $request->name,
-    		'cnpj' => $request->cnpj,
         ])->id;
 
         $user = User::find(auth()->user()->id);
@@ -75,7 +73,6 @@ class BusinessController extends Controller
 
 		$validator = Validator::make($request->all(), [
             'name' => 'required|string|max:45',
-            'cnpj' => 'required|string|unique:business|max:22',
         ]);
  
         if ($validator->fails()) {
@@ -86,7 +83,6 @@ class BusinessController extends Controller
 
         $business = Busines::find($business_id);
         $business->name = $request->name;
-        $business->cnpj = $request->cnpj;
         $business->save();
 
         return redirect()->route('manager.show.business')

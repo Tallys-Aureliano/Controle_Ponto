@@ -27,8 +27,8 @@ Route::middleware(['auth', 'check.manager'])->group(function () {
 
     Route::get('manager/business/show', [BusinessController::class, 'showMyBusiness'])->name('manager.show.business');
 
-    Route::get('manager/business/edit', [BusinessController::class, 'editMyBusiness'])->name('manager.edit.business');
+    // Route::get('manager/business/edit', [BusinessController::class, 'editMyBusiness'])->name('manager.edit.business');
 
-    Route::post('manager/business/update', [BusinessController::class, 'updateMyBusiness'])->name('manager.update.business');
+    // Route::post('manager/business/update', [BusinessController::class, 'updateMyBusiness'])->name('manager.update.business');
 
 });

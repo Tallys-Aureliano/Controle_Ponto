@@ -9,7 +9,6 @@ class Busines extends Model
 {
 	protected $fillable = [
         'name',
-        'cnpj',
         'active'
     ];
 

@@ -47,7 +47,7 @@ class EmployeController extends Controller
     public function showJustifications()
     {
         $justifications = Justification::all()
-            ->where('use_id', auth()->user()->id);
+            ->where('users_id', auth()->user()->id);
 
         return view('users.employe.employe.show_justification', compact('justifications'));
     }
@@ -63,6 +63,13 @@ class EmployeController extends Controller
         $user = User::with('position')->find(auth()->user()->id);
 
         return view('users.employe.profile', compact('user'));
+    }
+
+    public function showEmploye($id)
+    {
+        $user = User::with(['position', 'business'])->findOrFail($id);
+
+        return view('users.admin.employe.show', compact('user'));
     }
 
     /**
@@ -99,5 +106,11 @@ class EmployeController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function list(){
+        $users = User::with(['position', 'business'])->get();
+
+        return view('users.admin.employe.list', compact('users'));
     }
 }

@@ -9,19 +9,30 @@ Lista de justificativas
 <h1 class="text-center">Minhas justificativas</h1>
 
 <div class="table-responsive">
-	<table>
+	<table class="table">
 		<thead>
-			<th>Data</th>
-			<th>Comentario</th>
-			<th>Anexo</th>
+			<tr>
+				<th scope="col">Data</th>
+				<th scope="col">Comentário</th>
+				<th scope="col">Anexo</th>
+			</tr>
 		</thead>
 		<tbody>
+			<tr>
+				@foreach($justifications as $justification)
+					<td>{{ $justification->date }}</td>
+					<td>{{ $justification->comment }}</td>
+					<td>
+						<a href="{{ $justification->attachment }}">
+							{{ $justification->attachment }}
+						</a>
+					</td>
+				@endforeach
+			</tr>
 			
-			<tr></tr>
 		</tbody>
-
-	</table>	
-
+	</table>
+	
 </div>
 
 @endsection

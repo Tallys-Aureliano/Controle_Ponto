@@ -13,4 +13,9 @@ class Position extends Model
 	];
 
     use HasFactory;
+
+    public function sector()
+    {
+        return $this->belongsTo(Sector::class, 'sectors_id');
+    }
 }

@@ -39,7 +39,7 @@
                 <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow">
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="bi bi-list"></i>
+                    <i class="bi bi-list"></i> 
                         {{-- <i class="bi bi-list"></i> --}}
                     </button>
 
@@ -97,7 +97,7 @@
     <!-- End of Page Wrapper -->
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
+        <i class="bi bi-arrow-up"></i>
     </a>
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

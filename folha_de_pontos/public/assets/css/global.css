@@ -85,6 +85,7 @@
 
 .btn-sair {
  color: var(--primary-font-color) !important;
+ background-color: transparent !important;
 }
 
 .bi {

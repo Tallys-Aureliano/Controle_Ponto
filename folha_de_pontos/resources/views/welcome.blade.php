@@ -210,7 +210,7 @@ Bem vindo
       <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
         <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
         <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
-          <img class="card-img-top "  src="{{ asset('assets/img/banner.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
+          <img class="card-img-top "  src="{{ asset('assets/img/ariane.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
           </div>
             <div class="card-body">
             <h2 class="text-center color-secundary mb-3 mt-3">Ariane</h2>

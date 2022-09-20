@@ -8,16 +8,33 @@ Lista de setores
 
 <h1 class="text-center">LISTA DE SETORES</h1>
 
+<a href="{{ route('admin.sector.create') }}">
+  <button class="btn btn-sm btn-outline-success">Novo</button>
+</a>
+
 <div class="table-responsive mt-5">
 	<table class="table">
 		<thead>
 			<th>Nome</th>
+      <th></th>
 		</thead>
 
 	<tbody>
 		@foreach($sectors as $sector)
 			<tr>
-				<td>{{ $sector->name }}</td>
+				<td><a href="{{ route('admin.sector.show', ['id'=>$sector->id]) }}">
+          {{ $sector->name }}
+        </a>
+        </td>
+        <td>
+          <a href="{{ route('admin.sector.edit', ['id'=>$sector->id]) }}">
+            <button class="btn btn-sm btn-outline-warning">Editar</button>
+          </a>
+          <form action="{{ route('admin.sector.destroy', ['id'=>$sector->id]) }}" method="POST">
+            @csrf
+            <button class="btn btn-sm btn-outline-danger">Apagar</button>
+          </form>
+        </td>
 			</tr>
 		@endforeach
 	</tbody>

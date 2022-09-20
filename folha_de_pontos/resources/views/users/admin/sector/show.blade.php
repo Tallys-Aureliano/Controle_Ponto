@@ -1,40 +1,37 @@
 @extends('layouts.admin')
 
 @section('title')
-Empresa: {{ $business->name }}
+Setor: {{ $sector->name }}
 @endsection
 
 @section('content-admin')
 
-<h1 class="text-center">Empresa: {{ $business->name }}</h1>
-	<h2 class="text-center text-secondary mt-5">Funcionários</h2>
+<h1 class="text-center">Setor: {{ $sector->name }}</h1>
 
-	<a href="{{ route('admin.business.edit', ['id' => $business->id]) }}"><button class="btn btn-sm btn-outline-success">Editar</button></a>
-	{{-- Aqui ainda vem a lista de funcionarios dessa empresa --}}
+	<a href="{{ route('admin.sector.edit', ['id' => $sector->id]) }}"><button class="btn btn-sm btn-outline-success">Editar</button></a>
+	<form action="{{ route('admin.sector.destroy', ['id' => $sector->id]) }}" method="POST">
+		@csrf
+		<button class="btn btn-sm btn-outline-danger">Remover</button>
+	</form>
+
+
+	<h2 class="text-center text-secondary">Cargos no setor</h2>
 	<div class="table-responsive mt-3">
 		<table class="table">
 			<thead>
-				<th>Nome</th>
-				<th>matricula</th>
-				<th>Cargo</th>
+				<th>nome</th>
 			</thead>
 			<tbody>
-				@foreach($users as $user)
+				@foreach($positions as $position)
 				<tr>
-					<td><a href="{{ route('admin.employe.show', ['id' => $user->id]) }}">{{ $user->name }}</a></td>
-					<td>
-						@if($user->matricula)
-							{{ $user->matricula }}
-						@else
-							Vazio
-						@endif
+					<td><a href="{{ route('admin.position.show', ['id' => $position->id]) }}">{{ $position->name }}</a>
 					</td>
-					<td>{{ $user->position->name }}</td>
 				</tr>
 				@endforeach
 			</tbody>
 		</table>
 	</div>
+
 <nav aria-label="...">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">

@@ -240,16 +240,6 @@ body {
   position: relative;
 }
 
-.alert {
-  width: 500px !important;
-  padding-right: 24px;
-  height: auto !important;
-  position: absolute !important;
-  z-index: 100 !important;
-  top: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 @media (max-width:800px) {
   .alert {
@@ -265,4 +255,8 @@ body {
 #accordionSidebar {
   background-color:#525FBF !important;
   background-image: linear-gradient(#525FBF,#525FBF) !important;
+}
+
+.btn-close {
+  padding: 1rem !important;
 }

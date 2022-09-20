@@ -5,7 +5,6 @@ Meu perfil
 @endsection
 
 @section('content-dashboard')
-	
 	<h1 class="text-center">Perfil</h1>
 	<div class="mt-3">
 	</div>
@@ -22,5 +21,4 @@ Meu perfil
 			</ul>
 		</div>
 	</div>
-
 @endsection

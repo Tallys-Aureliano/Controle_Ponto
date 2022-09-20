@@ -9473,3 +9473,13 @@ box-shadow: 5px 5px 10px 2px #00000020;
 #funcionalidades {
   background-color: #fafafa;
 }
+
+.alert {
+  width: 500px !important;
+  height: auto !important;
+  z-index: 100 !important;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}

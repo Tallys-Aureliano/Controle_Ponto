@@ -17,10 +17,11 @@ Lista de empresas
 	</form>
 </div>
 
-<a href="{{ route('admin.business.create') }}"><button class="btn btn-lg btn-primary-m">Nova Empresa</button></a>
+<a href="{{ route('admin.business.create') }}"><button class="btn btn-secundary-m">Criar Empresa</button></a>
 
 
 <div class="table-responsive mt-4">
+	
 	<table class="table">
 		<thead>
 			<th>Nome</th>
@@ -51,7 +52,9 @@ Lista de empresas
 			@endforeach
 		</tbody>
 	</table>
+
 </div>
+
 <nav aria-label="...">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">

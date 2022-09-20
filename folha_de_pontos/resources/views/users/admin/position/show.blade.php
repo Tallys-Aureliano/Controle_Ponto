@@ -7,18 +7,18 @@ Cargo: {{ $position->name }}
 @section('content-admin')
 <h1 class="text-center">Cargo: {{ $position->name }}</h1>
 
-<p>Nome: {{ $position->name }}</p>
-<p>Setor: 
+<h5 class="mt-5">Nome: {{ $position->name }}</h5>
+<h5>Setor: 
 	@if($position->sector)
 		{{ $position->sector->name }}
 	@else
 		Vazio
 	@endif
-</p>
+</h5>
 
-<h2 class="text-secondary text-center">Funcionários no cargo</h2>
+<h2 class="text-secondary text-center mt-4">Funcionários no cargo</h2>
 
-<div class="table-responsive">
+<div class="table-responsive mt-3">
 	<table class="table">
 		<thead>
 			<th>Nome</th>

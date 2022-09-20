@@ -4,7 +4,10 @@ Lista de cargos
 @endsection
 @section('content-admin')
 <h1 class="text-center">LISTA DE CARGOS</h1>
-<div class="table-responsive mt-5">
+
+<a href="{{ route('admin.position.create') }}"><button class="btn btn-secundary-m mt-5">Criar Cargo</button></a>
+
+<div class="table-responsive mt-3">
 	<table class="table">
 		<thead>
 			<th>Nome</th>
@@ -23,13 +26,13 @@ Lista de cargos
 				@else
 				<td>Vazio</td>
 				@endif
-				<td>
+				<td class="d-flex justify-content-end gap-2">
 					<a href="{{ route('admin.position.edit', ['id'=>$position->id]) }}">
-						<button class="btn btn-sm btn-outline-warning">Editar</button>
+						<button class="btn btn-sm btn-secundary-m">Editar</button>
 					</a>
 					<form action="{{ route('admin.position.destroy', ['id' => $position->id]) }}" method="POST">
 					@csrf
-					<button class="btn btn-sm btn-outline-danger">Apagar</button></form>
+					<button class="btn btn-sm btn-danger">Apagar</button></form>
 				</td>
 			</tr>
 			@endforeach

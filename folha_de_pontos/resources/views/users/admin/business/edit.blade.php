@@ -17,7 +17,7 @@ Editar empresa
 			  <option value="0"@if(!$business->active)selected="selected"@endif >Desativada</option>
 			</select>
 			<div class="text-center">
-				<button class="btn bt-lg btn-secundary-m mt-3">Salvar Alterações</button>
+				<button class="btn btn-secundary-m mt-3">Salvar Alterações</button>
 			</div>
 		</form>
 	</div>

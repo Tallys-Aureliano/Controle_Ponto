@@ -9,10 +9,10 @@ Lista de setores
 <h1 class="text-center">LISTA DE SETORES</h1>
 
 <a href="{{ route('admin.sector.create') }}">
-  <button class="btn btn-sm btn-outline-success">Novo</button>
+  <button class="btn btn-secundary-m mt-5">Criar Setor</button>
 </a>
 
-<div class="table-responsive mt-5">
+<div class="table-responsive mt-3">
 	<table class="table">
 		<thead>
 			<th>Nome</th>
@@ -26,13 +26,13 @@ Lista de setores
           {{ $sector->name }}
         </a>
         </td>
-        <td>
+        <td class="d-flex justify-content-end gap-2">
           <a href="{{ route('admin.sector.edit', ['id'=>$sector->id]) }}">
-            <button class="btn btn-sm btn-outline-warning">Editar</button>
+            <button class="btn btn-sm btn-secundary-m">Editar</button>
           </a>
           <form action="{{ route('admin.sector.destroy', ['id'=>$sector->id]) }}" method="POST">
             @csrf
-            <button class="btn btn-sm btn-outline-danger">Apagar</button>
+            <button class="btn btn-sm btn-danger">Apagar</button>
           </form>
         </td>
 			</tr>

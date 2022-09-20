@@ -11,7 +11,9 @@ Novo setor
 <form action="{{ route('admin.sector.store') }}" method="POST">
 	@csrf
 	<input type="text" class="form-control" name="name" maxlength="191" required autocomplete="false">
-	<button class="btn btn-sm btn-outline-success">Criar</button>
+	<div class="text-center">
+		<button class="btn btn-secundary-m mt-3">Criar</button>
+	</div>
 </form>
 
 @endsection

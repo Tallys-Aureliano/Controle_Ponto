@@ -7,17 +7,29 @@ Funcionario: {{ $user->name }}
 @section('content-admin')
 <h1 class="text-center">Funcionário: {{ $user->name }}</h1>
 
-<p>Nome: {{ $user->name }}</p>
-<p>Email: {{ $user->email }}</p>
-<p>Matricula:
-	@if($user->matricula)
-		{{ $user->matricula }}
-	@else
-		Vazio
-	@endif
-</p>
-<p>Cargo: {{ $user->position->name }}</p>
-<p>Empresa: {{ $user->business->name }}</p>
+<div class="text-left mx-auto d-flex flex-column align-items-center mt-3"">
+<img src="{{ asset('assets/img/banner.png') }} alt="Foto do usuario" class="mb-4 mt-5" style="width: 150px; height:150px;border-radius:50%">
+	<div class="mx-auto">
+		<ul class="list-unstyled text-left mt-5">
+			<li><h5>Nome: {{ $user->name }}</h5></li>
+			<li class="mt-4"><h5>Email: {{ $user->email }}</h5></li>
+			<li class="mt-4">
+			<h5>Matricula:
+				@if($user->matricula)
+					{{ $user->matricula }}
+				@else
+					Vazio
+				@endif
+			</h5>
+			</li>
+			<li class="mt-4"><h5>Cargo: {{ $user->position->name }}</h5></li>
+			<li class="mt-4"><h5>Empresa: {{ $user->business->name }}</h5></li>
+			
+		</ul>
+
+	</div>
+
+</div>
 
 
 @endsection

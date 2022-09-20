@@ -11,7 +11,7 @@ Criar empresa
 			@csrf
 			<input type="text" class="form-control mb-3" name="name" placeholder="Nome da empresa" required>
 			<div class="text-center">
-				<button class="btn btn-lg btn-secundary-m mt-3">Criar Empresa</button>
+				<button class="btn btn-secundary-m mt-3">Criar Empresa</button>
 			</div>
 		</form>
 	</div>

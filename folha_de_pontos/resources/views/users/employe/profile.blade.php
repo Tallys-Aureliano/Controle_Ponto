@@ -7,7 +7,7 @@ Meu perfil
 @section('content-dashboard')
 	<h1 class="text-center">Perfil</h1>
 	
-	<div class="text-center mx-auto d-flex flex-column align-items-center mt-3">
+	<div class="text-left  mx-auto d-flex flex-column align-items-center mt-3">
 	@if(auth()->user()->role == 1)
 	<a href="{{ route('manager.edit.employe', ['id'=>$user->id]) }}" class="btn btn-secundary-m mt-5 ">Editar</a>
 	@endif

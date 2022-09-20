@@ -5,7 +5,7 @@ Lista de usuários
 @endsection
 
 @section('content-admin')
-	<h1 class="text-center">LISTA DE USUÁRIOS</h1>
+<h1 class="text-center">LISTA DE USUÁRIOS</h1>
 
 <div class="table-responsive mt-5">
 	<table class="table">

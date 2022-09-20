@@ -15,4 +15,9 @@ class Busines extends Model
     protected $table = 'business';
 
     use HasFactory;
+
+    public function users()
+	{
+	    return $this->hasMany(User::class, 'id');
+	}
 }

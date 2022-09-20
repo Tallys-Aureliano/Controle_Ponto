@@ -1,13 +1,18 @@
 @extends('base')
 
+@section('head')
+<!-- CSS ADMIN -->
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/admin.css') }}">
+@endsection
+
 @section('content')
 <body>
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand me-auto" href="{{ route('dashboard') }}">Bem vindo, {{ auth()->user()->name }}.</a>
+    <a class="navbar-brand me-auto text-white fs-4" href="{{ route('dashboard') }}">Bem vindo, {{ auth()->user()->name }}.</a>
     <form action="{{ route('logout') }}" method="POST" class="d-flex">
     	@csrf
-      <button class="btn btn-outline-danger" type="submit">Sair</button>
+      <button class="btn btn-lg btn-sair" type="submit">Sair</button>
     </form>
   </div>
 </nav>

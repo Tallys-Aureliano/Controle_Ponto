@@ -5,9 +5,9 @@ Lista de cargos
 @endsection
 
 @section('content-admin')
-<h1 class="text-center">Lista de cargos</h1>
+<h1 class="text-center">LISTA DE CARGOS</h1>
 
-<div class="table-responsive">
+<div class="table-responsive mt-5">
 	<table class="table">
 		<thead>
 			<th>Nome</th>

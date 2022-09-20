@@ -23,3 +23,24 @@ body {
 a > p {
     margin: 0 !important;
 }
+
+a.page-link {
+    background-color: white !important;
+    color: #5D6CD9 !important;
+}
+
+.pagination .page-link.active {
+    background-color: #5D6CD9 !important;
+    color: white !important;
+}
+
+.table >thead {
+    background-color: #5D6CD9 !important;
+    color: white !important;
+    border-radius: 8px !important;
+}
+
+
+.table > tbody {
+    background-color: white !important;
+}

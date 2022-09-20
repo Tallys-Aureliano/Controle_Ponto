@@ -7,10 +7,9 @@ Empresa: {{ $business->name }}
 @section('content-admin')
 
 <h1 class="text-center">Empresa: {{ $business->name }}</h1>
-
-	<h2 class="text-center text-secondary mt-3">Funcionários</h2>
+	<h2 class="text-center text-secondary mt-5">Funcionários</h2>
 	{{-- Aqui ainda vem a lista de funcionarios dessa empresa --}}
-	<div class="table-responsive">
+	<div class="table-responsive mt-3">
 		<table class="table">
 			<thead>
 				<th>Nome</th>
@@ -34,5 +33,20 @@ Empresa: {{ $business->name }}
 			</tbody>
 		</table>
 	</div>
+<nav aria-label="...">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled rounded">
+      <a class="page-link">Anterior</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Próxima</a>
+    </li>
+  </ul>
+</nav>
 
 @endsection

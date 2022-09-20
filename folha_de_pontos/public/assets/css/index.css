@@ -9458,8 +9458,9 @@ blockquote::before {
 /*# sourceMappingURL=style.css.map */
 
 #sobre {
-  background-color: #fafafa;
+  background-color: #F5F5F5;
 }
+
 #sobre .card img {
   transition: all .3s;
   }
@@ -9471,7 +9472,7 @@ box-shadow: 5px 5px 10px 2px #00000020;
 
 
 #funcionalidades {
-  background-color: #fafafa;
+  background-color: #F5F5F5;
 }
 
 .alert {

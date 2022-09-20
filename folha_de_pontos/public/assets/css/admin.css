@@ -1,9 +1,33 @@
+
 body {
-    background-color: #f5f5f5 !important;
+    background-color: #ffffff90 !important;
 }
 
 .navbar {
     background-color: #5D6CD9 !important;
+}
+
+.breadcrumb-nav {
+    background-color: #525FBF !important;
+    padding: 16px 0 !important;
+}
+
+.breadcrumb {
+    background-color: transparent !important;
+    margin: 0 !important;
+    color: white !important;
+}
+
+.breadcrumb-item a {
+    color: white !important;
+}
+
+.breadcrumb-item.active {
+    color: #ffffff90;
+}
+
+.breadcrumb-item.active::before {
+    color: #ffffff90;
 }
 
 .btn-sair {

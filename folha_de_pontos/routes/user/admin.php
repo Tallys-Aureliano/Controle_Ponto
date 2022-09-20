@@ -42,10 +42,48 @@ Route::middleware(['auth', 'check.admin'])->group(function () {
 	Route::get('admin/employe/show/{id}', [EmployeController::class, 'showEmploye'])
 		->name('admin.employe.show');
 
+	// SECTOR CRUD
 	Route::get('admin/sector/list', [SectorController::class, 'list'])
 		->name('admin.sector.list');
 
+	Route::get('admin/sector/show/{id}', [SectorController::class, 'show'])
+		->name('admin.sector.show');
+
+	Route::get('admin/sector/create', [SectorController::class, 'create'])
+		->name('admin.sector.create');
+
+	Route::post('admin/sector/store', [SectorController::class, 'store'])
+		->name('admin.sector.store');
+
+	Route::get('admin/sector/edit/{id}', [SectorController::class, 'edit'])
+		->name('admin.sector.edit');
+
+	Route::post('admin/sector/update/{id}', [SectorController::class, 'update'])
+		->name('admin.sector.update');
+
+	Route::post('admin/sector/destroy/{id}', [SectorController::class, 'destroy'])
+		->name('admin.sector.destroy');
+
+	// POSITION CRUD
+	
+	Route::get('admin/position/show/{id}', [PositionController::class, 'show'])
+		->name('admin.position.show');
+
 	Route::get('admin/position/list', [PositionController::class, 'list'])
 		->name('admin.position.list');
+	
+	Route::get('admin/position/create', [PositionController::class, 'create'])
+		->name('admin.position.create');
 
+	Route::post('admin/position/store', [PositionController::class, 'store'])
+		->name('admin.position.store');
+
+	Route::post('admin/position/destroy/{id}', [PositionController::class, 'destroy'])
+		->name('admin.position.destroy');
+
+	Route::get('admin/position/edit/{id}', [PositionController::class, 'edit'])
+		->name('admin.position.edit');
+
+	Route::post('admin/position/update/{id}', [PositionController::class, 'update'])
+		->name('admin.position.update');
 });

@@ -16,21 +16,36 @@ Lista de empresas
 	</form>
 </div>
 
+<a href="{{ route('admin.business.create') }}"><button class="btn btn-sm btn-outline-success">Nova</button></a>
+
 
 <div class="table-responsive">
 	<table class="table">
 		<thead>
 			<th>Nome</th>
 			<th>Criado em</th>
+			<th></th>
 		</thead>
 		<tbody>
 			@foreach($businesss as $business)
-				<tr>
+
+				@if(!$business->active)
+					<tr style="background-color: gray">
+				@else
+					<tr>
+				@endif
 					<td>
 						<a href="{{ route('admin.business.show', ['id' => $business->id]) }}">{{ $business->name }}</a>
 					</td>
 					
 					<td>{!! date('d/m/Y', strtotime($business->created_at)) !!}</td>
+					<td>
+						<a href="{{ route('admin.business.edit', ['id' => $business->id]) }}"><button class="btn btn-sm btn-outline-success">Editar</button></a>
+						<form action="{{ route('admin.business.destroy', ['id' => $business->id]) }}" method="POST">
+							@csrf
+							<button class="btn btn-sm btn-outline-danger">Apagar</button>
+						</form>
+					</td>
 				</tr>
 			@endforeach
 		</tbody>

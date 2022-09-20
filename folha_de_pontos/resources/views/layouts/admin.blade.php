@@ -13,6 +13,7 @@
 </nav>
 
 <main class="container mt-4">
+	@include('partials.flash_messages')
 	@yield('content-admin')	
 </main>
 

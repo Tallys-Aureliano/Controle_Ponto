@@ -10,9 +10,10 @@ use Illuminate\Support\Facades\Validator;
 class BusinessController extends Controller
 {
 	public function show($id){
-		$business = Busines::with(['users'])->findOrFail($id);
+		$business = Busines::findOrFail($id);
+		$users = User::with('business')->where('business_id', $id)->get();
 
-		return view('users.admin.business.show', compact('business')); // tem que mudar
+		return view('users.admin.business.show', compact('business', 'users')); // tem que mudar
 	}
 
 	public function showMyBusiness(){
@@ -114,7 +115,7 @@ class BusinessController extends Controller
 	}
 
 	public function list(){
-		$businesss = Busines::orderBy('active', 'desc')->get();
+		$businesss = Busines::orderBy('active', 'desc')->orderBy('created_at','desc')->get();
 		return view('users.admin.business.list', compact('businesss'));
 	}
 

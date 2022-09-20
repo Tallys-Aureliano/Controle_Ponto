@@ -20,7 +20,13 @@ Lista de usuários
 			@foreach($users as $user)
 				<tr>
 					<td><a href="{{ route('admin.employe.show', ['id' => $user->id]) }}">{{ $user->name }}</a></td>
-					<td>{{ $user->matricula }}</td>
+					<td>
+						@if($user->matricula)
+							{{ $user->matricula }}
+						@else
+							Vazio
+						@endif
+					</td>
 					<td>{{ $user->email }}</td>
 					<td>{{ $user->position->name }}</td>
 					<td><a href="{{ route('admin.business.show', ['id' => $user->business->id]) }}">{{ $user->business->name }}</td>

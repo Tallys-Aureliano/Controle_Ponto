@@ -49,6 +49,15 @@ Route::middleware(['auth', 'check.admin'])->group(function () {
 	Route::post('admin/employe/store', [UserController::class, 'store'])
 		->name('admin.employe.store');
 
+	Route::get('admin/employe/edit/{id}', [UserController::class, 'edit'])
+		->name('admin.employe.edit');
+
+	Route::post('admin/employe/update/{id}', [UserController::class, 'update'])
+		->name('admin.employe.update');
+
+	Route::post('admin/employe/destroy/{id}', [UserController::class, 'destroy'])
+		->name('admin.employe.destroy');
+
 	// SECTOR CRUD
 	Route::get('admin/sector/list', [SectorController::class, 'list'])
 		->name('admin.sector.list');

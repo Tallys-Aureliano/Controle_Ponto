@@ -8,11 +8,14 @@ Setor: {{ $sector->name }}
 
 <h1 class="text-center">Setor: {{ $sector->name }}</h1>
 
-	<a href="{{ route('admin.sector.edit', ['id' => $sector->id]) }}"><button class="btn btn-secundary-m mt-5">Editar</button></a>
+<div class="d-flex align-items-center gap-2 mt-5">
+	<a href="{{ route('admin.sector.edit', ['id' => $sector->id]) }}"><button class="btn btn-secundary-m ">Editar</button></a>
 	<form action="{{ route('admin.sector.destroy', ['id' => $sector->id]) }}" method="POST">
 		@csrf
-		<button class="btn btn-danger mt-3">Remover</button>
+		<button class="btn btn-danger">Remover</button>
 	</form>
+</div>
+<hr>
 
 	<h2 class="text-center mt-4">Cargos no setor</h2>
 

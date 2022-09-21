@@ -26,7 +26,7 @@
   </div>
 </nav>
 
-<main class="container mt-4">
+<main class="container mt-4 mb-5">
 	@include('partials.flash_messages')
 	@yield('content-admin')	
 </main>

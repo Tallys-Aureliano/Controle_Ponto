@@ -6,33 +6,39 @@ Criar funcionario
 
 @section('content-dashboard')
 
+
 <h1 class="text-center">Criar funcionário</h1>
 
-<form action="" method="POST" class="container mt-5 text-center">
-	<div class="input-group mb-3 --form-authentication">
+<form action="" method="POST" class="container mt-5  --box-form">
+	<label for="inputGroupFile01">Escolha uma foto</label>
+	<div class="input-group mb-3">
 	<input type="file" class="form-control" id="inputGroupFile01">
 	</div>
 
-	<div class="input-group mb-3 --form-authentication">
+	<label for="Nome">Nome</label>
+	<div class="input-group mb-3 ">
 	  <input type="text" name="name" class="form-control" placeholder="Nome" required>
 	</div>
 
-	<div class="input-group mb-3 --form-authentication">
+	<label for="email">Email</label>
+	<div class="input-group mb-3">
 	  <input type="email" class="form-control" name="email" placeholder="Email" required>
-
-	</div>
-	<div class="--form-authentication">
-		<input type="text" class="form-control mb-3 --form-authentication" name="matricula" placeholder="Matricula" maxlength="19">
 	</div>
 
-	<div class="--form-authentication">
-		<input type="password" class="form-control mb-3 --form-authentication" name="password" placeholder="Senha" minlength="8" required>
+	<label for="matricula">Matricula</label>
+	<div class="">
+		<input type="text" class="form-control mb-3 " name="matricula" placeholder="Matricula" maxlength="19">
 	</div>
-	<div class="--form-authentication">
-		<input type="password" class="form-control mb-3 --form-authentication" name="password-confirmation" placeholder="Confirmar senha" required>
+
+	<label for="senha">Senha</label>
+	<div class="">
+		<input type="password" class="form-control mb-3 " name="password" placeholder="Senha" minlength="8" required>
 	</div>
-	<div class="--form-authentication-button">
-		<button class="btn btn-lg btn-primary-m mt-3">Criar Funcionário</button>
+
+	<label for="password-confirmation">Confirme sua senha</label>
+	<div class="">
+		<input type="password" class="form-control mb-3" name="password-confirmation" placeholder="Confirmar senha" required>
 	</div>
+	<button class="btn btn-lg btn-primary-m mt-2">Criar Funcionário</button>
 </form>
 @endsection

@@ -8,7 +8,7 @@ Lista de justificativas
 
 <h1 class="text-center">Minhas justificativas</h1>
 
-<div class="table-responsive mt-5 rounded-2 shadow-sm">
+<div class="table-responsive mt-5 rounded-2 shadow-sm mt-5">
 	<table class="table">
 		<thead>
 			<tr>

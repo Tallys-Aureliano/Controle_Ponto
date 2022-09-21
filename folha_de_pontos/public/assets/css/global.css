@@ -149,6 +149,15 @@ body {
   font-size: 1.3em;
 }
 
+.--box-form {
+  width: 600px !important;
+}
+
+@media (max-width:900px) {
+  .--box-form {
+    width: 100% !important;
+  }
+}
 
 .--box-authentication {
     width: 450px;

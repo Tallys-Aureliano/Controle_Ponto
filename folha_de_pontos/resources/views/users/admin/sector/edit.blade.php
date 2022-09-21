@@ -8,20 +8,36 @@ Setor: {{ $sector->name }}
 
 <h1 class="text-center">Setor: {{ $sector->name }}</h1>
 
-<div class="mt-5">
+<div class="mt-5 mx-auto --box-form">
 	<form action="{{ route('admin.sector.update', ['id'=>$sector->id]) }}" method="POST">
 		@csrf
-		<input type="text" class="form-control @if($errors->has('name')) is-invalid @endif" name="name" maxlength="191" value="{{ $sector->name }}" required autocomplete="false">
+		<label for="name" class="mb-2">Nome</label>
+		<input type="text" class="form-control @if($errors->has('name')) is-invalid @endif mb-3" name="name" maxlength="191" value="{{ $sector->name }}" required autocomplete="false">
 		@if($errors->has('name'))
 		<div class="invalid-feedback">
 		    @error('name') {{ $message }} @enderror
 		</div>
     	@endif
-
-		<div class="text-center">
-			<button class="btn btn-secundary-m mt-3">Salvar Alterações</button>
-		</div>
+		<button class="btn btn-secundary-m mt-2">Salvar Alterações</button>
 	</form>
 </div>
+
+<div class="modal" tabindex="-1" id="modal1">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title">Modal title</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <div class="modal-body">
+			<p>Modal body text goes here.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+			<button type="button" class="btn btn-secundary-m">Salvar</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
 
 @endsection

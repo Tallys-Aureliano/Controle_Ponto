@@ -7,24 +7,29 @@ Lista de justificativas
 @section('content-dashboard')
 <h1 class="text-center">Lista de Justificativas</h1>
 
-<div class="--form-filter mt-5 mb-3">
-	<form action="" class="get" class="--form-authentication">
-		<div class="d-flex flex-wrap gap-3 mt-5 --form-authentication">
-			<label for="">Consulta:</label>
-			<input class="form-control form-control-lg" type="text" placeholder="Nome ou Matricula" name="consult">
-			<label for="">Consultar por:</label>
-			<select class="form-select form-control-sm shadow-sm" aria-label="Funcionario">
-				<option selected>Tipo</option>
-				<option value="1">Nome</option>
-				<option value="2">Matricula</option>
-			</select>
-			
-			<button class="btn btn-sm btn-primary-m shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
+<div class="--form-filter mt-5 mb-3 --box-form">
+	<form action="" class="get" class="--box-authentication">
+		<div class="d-flex flex-column gap-3 mt-5">
+			<div class="text-start">
+				<label for="consult">Nome ou Matricula</label>
+				<input class="form-control" type="text" placeholder="Nome ou Matricula" name="consult">
+			</div>
+			<div class="d-flex align-items-center gap-3">
+				<span>Consulta por:</span>
+					<select class="form-select shadow-sm" aria-label="Funcionario">
+						<option selected>Tipo</option>
+						<option value="1">Nome</option>
+						<option value="2">Matricula</option>
+					</select>
+					
+					<button class="btn btn-secondary shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
+			</div>
 		</div>
 	</form>
+	<hr>
 </div>
 
-<div class="table-responsive rounded-2 shadow-sm">
+<div class="table-responsive rounded-2 shadow-sm mt-5">
 	<table class="table">
 		<thead>
 			<tr>
@@ -48,7 +53,7 @@ Lista de justificativas
 	</table>
 	
 </div>
-<nav aria-label="..." class="mt-2">
+<nav aria-label="..." class="mt-3">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
       <a class="page-link">Anterior</a>

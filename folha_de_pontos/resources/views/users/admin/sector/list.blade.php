@@ -9,10 +9,11 @@ Lista de setores
 <h1 class="text-center">LISTA DE SETORES</h1>
 
 <a href="{{ route('admin.sector.create') }}">
-  <button class="btn btn-secundary-m mt-5">Criar Setor</button>
+  <button class="btn btn-primary-m mt-5">Criar Setor</button>
 </a>
+<hr>
 
-<div class="table-responsive mt-3 rounded-3  shadow-sm"">
+<div class="table-responsive mt-5 rounded-3  shadow-sm">
 	<table class="table">
 		<thead>
 			<th>Nome</th>
@@ -40,6 +41,8 @@ Lista de setores
 	</tbody>
 </table>
 </div>
+
+
 <nav aria-label="..." class="mt-3">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
@@ -55,5 +58,23 @@ Lista de setores
     </li>
   </ul>
 </nav>
+
+<div class="modal" tabindex="-1" id="modal1">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title">Modal title</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <div class="modal-body">
+			<p>Modal body text goes here.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+			<button type="button" class="btn btn-secundary-m">Salvar</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
 
 @endsection

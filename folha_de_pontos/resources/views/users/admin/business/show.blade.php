@@ -13,7 +13,7 @@ Empresa: {{ $business->name }}
 	{{-- Aqui ainda vem a lista de funcionarios dessa empresa --}}
 	<div class="table-responsive mt-3 rounded-3  shadow-sm">
 		<table class="table">
-			<thead>git 
+			<thead>
 				<th>Nome</th>
 				<th>matricula</th>
 				<th>Cargo</th>

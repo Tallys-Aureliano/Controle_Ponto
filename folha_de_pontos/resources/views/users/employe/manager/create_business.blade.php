@@ -5,6 +5,7 @@ Cadastrar empresa
 @endsection
 
 @section('auth-content')
+
 <form action="{{ route('business.store') }}" method="POST">
 	@csrf
 	<h1 class="text-center pb-4">Cadastro da empresa</h1>

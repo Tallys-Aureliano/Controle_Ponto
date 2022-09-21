@@ -4,6 +4,11 @@ Lista de cargos
 @endsection
 @section('content-admin')
 <h1 class="text-center">LISTA DE CARGOS</h1>
+
+<a href="{{ route('admin.position.create') }}">
+	<button class="btn btn-sm btn-outline-success">Novo</button>
+</a>
+
 <div class="table-responsive mt-5">
 	<table class="table">
 		<thead>

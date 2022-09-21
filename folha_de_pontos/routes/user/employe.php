@@ -11,7 +11,10 @@ Route::middleware(['auth', 'check.employe'])->group(function () {
     	->name('employe.profile');
 
    	Route::get('employe/justifications/create', [EmployeController::class, 'createJustifications'])
-   		->name('employe.justifications.create');
+   		->name('employe.justification.create');
+
+    Route::post('employe/justifications/store', [EmployeController::class, 'storeJustification'])
+      ->name('employe.justification.store');
 
    	Route::get('employe/justifications/list', [EmployeController::class, 'listJustifications'])
    		->name('employe.justification.list');

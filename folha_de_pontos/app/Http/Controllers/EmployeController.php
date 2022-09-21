@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Storage;
 
 use App\Models\User;
 use App\Models\Justification;
 use App\Models\PointRegister as Point;
-use Illuminate\Support\Facades\Storage;
+
+
 
 class EmployeController extends Controller
 {
@@ -66,18 +68,18 @@ class EmployeController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'comment' => 'required|string|max:600',
-            'file' => 'emmets:png,jpg,jpeg,pdf,doc,docx|max:10000',
+            'file' => 'nullable|mimes:png,jpg,jpeg,pdf,doc,docx|max:10000',
             'date' => 'required|date'
         ]);
 
         if ($validator->fails()) {
-            return redirect()->route('admin.justification.list')
+            return redirect()->route('employe.justification.create')
                     ->withErrors($validator)
                     ->withInput();
         }
 
-        Storage::disk('public')->put($request->name, $request->_file_);
-        $file = "";
+        // Storage::disk('public')->put($request->name, $request->_file_);
+        // $file = "";
 
         $Justification = Justification::create([
             'comment' => $request->comment,
@@ -86,7 +88,7 @@ class EmployeController extends Controller
             'users_id' => auth()->user()->id
         ])->save();
 
-        return redirect()->route('admin.justification.list')
+        return redirect()->route('employe.justification.list')
             ->with('success', 'Justificativa criada com sucesso.');
 
     }

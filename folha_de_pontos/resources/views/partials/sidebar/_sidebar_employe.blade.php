@@ -26,7 +26,7 @@
     <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Opções</h6>
-            <a class="collapse-item" href="{{ route('employe.justifications.create') }}">Nova Justificativa</a>
+            <a class="collapse-item" href="{{ route('employe.justification.create') }}">Nova Justificativa</a>
             <a class="collapse-item" href="{{ route('employe.justification.list') }}">Minhas Justificativas</a>
         </div>
     </div>

@@ -28,7 +28,7 @@ Bem vindo
           <h3 class="text-center mb-4 text-white" style="text-shadow: 3px 3px 5px rgba(0,0,0, .25);">Conheça a melhor solução de controle de ponto</h3>
           <div class="text-center">
             <a type="button"
-              class="btn btn-lg btn-primary-m rounded-3" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Comece Agora!<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span>
+              class="btn btn-lg btn-primary-m rounded-3" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Comece Agora<span style="font-size: 16px;" class="ms-2 fas fa-arrow-right"></span>
             </a>
           </div>
         </div>
@@ -210,10 +210,54 @@ Bem vindo
       <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
         <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
         <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
-          <img class="card-img-top "  src="{{ asset('assets/img/banner.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
+          <img class="card-img-top "  src="{{ asset('assets/img/ariane.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
           </div>
             <div class="card-body">
-            <h2 class="text-center color-secundary mb-3 mt-3">Fulano de tal</h2>
+            <h2 class="text-center color-secundary mb-3 mt-3">Ari Ane</h2>
+            <h3 class="text-center color-font-secundary mb-4">Sub-gerente</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
+        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
+        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
+          <img class="card-img-top "  src="{{ asset('assets/img/francisco.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
+          </div>
+            <div class="card-body">
+            <h2 class="text-center color-secundary mb-3 mt-3">Cisco Lee</h2>
+            <h3 class="text-center color-font-secundary mb-4">Front-end</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
+        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
+        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
+          <img class="card-img-top "  src="{{ asset('assets/img/clara.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
+          </div>
+            <div class="card-body">
+            <h2 class="text-center color-secundary mb-3 mt-3">Maria Clara</h2>
+            <h3 class="text-center color-font-secundary mb-4">Tester</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
+        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
+        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
+          <img class="card-img-top "  src="{{ asset('assets/img/michel.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
+          </div>
+            <div class="card-body">
+            <h2 class="text-center color-secundary mb-3 mt-3">El Michel</h2>
+            <h3 class="text-center color-font-secundary mb-4">Back-end</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
+        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
+        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
+          <img class="card-img-top "  src="{{ asset('assets/img/poliana.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
+          </div>
+            <div class="card-body">
+            <h2 class="text-center color-secundary mb-3 mt-3">Poliana Vision</h2>
             <h3 class="text-center color-font-secundary mb-4">Designer</h3>
           </div>
         </div>
@@ -221,55 +265,11 @@ Bem vindo
       <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
         <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
         <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
-          <img class="card-img-top "  src="{{ asset('assets/img/banner.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
+          <img class="card-img-top "  src="{{ asset('assets/img/tallys.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
           </div>
             <div class="card-body">
-            <h2 class="text-center color-secundary mb-3 mt-3">Fulano de tal</h2>
-            <h3 class="text-center color-font-secundary mb-4">Designer</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
-        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
-        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
-          <img class="card-img-top "  src="{{ asset('assets/img/banner.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
-          </div>
-            <div class="card-body">
-            <h2 class="text-center color-secundary mb-3 mt-3">Fulano de tal</h2>
-            <h3 class="text-center color-font-secundary mb-4">Designer</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
-        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
-        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
-          <img class="card-img-top "  src="{{ asset('assets/img/banner.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
-          </div>
-            <div class="card-body">
-            <h2 class="text-center color-secundary mb-3 mt-3">Fulano de tal</h2>
-            <h3 class="text-center color-font-secundary mb-4">Designer</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
-        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
-        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
-          <img class="card-img-top "  src="{{ asset('assets/img/banner.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
-          </div>
-            <div class="card-body">
-            <h2 class="text-center color-secundary mb-3 mt-3">Fulano de tal</h2>
-            <h3 class="text-center color-font-secundary mb-4">Designer</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-xl-5 col-md-7 pt-1 d-flex justify-content-center">
-        <div class="card" style="width: 26rem; border-top-left-radius: 50px ;">
-        <div style="position: relative; background-image: linear-gradient(#5366FF, #46BB83);width:100%; border-bottom-right-radius: 50px;  border-top-left-radius: 50px ;">
-          <img class="card-img-top "  src="{{ asset('assets/img/banner.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
-          </div>
-            <div class="card-body">
-            <h2 class="text-center color-secundary mb-3 mt-3">Fulano de tal</h2>
-            <h3 class="text-center color-font-secundary mb-4">Designer</h3>
+            <h2 class="text-center color-secundary mb-3 mt-3">Tatallys</h2>
+            <h3 class="text-center color-font-secundary mb-4">Gerente</h3>
           </div>
         </div>
       </div>

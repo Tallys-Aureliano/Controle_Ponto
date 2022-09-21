@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Justification;
 
 class ManagerController extends Controller
 {
@@ -15,6 +16,13 @@ class ManagerController extends Controller
     public function index()
     {
         return view('users.employe.dashboard');
+    }
+
+    public function listJustificatives()
+    {
+        $justifications = Justification::with(['user'])->get();
+
+        return view('users.employe.manager.list_justifications', compact('justifications'));
     }
 
     /**
@@ -44,12 +52,6 @@ class ManagerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
-    {
-        $user = User::with(['position'])->get()->find(auth()->user()->id);
-
-        return view('users.employe.profile', compact('user'));
-    }
 
     public function showEmploye($id)
     {

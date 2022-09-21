@@ -25,8 +25,8 @@
 				</div>
 			
 		<div>
-			<!-- account btn --> <a href="{{ route('login') }}" class="btn btn-lg btn-secundary-m rounded-3">Entrar</a>
-			<!-- account btn --> <a href="{{ route('register') }}" class="btn btn-lg btn-primary-m rounded-3 ms-2 ms-lg-3">Cadastre-se</a>
+			<!-- account btn --> <a href="{{ route('login') }}" class="btn  btn-secundary-m rounded-3">Entrar</a>
+			<!-- account btn --> <a href="{{ route('register') }}" class="btn btn-primary-m rounded-3 ms-2">Cadastre-se</a>
 
 		</div>
 	</div>

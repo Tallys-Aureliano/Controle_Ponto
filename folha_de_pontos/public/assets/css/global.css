@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 :root {
-  --primary-font-color: #1C1C1C;
-  --secundary-font-color: #666666;
+  --primary-font-color: #28252e;
+  --secundary-font-color: #84858b;
   --primary-color: #5D6CD9;
   --primary-color-dark: #525FBF;
-  --secundary-color: #77BA85;
-  --secundary-color-dark: #62996D;
+  --secundary-color: #46BB83;
+  --secundary-color-dark: #3EA674;
   --bg-color:#fff;
   --white:#fff;
 }
@@ -85,6 +85,7 @@
 
 .btn-sair {
  color: var(--primary-font-color) !important;
+ background-color: transparent !important;
 }
 
 .bi {
@@ -102,7 +103,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--primary-font-color);
+  color: var(--primary-font-color) !important;
   background-color: var(--bg-color);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -240,16 +241,6 @@ body {
   position: relative;
 }
 
-.alert {
-  width: 500px !important;
-  padding-right: 24px;
-  height: auto !important;
-  position: absolute !important;
-  z-index: 100 !important;
-  top: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 @media (max-width:800px) {
   .alert {
@@ -265,4 +256,8 @@ body {
 #accordionSidebar {
   background-color:#525FBF !important;
   background-image: linear-gradient(#525FBF,#525FBF) !important;
+}
+
+.btn-close {
+  padding: 1rem !important;
 }

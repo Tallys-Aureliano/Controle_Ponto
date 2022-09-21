@@ -28,7 +28,8 @@ class User extends Authenticatable
         'role',
         'auto_register',
         'business_id',
-        'active'
+        'active',
+        'position_id'
     ];
 
     /**

@@ -20,12 +20,12 @@ Relatório individual
 				<option value="2">Matricula</option>
 			</select>
 			
-			<button class="btn btn-sm btn-secundary-m shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
+			<button class="btn btn-sm btn-primary-m shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
 		</div>
 	</form>
 </div>
 
-	<div class="table-responsive">
+	<div class="table-responsive rounded-2 shadow-sm">
 	<table class="table">
 		<thead>
 			<tr>
@@ -60,7 +60,7 @@ Relatório individual
 		</tbody>
 	</table>
 </div>
-<nav aria-label="...">
+<nav aria-label="..." class="mt-3">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
       <a class="page-link">Anterior</a>

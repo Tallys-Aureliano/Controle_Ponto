@@ -13,4 +13,14 @@ class Position extends Model
 	];
 
     use HasFactory;
+
+    public function sector()
+    {
+        return $this->belongsTo(Sector::class, 'sectors_id');
+    }
+
+    public function users()
+	{
+	    return $this->hasMany(User::class, 'id');
+	}
 }

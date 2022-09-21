@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 	<head>
 		<meta name="author" content="Serido Soft">
 		<title>@yield('title')</title>
+		<!-- FONT AWESOME -->
+		<script src="https://kit.fontawesome.com/9f22424b2c.js" crossorigin="anonymous"></script>
 		<!-- CSS GLOBAL -->
 		<link rel="stylesheet" type="text/css" href="{{asset('assets/css/global.css')}}">
 		<!-- CSS BOOTSTRAP -->
@@ -17,5 +19,6 @@
 		</head>
 		<!-- JS BOOTSTRAP -->
 		@yield('content')
+		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 	</html>

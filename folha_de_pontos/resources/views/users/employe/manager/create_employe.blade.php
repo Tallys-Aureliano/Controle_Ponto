@@ -31,7 +31,8 @@ Criar funcionario
 	<div class="--form-authentication">
 		<input type="password" class="form-control mb-3 --form-authentication" name="password-confirmation" placeholder="Confirmar senha" required>
 	</div>
-	
-	<button class="btn btn-primary-m btn-lg">Criar Funcionário</button>
+	<div class="--form-authentication-button">
+		<button class="btn btn-lg btn-primary-m mt-3">Criar Funcionário</button>
+	</div>
 </form>
 @endsection

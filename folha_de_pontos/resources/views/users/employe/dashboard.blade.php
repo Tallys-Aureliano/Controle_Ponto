@@ -9,7 +9,7 @@ Dashboard - Gerente
 @if(auth()->user()->role == 1)
 	@include('partials.dashboard-content._content_manager')
 @else
-	@include('partials.sidebar._sidebar_employe')
+	@include('partials.dashboard-content._content_employe')
 @endif
 
 @endsection

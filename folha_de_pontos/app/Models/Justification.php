@@ -11,8 +11,13 @@ class Justification extends Model
 		'comment',
 		'attachment',
 		'date',
-		'use_id'
+		'users_id'
 	];
+
+	public function user()
+	{
+		return $this->belongsTo(User::class, 'users_id');
+	}
 
     use HasFactory;
 }

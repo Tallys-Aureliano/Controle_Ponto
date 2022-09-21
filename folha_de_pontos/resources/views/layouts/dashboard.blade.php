@@ -11,14 +11,14 @@
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
             <!-- Sidebar - Brand -->
-
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                        <div class="sidebar-brand-icon rotate-n-15">
-                            <img src="{{ asset('assets/img/logo-media-cinza.png') }}" alt="" class="fas fa-laugh-wink">
-                            {{-- <i class="bi bi-list"></i> --}}
-                        </div>
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('dashboard') }}">
+                <div class="sidebar-brand-icon">
+                    <img src="{{ asset('assets/img/logo-pequena-white.png') }}" alt="Logo">
+                </div>
+                <div class="sidebar-brand-text mx-3">Serido Ponto</div>
             </a>
-                    
+
+            <hr class="sidebar-divider d-none d-md-block">
 
             @if(auth()->user()->role == 1)
             @include('partials.sidebar._sidebar_manager')
@@ -28,9 +28,6 @@
 
             <hr class="sidebar-divider d-none d-md-block">
 
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"><i class="bi bi-arrow-bar-left"></i></button>
-            </div>
         </ul>
         <div id="content-wrapper" class="d-flex flex-column">
             <!-- Main Content -->
@@ -39,12 +36,8 @@
                 <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow">
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="bi bi-list"></i>
-                        {{-- <i class="bi bi-list"></i> --}}
+                       <i class="bi bi-list"></i>
                     </button>
-
-
-
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -58,20 +51,11 @@
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
+                                    Perfil
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <form action="{{ route('logout') }}" method="POST" class="text-center">
                                     @csrf
-
                                     <input class="dropdown-item btn-sair" type="submit" value="Sair">
                                 </form>
                             </div>
@@ -85,6 +69,7 @@
                     @include('partials.flash_messages')
 
                     @yield('content-dashboard')
+                    
                 </div>
             </div>
             <!-- /.container-fluid -->
@@ -97,7 +82,6 @@
     <!-- End of Page Wrapper -->
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
     </a>
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

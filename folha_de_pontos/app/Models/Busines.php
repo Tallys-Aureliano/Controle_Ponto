@@ -9,11 +9,15 @@ class Busines extends Model
 {
 	protected $fillable = [
         'name',
-        'cnpj',
         'active'
     ];
 
     protected $table = 'business';
 
     use HasFactory;
+
+    public function users()
+	{
+	    return $this->hasMany(User::class, 'id');
+	}
 }

@@ -7,6 +7,10 @@ Funcionario: {{ $user->name }}
 @section('content-admin')
 <h1 class="text-center">Funcionário: {{ $user->name }}</h1>
 
+<a href="{{ route('admin.employe.edit', ['id'=>$user->id]) }}">
+	<button class="btn btn-sm btn-outline-success">Editar</button>
+</a>
+
 <div class="text-left mx-auto d-flex flex-column align-items-center mt-3"">
 <img src="{{ asset('assets/img/banner.png') }} alt="Foto do usuario" class="mb-4 mt-5" style="width: 150px; height:150px;border-radius:50%">
 	<div class="mx-auto">
@@ -27,6 +31,5 @@ Funcionario: {{ $user->name }}
 		</ul>
 	</div>
 </div>
-
 
 @endsection

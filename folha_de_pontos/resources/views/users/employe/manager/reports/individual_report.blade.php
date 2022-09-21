@@ -25,7 +25,7 @@ Relatório individual
 	</form>
 </div>
 
-	<div class="table-responsive">
+	<div class="table-responsive rounded-2 shadow-sm">
 	<table class="table">
 		<thead>
 			<tr>
@@ -60,7 +60,7 @@ Relatório individual
 		</tbody>
 	</table>
 </div>
-<nav aria-label="..." class="mt-2">
+<nav aria-label="..." class="mt-3">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
       <a class="page-link">Anterior</a>

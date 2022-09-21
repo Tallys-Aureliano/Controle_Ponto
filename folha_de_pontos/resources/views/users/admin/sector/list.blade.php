@@ -12,7 +12,7 @@ Lista de setores
   <button class="btn btn-secundary-m mt-5">Criar Setor</button>
 </a>
 
-<div class="table-responsive mt-3">
+<div class="table-responsive mt-3 rounded-3  shadow-sm"">
 	<table class="table">
 		<thead>
 			<th>Nome</th>
@@ -40,7 +40,7 @@ Lista de setores
 	</tbody>
 </table>
 </div>
-<nav aria-label="..." class="mt-2">
+<nav aria-label="..." class="mt-3">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
       <a class="page-link">Anterior</a>

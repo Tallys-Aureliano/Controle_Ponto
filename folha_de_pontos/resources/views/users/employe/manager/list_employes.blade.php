@@ -24,7 +24,7 @@ Lista de funcionários
 	</form>
 </div>
 
-<div class="table-responsive">
+<div class="table-responsive rounded-2 shadow-sm">
 	<table class="table">
 		<thead>
 			<tr>

@@ -8,7 +8,7 @@ Lista de justificativas
 
 <h1 class="text-center">Minhas justificativas</h1>
 
-<div class="table-responsive mt-5">
+<div class="table-responsive mt-5 rounded-2 shadow-sm">
 	<table class="table">
 		<thead>
 			<tr>
@@ -33,7 +33,7 @@ Lista de justificativas
 		</tbody>
 	</table>
 </div>
-<nav aria-label="..." class="mt-2">
+<nav aria-label="..." class="mt-3">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
       <a class="page-link">Anterior</a>

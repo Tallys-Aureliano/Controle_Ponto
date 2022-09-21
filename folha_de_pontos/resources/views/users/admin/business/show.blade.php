@@ -11,7 +11,7 @@ Empresa: {{ $business->name }}
 
 	<a href="{{ route('admin.business.edit', ['id' => $business->id]) }}" class="mt-4"><button class="btn btn-secundary-m mt-4">Editar Empresa</button></a>
 	{{-- Aqui ainda vem a lista de funcionarios dessa empresa --}}
-	<div class="table-responsive mt-3">
+	<div class="table-responsive mt-3 rounded-3  shadow-sm">
 		<table class="table">
 			<thead>
 				<th>Nome</th>
@@ -35,7 +35,7 @@ Empresa: {{ $business->name }}
 			</tbody>
 		</table>
 	</div>
-<nav aria-label="..." class="mt-2">
+<nav aria-label="..." class="mt-3">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
       <a class="page-link">Anterior</a>

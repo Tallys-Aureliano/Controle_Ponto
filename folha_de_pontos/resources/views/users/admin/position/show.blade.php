@@ -18,7 +18,7 @@ Cargo: {{ $position->name }}
 
 <h2 class="text-secondary text-center mt-4">Funcionários no cargo</h2>
 
-<div class="table-responsive mt-3">
+<div class="table-responsive mt-3 rounded-3  shadow-sm"">
 	<table class="table">
 		<thead>
 			<th>Nome</th>
@@ -47,7 +47,7 @@ Cargo: {{ $position->name }}
 		</tbody>
 	</table>
 </div>
-<nav aria-label="..." class="mt-2">
+<nav aria-label="..." class="mt-3">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
       <a class="page-link">Anterior</a>

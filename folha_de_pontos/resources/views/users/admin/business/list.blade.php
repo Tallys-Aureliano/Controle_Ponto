@@ -20,7 +20,7 @@ Lista de empresas
 <a href="{{ route('admin.business.create') }}"><button class="btn btn-secundary-m">Criar Empresa</button></a>
 
 
-<div class="table-responsive mt-4">
+<div class="table-responsive mt-4 rounded-3  shadow-sm">
 	
 	<table class="table">
 		<thead>
@@ -55,7 +55,7 @@ Lista de empresas
 
 </div>
 
-<nav aria-label="..." class="mt-2">
+<nav aria-label="..." class="mt-3">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
       <a class="page-link">Anterior</a>

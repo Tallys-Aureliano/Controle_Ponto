@@ -25,7 +25,9 @@ Lista de pontos
 		<tr @if(!$point->exit_time) style="background-color: grey;" @endif>
 			<td>
 				<a href="{{ route('admin.point.show', ['id'=>$point->id]) }}">
-					{{$point->users->name}}
+					@if($point->users)
+						{{$point->users->name}}
+					@endif
 				</a>
 			</td>
 			<td>{!! date('d/m/Y', strtotime($point->date)) !!}</td>

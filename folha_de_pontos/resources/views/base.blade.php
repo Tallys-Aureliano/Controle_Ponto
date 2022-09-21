@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 	<head>
 		<meta name="author" content="Serido Soft">
 		<title>@yield('title')</title>

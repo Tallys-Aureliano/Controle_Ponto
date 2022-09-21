@@ -12,7 +12,7 @@
          </a>
      </li>
      <li class="nav-item">
-         <a class="nav-link collapsed" href="#">
+         <a class="nav-link collapsed" href="{{ route('manager.justificative.list') }}">
              <i class="bi bi-emoji-smile-fill"></i>
              <span>Justificativas</span>
          </a>

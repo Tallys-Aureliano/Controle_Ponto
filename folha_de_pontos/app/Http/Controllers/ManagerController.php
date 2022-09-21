@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Justification;
 
 class ManagerController extends Controller
 {
@@ -15,6 +16,13 @@ class ManagerController extends Controller
     public function index()
     {
         return view('users.employe.dashboard');
+    }
+
+    public function listJustificatives()
+    {
+        $justifications = Justification::with(['user'])->get();
+
+        return view('users.employe.manager.list_justifications', compact('justifications'));
     }
 
     /**

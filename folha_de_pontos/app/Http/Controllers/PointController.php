@@ -52,6 +52,7 @@ class PointController extends Controller
                     ->withInput();
         }
 
+        //NAO TA PEGANDO RELACAO COM USER
         $point = Point::create([
         	'entry_time' => $request->entry_time,
         	'exit_time' => $request->exit_time,

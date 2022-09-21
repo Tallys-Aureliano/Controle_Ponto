@@ -40,8 +40,12 @@
             <div class=" card col-lg-3 col-md-5 service-item mt-5 mx-auto">
                 <div class=" ">
                     <h5 class="fw-semibold mb-3 mt-3 service-description text-center shadow-sm">Justificativas</h5>
-                    <h1 class="fw-bold mb-5 service-title text-center text-black">100</h1>
-                    <a href=""><button class="btn btn-lg btn-detalhar">Detalhar</button></a>
+                    <h1 class="fw-bold mb-5 service-title text-center text-black">
+                        @php
+                           echo App\Models\Justification::where('users_id', auth()->user()->id)->count();
+                        @endphp
+                    </h1>
+                    <a href="{{ route('employe.justification.list') }}"><button class="btn btn-lg btn-detalhar">Detalhar</button></a>
                 </div>
             </div>
       

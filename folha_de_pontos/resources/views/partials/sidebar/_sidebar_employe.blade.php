@@ -12,7 +12,7 @@
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link collapsed" href="#"">
+    <a class="nav-link collapsed" href="{{ route('employe.point.list') }}">
         <i class="bi bi-file-earmark-text-fill"></i>
         <span>Histórico de pontos</span>
     </a>
@@ -27,7 +27,7 @@
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Opções</h6>
             <a class="collapse-item" href="{{ route('employe.justifications.create') }}">Nova Justificativa</a>
-            <a class="collapse-item" href="{{ route('employe.justifications.show') }}">Minhas Justificativas</a>
+            <a class="collapse-item" href="{{ route('employe.justification.list') }}">Minhas Justificativas</a>
         </div>
     </div>
 </li>

@@ -1,12 +1,8 @@
-
 @extends('partials.auth._auth')
-
 
 @section('title')
 Login
 @endsection
-
-
 
 @section('auth-content')
 <div class="text-center">
@@ -14,10 +10,23 @@ Login
 </div>
 <form method="POST" action="{{ route('login') }}">
     @csrf
+
     <div class="--form-authentication">
-        <input type="email" name="email" class="form-control mt-3" placeholder="Entre com seu Email">
-        <input type="password" name="password" class="form-control mt-3" placeholder="Sua senha">
+        <input type="email" name="email" class="form-control @if($errors->has('email')) is-invalid @endif mt-3" value="{{ old('email') }}" placeholder="Entre com seu Email">
+        @if($errors->has('email'))
+        <div class="invalid-feedback">
+            @error('email') {{ $message }} @enderror
+        </div>
+        @endif
+
+        <input type="password" name="password" class="form-control @if($errors->has('password')) is-invalid @endif mt-3" placeholder="Sua senha">
+        @if($errors->has('password'))
+        <div class="invalid-feedback">
+            @error('password') {{ $message }} @enderror
+        </div>
+        @endif
     </div>
+
     <div class="--other-things mt-3">
         <a href="{{ route('password.request') }}">Esqueci minha senha</a>
     </div>

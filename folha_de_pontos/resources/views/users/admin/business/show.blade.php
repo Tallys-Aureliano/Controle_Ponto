@@ -9,7 +9,7 @@ Empresa: {{ $business->name }}
 <h1 class="text-center">Empresa: {{ $business->name }}</h1>
 	<h2 class="text-center text-secondary mt-5">Funcionários</h2>
 
-	<a href="{{ route('admin.business.edit', ['id' => $business->id]) }}"><button class="btn btn-lg btn-secundary-m">Editar</button></a>
+	<a href="{{ route('admin.business.edit', ['id' => $business->id]) }}" class="mt-4"><button class="btn btn-secundary-m mt-4">Editar Empresa</button></a>
 	{{-- Aqui ainda vem a lista de funcionarios dessa empresa --}}
 	<div class="table-responsive mt-3">
 		<table class="table">
@@ -35,7 +35,7 @@ Empresa: {{ $business->name }}
 			</tbody>
 		</table>
 	</div>
-<nav aria-label="...">
+<nav aria-label="..." class="mt-2">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
       <a class="page-link">Anterior</a>

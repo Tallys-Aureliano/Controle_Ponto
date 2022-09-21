@@ -2,7 +2,9 @@
 body {
     background-color: #ffffff90 !important;
 }
-
+a {
+     text-decoration: none !important;
+}
 .navbar {
     background-color: #5D6CD9 !important;
 }
@@ -53,12 +55,12 @@ a.page-link {
     color: #5D6CD9 !important;
 }
 
-.pagination .page-link.active {
+.active > .page-link {
     background-color: #5D6CD9 !important;
     color: white !important;
 }
 
-.table >thead {
+.table > thead {
     background-color: #5D6CD9 !important;
     color: white !important;
     border-radius: 8px !important;

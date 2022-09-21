@@ -24,11 +24,8 @@ Funcionario: {{ $user->name }}
 			</li>
 			<li class="mt-4"><h5>Cargo: {{ $user->position->name }}</h5></li>
 			<li class="mt-4"><h5>Empresa: {{ $user->business->name }}</h5></li>
-			
 		</ul>
-
 	</div>
-
 </div>
 
 

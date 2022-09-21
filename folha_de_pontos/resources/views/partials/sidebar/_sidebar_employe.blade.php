@@ -12,6 +12,12 @@
     </a>
 </li>
 <li class="nav-item">
+    <a class="nav-link collapsed" href="#"">
+        <i class="bi bi-file-earmark-text-fill"></i>
+        <span>Histórico de pontos</span>
+    </a>
+</li>
+<li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         <i class="bi bi-emoji-smile-fill"></i>
         <span>Justificativas</span>
@@ -24,10 +30,4 @@
             <a class="collapse-item" href="{{ route('employe.justifications.show') }}">Minhas Justificativas</a>
         </div>
     </div>
-</li>
-<li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-        <i class="bi bi-file-earmark-text-fill"></i>
-        <span>Histórico de pontos</span>
-    </a>
 </li>

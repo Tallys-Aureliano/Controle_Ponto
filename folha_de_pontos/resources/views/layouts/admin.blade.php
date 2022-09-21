@@ -12,7 +12,7 @@
     <a class="navbar-brand me-auto text-white fs-4" href="{{ route('dashboard') }}">Bem vindo, {{ auth()->user()->name }}.</a>
     <form action="{{ route('logout') }}" method="POST" class="d-flex">
     	@csrf
-      <button class="btn btn-lg btn-sair" type="submit">Sair</button>
+      <button class="btn btn-sair" type="submit">Sair</button>
     </form>
   </div>
 </nav>

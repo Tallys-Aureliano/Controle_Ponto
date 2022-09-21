@@ -9484,3 +9484,9 @@ box-shadow: 5px 5px 10px 2px #00000020;
   left: 50%;
   transform: translateX(-50%);
 }
+
+@media (max-width: 550px) {
+  .alert {
+    width: 300px !important;
+  }
+}

@@ -36,7 +36,7 @@ Lista de usuários
 		</tbody>
 	</table>
 </div>
-<nav aria-label="...">
+<nav aria-label="..." class="mt-2">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
       <a class="page-link">Anterior</a>

@@ -12,7 +12,7 @@ Lista de empresas
 		<div class="d-flex flex-wrap gap-3 mt-5 --form-authentication">
 			<label for="">Consulta:</label>
 			<input class="form-control form-control-lg" type="text" placeholder="Nome" name="name">
-			<button class="btn btn-sm btn-secundary-m shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
+			<button class="btn btn-primary-m shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
 		</div>
 	</form>
 </div>
@@ -42,7 +42,7 @@ Lista de empresas
 					
 					<td>{!! date('d/m/Y', strtotime($business->created_at)) !!}</td>
 					<td class="d-flex justify-content-end gap-2">
-						<a href="{{ route('admin.business.edit', ['id' => $business->id]) }}"><button class="btn btn-sm btn-secundary-m">Editar</button></a>
+						<a href="{{ route('admin.business.edit', ['id' => $business->id]) }}"><button class="btn btn-sm btn-secondary">Editar</button></a>
 						<form action="{{ route('admin.business.destroy', ['id' => $business->id]) }}" method="POST">
 							@csrf
 							<button class="btn btn-sm btn-danger">Apagar</button>
@@ -55,7 +55,7 @@ Lista de empresas
 
 </div>
 
-<nav aria-label="...">
+<nav aria-label="..." class="mt-2">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
       <a class="page-link">Anterior</a>

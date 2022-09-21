@@ -28,7 +28,7 @@ Lista de setores
         </td>
         <td class="d-flex justify-content-end gap-2">
           <a href="{{ route('admin.sector.edit', ['id'=>$sector->id]) }}">
-            <button class="btn btn-sm btn-secundary-m">Editar</button>
+            <button class="btn btn-sm btn-secondary">Editar</button>
           </a>
           <form action="{{ route('admin.sector.destroy', ['id'=>$sector->id]) }}" method="POST">
             @csrf
@@ -40,7 +40,7 @@ Lista de setores
 	</tbody>
 </table>
 </div>
-<nav aria-label="...">
+<nav aria-label="..." class="mt-2">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
       <a class="page-link">Anterior</a>

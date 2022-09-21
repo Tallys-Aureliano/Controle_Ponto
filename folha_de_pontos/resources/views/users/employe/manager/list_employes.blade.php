@@ -12,14 +12,14 @@ Lista de funcionários
 		<div class="d-flex flex-wrap gap-3 mt-5 --form-authentication">
 			<label for="">Consulta:</label>
 			<input class="form-control form-control-lg" type="text" placeholder="Nome ou Matricula" name="consult">
-			<label for="">Consultar Por:</label>
+			<label for="">Consultar por:</label>
 			<select class="form-select form-control-sm shadow-sm" aria-label="Funcionario">
 				<option selected>Tipo</option>
 				<option value="1">Nome</option>
 				<option value="2">Matricula</option>
 			</select>
 			
-			<button class="btn btn-sm btn-secundary-m shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
+			<button class="btn btn-sm btn-primary-m shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
 		</div>
 	</form>
 </div>
@@ -56,7 +56,7 @@ Lista de funcionários
 	</table>
 	
 </div>
-<nav aria-label="...">
+<nav aria-label="..." class="mt-2">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
       <a class="page-link">Anterior</a>

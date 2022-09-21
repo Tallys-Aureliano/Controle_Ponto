@@ -31,7 +31,10 @@ Editar funcionario
 	<div class="--form-authentication">
 		<input type="password" class="form-control mb-3 --form-authentication" name="password-confirmation" placeholder="Confirmar senha" required autocomplete="false">
 	</div>
-	
-	<button class="btn btn-secundary-m btn-lg">Salvar Alterações</button>
+
+	<div class="--form-authentication-button">
+		<button class="btn btn-lg btn-secundary-m mt-3">Salvar Alterações</button>
+	</div>
+
 </form>
 @endsection

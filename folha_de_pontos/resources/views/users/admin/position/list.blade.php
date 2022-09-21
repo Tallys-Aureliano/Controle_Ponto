@@ -28,7 +28,7 @@ Lista de cargos
 				@endif
 				<td class="d-flex justify-content-end gap-2">
 					<a href="{{ route('admin.position.edit', ['id'=>$position->id]) }}">
-						<button class="btn btn-sm btn-secundary-m">Editar</button>
+						<button class="btn btn-sm btn-secondary">Editar</button>
 					</a>
 					<form action="{{ route('admin.position.destroy', ['id' => $position->id]) }}" method="POST">
 					@csrf
@@ -39,4 +39,19 @@ Lista de cargos
 		</tbody>
 	</table>
 </div>
+<nav aria-label="..." class="mt-2">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled rounded">
+      <a class="page-link">Anterior</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Próxima</a>
+    </li>
+  </ul>
+</nav>
 @endsection

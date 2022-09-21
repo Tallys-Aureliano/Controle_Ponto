@@ -8,19 +8,26 @@ Mostrar ponto
 
 <h1 class="text-center">Mostrar ponto</h1>
 
-<a href="{{ route('admin.point.edit', ['id'=>$point->id]) }}">
-<button class="btn btn-sm btn-outline-warning">Editar</button>
-</a>
+<div class="text-left  mx-auto d-flex flex-column align-items-center mt-5">
+	<div class="d-flex justify-content-center gap-3">
 
-<form action="{{ route('admin.point.destroy', ['id'=>$point->id]) }}" method="POST">
-	@csrf
-	<button class="btn btn-sm btn-outline-danger">Apagar</button>
-</form>
+		<a href="{{ route('admin.point.edit', ['id'=>$point->id]) }}">
+		<button class="btn btn-secondary">Editar</button>
+		</a>
+		
+		<form action="{{ route('admin.point.destroy', ['id'=>$point->id]) }}" method="POST">
+			@csrf
+			<button class="btn btn-danger"">Apagar</button>
+		</form>
+	</div>
+	
+	<ul class="list-unstyled text-left mt-5">
+		<li><h5>Funcionário: <a href="{{ route('admin.employe.show', ['id'=>$point->users->id]) }}">{{$point->users->name}}</a></h5></li>
+		<li class="mt-4"><h5>Data: {!! date('d/m/Y', strtotime($point->date)) !!}</h5></li>
+		<li class="mt-4"><h5>Entrada: {{$point->entry_time}}</h5></li>
+		<li class="mt-4"><h5>Saída: {{$point->exit_time}}</h5></li>
+		<li class="mt-4"><h5>Situação: @if($point->exit_time) Fechado @else Aberto @endif</h5></li>	
 
-<p>Funcionário: <a href="{{ route('admin.employe.show', ['id'=>$point->users->id]) }}">{{$point->users->name}}</a></p>
-<p>Data: {!! date('d/m/Y', strtotime($point->date)) !!}</p>
-<p>Entrada: {{$point->entry_time}}</p>
-<p>Saída: {{$point->exit_time}}</p>
-<p>Situação: @if($point->exit_time) Fechado @else Aberto @endif</p>
-
+	</ul>
+</div>
 @endsection

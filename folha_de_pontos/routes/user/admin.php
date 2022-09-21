@@ -8,6 +8,7 @@ use App\Http\Controllers\EmployeController;
 use App\Http\Controllers\SectorController;
 use App\Http\Controllers\PositionController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PointController;
 
 Route::middleware(['auth', 'check.admin'])->group(function () {
 	// ADMIN DASHBOARD
@@ -102,4 +103,26 @@ Route::middleware(['auth', 'check.admin'])->group(function () {
 
 	Route::post('admin/position/update/{id}', [PositionController::class, 'update'])
 		->name('admin.position.update');
+
+	// POINT CRUD
+	Route::get('admin/point/list', [PointController::class, 'list'])
+		->name('admin.point.list');
+
+	Route::get('admin/point/show/{id}', [PointController::class, 'show'])
+		->name('admin.point.show');
+
+	Route::get('admin/point/edit/{id}', [PointController::class, 'edit'])
+		->name('admin.point.edit');
+
+	Route::post('admin/point/update/{id}', [PointController::class, 'update'])
+		->name('admin.point.update');
+
+	Route::get('admin/point/create', [PointController::class, 'create'])
+		->name('admin.point.create');
+
+	Route::post('admin/point/store', [PointController::class, 'store'])
+		->name('admin.point.store');
+
+	Route::post('admin/point/destroy/{id}', [PointController::class, 'destroy'])
+		->name('admin.point.destroy');
 });

@@ -109,7 +109,10 @@ class EmployeController extends Controller
     }
 
     public function list(){
-        $users = User::with(['position', 'business'])->get();
+        $users = User::with(['position', 'business'])
+            ->orderBy('active', 'desc')
+            ->orderBy('created_at', 'desc')
+            ->get();
 
         return view('users.admin.employe.list', compact('users'));
     }

@@ -50,5 +50,4 @@ Lista de pontos
 
 </div>
 
-
 @endsection

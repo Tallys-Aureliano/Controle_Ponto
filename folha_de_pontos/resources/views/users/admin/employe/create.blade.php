@@ -11,28 +11,28 @@ Criar funcionário
 
 	<form action="{{ route('admin.employe.store') }}" method="POST">
 		@csrf
-		<input type="text" class="form-control @if($errors->has('name')) is-invalid @endif" placeholder="Nome" name="name" required maxlength="191">
+		<input type="text" class="form-control @if($errors->has('name')) is-invalid @endif" placeholder="Nome" name="name" value="{{ old('name') }}" required maxlength="191">
 		@if($errors->has('name'))
 		<div class="invalid-feedback">
 			@error('name') {{ $message }} @enderror
 		</div>
 		@endif
 	
-		<input type="email" class="form-control @if($errors->has('email')) is-invalid @endif mt-2" placeholder="Email" name="email" required>
+		<input type="email" class="form-control @if($errors->has('email')) is-invalid @endif mt-2" placeholder="Email" name="email" value="{{ old('email') }}" required>
 		@if($errors->has('email'))
 		<div class="invalid-feedback">
 			@error('email') {{ $message }} @enderror
 		</div>
 		@endif
 	
-		<input type="text" class="form-control @if($errors->has('cpf')) is-invalid @endif mt-2" placeholder="Cpf" name="cpf" required maxlength="191">
+		<input type="text" class="form-control @if($errors->has('cpf')) is-invalid @endif mt-2" placeholder="Cpf" name="cpf" value="{{ old('cpf') }}" required maxlength="191">
 		@if($errors->has('cpf'))
 		<div class="invalid-feedback">
 			@error('cpf') {{ $message }} @enderror
 		</div>
 		@endif
 	
-		<input type="number" class="form-control @if($errors->has('matricula')) is-invalid @endif mt-2" placeholder="Matricula" name="matricula" maxlength="25">
+		<input type="number" class="form-control @if($errors->has('matricula')) is-invalid @endif mt-2" placeholder="Matricula" value="{{ old('matricula') }}" name="matricula" maxlength="25">
 		@if($errors->has('matricula'))
 		<div class="invalid-feedback">
 			@error('matricula') {{ $message }} @enderror

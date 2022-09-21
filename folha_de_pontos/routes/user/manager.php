@@ -25,4 +25,6 @@ Route::middleware(['auth', 'check.manager'])->group(function () {
     Route::get('manager/employe/edit/{id}', [EmployeController::class, 'edit'])->name('manager.edit.employe');
     
     Route::get('manager/business/show', [BusinessController::class, 'showMyBusiness'])->name('manager.show.business');
+
+    Route::get('manager/justificative/list', [ManagerController::class, 'listJustificatives'])->name('manager.justificative.list');
 });

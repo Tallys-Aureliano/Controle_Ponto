@@ -3,8 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+
 use App\Models\User;
 use App\Models\Justification;
+use App\Models\PointRegister as Point;
+use Illuminate\Support\Facades\Storage;
 
 class EmployeController extends Controller
 {
@@ -16,6 +20,20 @@ class EmployeController extends Controller
     public function index()
     {
         return view('users.employe.dashboard');
+    }
+
+    public function listPoints()
+    {
+        $points = Point::where('users_id', auth()->user()->id)->get();
+
+        return view('users.employe.employe.list_points', compact('points'));
+    }
+
+    public function listJustifications()
+    {
+        $justifications = Justification::where('users_id', auth()->user()->id)->get();
+
+        return view('users.employe.employe.list_justifications', compact('justifications'));
     }
 
     /**
@@ -44,13 +62,42 @@ class EmployeController extends Controller
         return view('users.employe.employe.create_justification');
     }
 
-    public function showJustifications()
+    public function storeJustification(Request $request)
     {
-        $justifications = Justification::all()
-            ->where('users_id', auth()->user()->id);
+        $validator = Validator::make($request->all(), [
+            'comment' => 'required|string|max:600',
+            'file' => 'emmets:png,jpg,jpeg,pdf,doc,docx|max:10000',
+            'date' => 'required|date'
+        ]);
 
-        return view('users.employe.employe.show_justification', compact('justifications'));
+        if ($validator->fails()) {
+            return redirect()->route('admin.justification.list')
+                    ->withErrors($validator)
+                    ->withInput();
+        }
+
+        Storage::disk('public')->put($request->name, $request->_file_);
+        $file = "";
+
+        $Justification = Justification::create([
+            'comment' => $request->comment,
+            'file' => $request->file,
+            'date' => $request->date,
+            'users_id' => auth()->user()->id
+        ])->save();
+
+        return redirect()->route('admin.justification.list')
+            ->with('success', 'Justificativa criada com sucesso.');
+
     }
+
+    // public function showJustifications()
+    // {
+    //     $justifications = Justification::all()
+    //         ->where('users_id', auth()->user()->id);
+
+    //     return view('users.employe.employe.show_justification', compact('justifications'));
+    // }
 
     /**
      * Display the specified resource.
@@ -60,8 +107,7 @@ class EmployeController extends Controller
      */
     public function show()
     {
-        $user = User::with('position')->find(auth()->user()->id);
-
+        $user = User::findOrFail(auth()->user()->id);
         return view('users.employe.profile', compact('user'));
     }
 

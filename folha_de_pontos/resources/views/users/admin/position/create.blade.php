@@ -12,7 +12,14 @@ Criar cargo
 
 	<form action="{{ route('admin.position.store') }}" method="POST">
 		@csrf
-		<input type="text" class="form-control form-control" name="name" required placeholder="Nome do cargo">
+		<input type="text" class="form-control @if($errors->has('name')) is-invalid @endif" name="name" required value="{{ old('name') }}" placeholder="Nome do cargo">
+		@if($errors->has('name'))
+		<div class="invalid-feedback">
+		    @error('name') {{ $message }} @enderror
+		</div>
+    	@endif
+
+
 		<select class="form-select mt-2" name="sector">
 			@foreach ($sectors as $sector)
 				<option value="{{ $sector->id }}">{{ $sector->name }}</option>

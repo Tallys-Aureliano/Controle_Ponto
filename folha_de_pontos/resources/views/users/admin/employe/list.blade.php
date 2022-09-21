@@ -7,9 +7,9 @@ Lista de usuários
 @section('content-admin')
 <h1 class="text-center">LISTA DE USUÁRIOS</h1>
 
-<a href="{{ route('admin.employe.create') }}"><button class="btn btn-sm btn-outline-success">Novo</button></a>
+<a href="{{ route('admin.employe.create') }}"><button class="btn btn-secundary-m mt-5">Criar Usuário</button></a>
 
-<div class="table-responsive mt-5">
+<div class="table-responsive mt-3">
 	<table class="table">
 		<thead>
 			<th>Nome</th>
@@ -35,14 +35,14 @@ Lista de usuários
 					<td>{{ $user->position->name }}</td>
 					<td><a href="{{ route('admin.business.show', ['id' => $user->business->id]) }}">{{ $user->business->name }}</td>
 					<td>@if($user->active == 1) Sim @else Não @endif</td>
-					<td>
+					<td class="d-flex justify-content-end gap-2">
 						<a href="{{ route('admin.employe.edit', ['id'=>$user->id]) }}">
-							<button class="btn btn-sm btn-outline-warning">Editar</button>
+							<button class="btn btn-sm btn-secondary">Editar</button>
 						</a>
 						@if($user->active == 1)
 						<form action="{{ route('admin.employe.destroy', ['id'=>$user->id]) }}" method="POST">
 							@csrf
-							<button class="btn btn-sm btn-outline-danger">Apagar</button>
+							<button class="btn btn-sm btn-danger">Apagar</button>
 						</form>
 						@endif
 					</td>

@@ -19,7 +19,7 @@ Criar cargo
 			@endforeach
 		</select>
 		<div class="text-center">
-			<button class="btn btn-secundary-m mt-3">Criar</button>
+			<button class="btn btn-secundary-m mt-3">Criar Cargo</button>
 		</div>
 	</form>
 </div>

@@ -9,14 +9,16 @@ Editar funcionario
 <h1 class="text-center">Editar funcionario</h1>
 
 <form action="" method="POST" class="container mt-5 text-center">
-	<div class="input-group mb-3 --form-authentication">
-	<input type="file" accept="image/*" class="form-control" id="inputGroupFile01">
-	</div>
 
 	<div class="input-group mb-3 --form-authentication">
-	  <input type="text" name="name" class="form-control" placeholder="Nome" required value="{{ $user->name }}">
+		<input type="file" accept="image/*" class="form-control" id="inputGroupFile01">
 	</div>
-
+	
+	
+	<div class="input-group mb-3 --form-authentication">
+		<input type="text" name="name" class="form-control" placeholder="Nome" required value="{{ $user->name }}">
+	</div>
+	
 	<div class="input-group mb-3 --form-authentication">
 	  <input type="email" class="form-control" name="email" placeholder="Email" required value="{{ $user->email }}">
 

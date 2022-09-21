@@ -2,6 +2,10 @@
 body {
     background-color: #ffffff90 !important;
 }
+h1, h5{
+    color: #858796 !important;
+}
+  
 a {
      text-decoration: none !important;
 }

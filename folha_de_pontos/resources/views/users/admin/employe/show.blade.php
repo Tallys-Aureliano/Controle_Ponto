@@ -7,6 +7,10 @@ Funcionario: {{ $user->name }}
 @section('content-admin')
 <h1 class="text-center">Funcionário: {{ $user->name }}</h1>
 
+<a href="{{ route('admin.employe.edit', ['id'=>$user->id]) }}">
+	<button class="btn btn-sm btn-outline-success">Editar</button>
+</a>
+
 <p>Nome: {{ $user->name }}</p>
 <p>Email: {{ $user->email }}</p>
 <p>Matricula:

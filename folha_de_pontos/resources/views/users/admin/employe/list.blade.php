@@ -16,11 +16,13 @@ Lista de usuários
 			<th>Matricula</th>
 			<th>Email</th>
 			<th>Cargo</th>
+			<th>Ativo</th>
 			<th>Empresa</th>
+			<th></th>
 		</thead>
 		<tbody>
 			@foreach($users as $user)
-				<tr>
+				<tr @if($user->active == 0) style="background-color: gray;" @endif>
 					<td><a href="{{ route('admin.employe.show', ['id' => $user->id]) }}">{{ $user->name }}</a></td>
 					<td>
 						@if($user->matricula)
@@ -32,7 +34,18 @@ Lista de usuários
 					<td>{{ $user->email }}</td>
 					<td>{{ $user->position->name }}</td>
 					<td><a href="{{ route('admin.business.show', ['id' => $user->business->id]) }}">{{ $user->business->name }}</td>
-					{{-- <td>{!! date('d/m/Y', strtotime($business->created_at)) !!}</td> --}}
+					<td>@if($user->active == 1) Sim @else Não @endif</td>
+					<td>
+						<a href="{{ route('admin.employe.edit', ['id'=>$user->id]) }}">
+							<button class="btn btn-sm btn-outline-warning">Editar</button>
+						</a>
+						@if($user->active == 1)
+						<form action="{{ route('admin.employe.destroy', ['id'=>$user->id]) }}" method="POST">
+							@csrf
+							<button class="btn btn-sm btn-outline-danger">Apagar</button>
+						</form>
+						@endif
+					</td>
 				</tr>
 			@endforeach
 		</tbody>

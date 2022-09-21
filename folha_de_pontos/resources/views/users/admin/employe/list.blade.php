@@ -7,6 +7,8 @@ Lista de usuários
 @section('content-admin')
 	<h1 class="text-center">LISTA DE USUÁRIOS</h1>
 
+<a href="{{ route('admin.employe.create') }}"><button class="btn btn-sm btn-outline-success">Novo</button></a>
+
 <div class="table-responsive mt-5">
 	<table class="table">
 		<thead>

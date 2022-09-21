@@ -7,6 +7,7 @@ use App\Http\Controllers\BusinessController;
 use App\Http\Controllers\EmployeController;
 use App\Http\Controllers\SectorController;
 use App\Http\Controllers\PositionController;
+use App\Http\Controllers\UserController;
 
 Route::middleware(['auth', 'check.admin'])->group(function () {
 	// ADMIN DASHBOARD
@@ -41,6 +42,12 @@ Route::middleware(['auth', 'check.admin'])->group(function () {
 
 	Route::get('admin/employe/show/{id}', [EmployeController::class, 'showEmploye'])
 		->name('admin.employe.show');
+
+	Route::get('admin/employe/create', [UserController::class, 'create'])
+		->name('admin.employe.create');
+
+	Route::post('admin/employe/store', [UserController::class, 'store'])
+		->name('admin.employe.store');
 
 	// SECTOR CRUD
 	Route::get('admin/sector/list', [SectorController::class, 'list'])

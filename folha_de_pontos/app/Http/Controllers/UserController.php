@@ -30,7 +30,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('users.admin.employe.create');
     }
 
     /**
@@ -41,7 +41,29 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'cpf' => ['required', 'string', 'max:14'],
+            'role' => ['required', 'int', 'in:0,1,2']
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->route('admin.employe.create')
+                    ->withErrors($validator)
+                    ->withInput();
+        }
+
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'cpf' => $request->cpf,
+            'auto_register' => false,
+            'role' => $request->role,
+            'positions_id' => $,
+        ]);
     }
 
     /**

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('cpf', 14);
-            $table->biginteger('matricula')->nullable();
+            $table->bigInteger('matricula', 25)->nullable();
             $table->string('photo', 555)->nullable();
             $table->integer('role');
             $table->boolean('active')->default(true);
@@ -34,6 +34,7 @@ return new class extends Migration
 
             // $table->unsignedBigInteger('position');
             // $table->foreign('position')->references('id')->on('positions');
+            
         });
     }
 

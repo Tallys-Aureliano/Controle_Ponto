@@ -33,8 +33,8 @@ Lista de usuários
 					</td>
 					<td>{{ $user->email }}</td>
 					<td>{{ $user->position->name }}</td>
-					<td><a href="{{ route('admin.business.show', ['id' => $user->business->id]) }}">{{ $user->business->name }}</td>
 					<td>@if($user->active == 1) Sim @else Não @endif</td>
+					<td><a href="{{ route('admin.business.show', ['id' => $user->business->id]) }}">{{ $user->business->name }}</td>
 					<td class="d-flex justify-content-end gap-2">
 						<a href="{{ route('admin.employe.edit', ['id'=>$user->id]) }}">
 							<button class="btn btn-sm btn-secondary">Editar</button>

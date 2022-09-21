@@ -14,8 +14,8 @@ Setor: {{ $sector->name }}
 		<button class="btn btn-danger mt-3">Remover</button>
 	</form>
 
+	<h2 class="text-center mt-4">Cargos no setor</h2>
 
-	<h2 class="text-center text-secondary mt-4">Cargos no setor</h2>
 	<div class="table-responsive mt-3">
 		<table class="table">
 			<thead>

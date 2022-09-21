@@ -16,7 +16,7 @@ Cargo: {{ $position->name }}
 	@endif
 </h5>
 
-<h2 class="text-secondary text-center mt-4">Funcionários no cargo</h2>
+<h2 class="text-center mt-4">Funcionários no cargo</h2>
 
 <div class="table-responsive mt-3 rounded-3  shadow-sm"">
 	<table class="table">

@@ -11,10 +11,15 @@ class PointRegister extends Model
 		'entry_time',
 		'exit_time',
 		'date',
-		'use_id'
+		'users_id'
 	];
 
     use HasFactory;
+
+    public function users()
+    {
+    	return $this->belongsTo(User::class, 'id');
+    }
 
     protected $table = 'point_registers';
 }

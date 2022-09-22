@@ -64,10 +64,9 @@ class PositionController extends Controller
 
     public function update(Request $request, $id)
     {
-        $sector = Sector::findOrFail($id);
-
+        $position = Position::findOrFail($id);
     	$validator = Validator::make($request->all(), [
-            'name' => 'required|string|unique:positions,name,'. $sector->id .'|max:191',
+            'name' => 'required|string|unique:positions,name,'. $position->id .'|max:191',
             'sector' => 'required|integer|exists:sectors,id',
         ]);
  
@@ -77,7 +76,6 @@ class PositionController extends Controller
                     ->withInput();
         }
 
-        $position = Position::findOrFail($id);
         $position->name = $request->name;
         $position->sectors_id = $request->sector;
         $position->save();

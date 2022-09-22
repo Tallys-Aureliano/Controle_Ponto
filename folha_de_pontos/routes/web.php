@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BusinessController;
+use App\Http\Controllers\ManagerController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -25,10 +26,7 @@ Route::get('manager/business/create', [BusinessController::class, 'create'])
 Route::post('manager/business/store', [BusinessController::class, 'store'])
 		->middleware(['auth'])->name('business.store');
 
-
 require __DIR__.'/auth.php';
 require __DIR__.'/user/manager.php';
 require __DIR__.'/user/admin.php';
 require __DIR__.'/user/employe.php';
-
-

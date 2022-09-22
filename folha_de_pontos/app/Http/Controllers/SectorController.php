@@ -61,8 +61,9 @@ class SectorController extends Controller
 
     public function update(Request $request, $id)
     {
+        $sector = Sector::findOrFail($id);
     	$validator = Validator::make($request->all(), [
-            'name' => 'required|string|max:191|unique:sectors',
+            'name' => 'required|string|max:191|unique:sectors,name,' . $sector->id,
         ]);
  
         if ($validator->fails()) {
@@ -71,7 +72,6 @@ class SectorController extends Controller
                     ->withInput();
         }
 
-        $sector = Sector::findOrFail($id);
         $sector->name = $request->name;
         $sector->save();
 

@@ -24,6 +24,7 @@ class User extends Authenticatable
         'active',
         'matricula',
         'cpf',
+        'is_point_active',
         'photo',
         'role',
         'auto_register',

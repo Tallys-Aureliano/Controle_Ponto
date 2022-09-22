@@ -50,11 +50,11 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'name' => ['required', 'string', 'max:191'],
+            'email' => ['required', 'string', 'email', 'max:191', 'unique:users'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
             'cpf' => ['required', 'string', 'max:14'],
-            'matricula' => ['required', 'integer', 'max:999999999999999', 'unique:users,matricula'],
+            'matricula' => ['integer', 'max:999999999999999', 'unique:users,matricula'],
             'business' => ['required', 'integer', 'exists:business,id'],
             'position' => ['required', 'integer', 'exists:positions,id'],
             'role' => ['required', 'int', 'in:0,1,2']
@@ -130,7 +130,7 @@ class UserController extends Controller
             'business' => ['required', 'integer', 'exists:business,id'],
             'position' => ['required', 'integer', 'exists:positions,id'],
             'role' => ['required', 'integer', 'in:0,1,2'],
-            'matricula' => ['string','max:19', 'unique:users,matricula,' . $user->id]
+            'matricula' => ['nullable', 'string','max:19', 'unique:users,matricula,' . $user->id]
         ]);
 
         if ($validator->fails()) {

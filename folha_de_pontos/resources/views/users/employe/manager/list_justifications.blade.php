@@ -24,12 +24,15 @@ Lista de justificativas
 					
 					<button class="btn btn-secondary shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
 			</div>
+
 		</div>
 	</form>
 	<hr>
 </div>
 
+<h3>Total: {{$justifications->count()}}</h3>
 <div class="table-responsive rounded-2 shadow-sm mt-5">
+
 	<table class="table">
 		<thead>
 			<tr>

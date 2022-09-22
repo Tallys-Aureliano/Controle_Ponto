@@ -29,7 +29,9 @@ Lista de funcionários
 </div>
 <hr>
 
+<h3>Total: {{$users->count()}}</h3>
 <div class="table-responsive rounded-2 shadow-sm mt-5">
+
 	<table class="table">
 		<thead>
 			<tr>

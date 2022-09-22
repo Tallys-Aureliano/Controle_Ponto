@@ -30,7 +30,9 @@ Relatório individual
 	<hr>
 </div>
 
+	<h3>Total de funcionários: {{$users->count()}}</h3>
 	<div class="table-responsive rounded-2 shadow-sm mt-5">
+
 	<table class="table">
 		<thead>
 			<tr>

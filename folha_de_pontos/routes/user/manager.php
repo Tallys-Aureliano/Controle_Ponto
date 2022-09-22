@@ -21,6 +21,8 @@ Route::middleware(['auth', 'check.manager'])->group(function () {
 
     Route::get('manager/employe/report/individual', [ManagerController::class, 'createIndividualReport'])->name('manager.create.report.individual');
 
+    Route::get('manager/employe/report/individual/{id}', [EmployeController::class, 'showPoints'])->name('manager.show.report.individual');
+
     Route::get('manager/employe/report/general', [ManagerController::class, 'createGeneralReport'])->name('manager.create.report.general');
 
     Route::get('manager/employe/show/{id}', [ManagerController::class, 'showEmploye'])->name('manager.show.employe');
@@ -33,11 +35,4 @@ Route::middleware(['auth', 'check.manager'])->group(function () {
     Route::get('manager/business/show', [BusinessController::class, 'showMyBusiness'])->name('manager.show.business');
 
     Route::get('manager/justificative/list', [ManagerController::class, 'listJustificatives'])->name('manager.justificative.list');
-
-    // POINTS
-    Route::get('manager/point/create', [ManagerController::class, 'createPoint'])
-        ->name('manager.point.create');
-
-    Route::post('manager/point/store', [ManagerController::class, 'storePoint'])
-        ->name('manager.point.store');
 });

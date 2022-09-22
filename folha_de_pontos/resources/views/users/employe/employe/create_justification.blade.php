@@ -9,11 +9,11 @@ Criar justificativa
 	<h1 class="text-center">Criar justificativa</h1>
 
 	<div class="mt-5">
-		<form action="{ route('employe.justification.store') }}" method="POST" class="--box-form mx-auto">
+		<form action="{{ route('employe.justification.store') }}" method="POST" class="--box-form mx-auto">
 			@csrf
 			<div>
 				<label for="date">Data</label>
-				<input type="date" class="form-control @if($errors->has('date')) is-invalid @endif mb-3" name="date">
+				<input type="date" class="form-control @if($errors->has('date')) is-invalid @endif mb-3" name="date" required>
 			@if($errors->has('date'))
 		        <div class="invalid-feedback">
 		            @error('date') {{ $message }} @enderror
@@ -22,7 +22,7 @@ Criar justificativa
 			</div>
 
 			<div class="mb-3">
-				<label for="formFile">Escolha uma foto</label>
+				<label for="formFile">Escolha um documento</label>
 				<input class="form-control @if($errors->has('file')) is-invalid @endif" name="file" type="file" accept=".doc,.docx,.pdf,image/*" id="formFile" disabled>
 				@if($errors->has('file'))
 		        <div class="invalid-feedback">

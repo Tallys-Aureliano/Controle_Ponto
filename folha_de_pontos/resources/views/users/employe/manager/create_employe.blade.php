@@ -9,10 +9,11 @@ Criar funcionario
 
 <h1 class="text-center">Criar funcionário</h1>
 
-<form action="{{ route('manager.store.employe') }}" method="POST" class="container mt-5  --box-form">
+<form action="{{ route('manager.store.employe') }}" method="POST" enctype="multipart/form-data" class="container mt-5  --box-form">
+	@csrf
 	<label for="inputGroupFile01">Escolha uma foto</label>
 	<div class="input-group mb-3">
-	<input type="file" class="form-control @if($errors->has('image')) is-invalid @endif" name="image" accept="image/*" disabled>
+	<input type="file" class="form-control @if($errors->has('image')) is-invalid @endif" name="image" accept="image/*">
 	@if($errors->has('image'))
 		<div class="invalid-feedback">
 			@error('image') {{ $message }} @enderror

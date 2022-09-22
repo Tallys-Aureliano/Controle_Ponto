@@ -6,7 +6,6 @@ Lista de justificativas
 
 @section('content-dashboard')
 <h1 class="text-center">Lista de Justificativas</h1>
-
 <div class="--form-filter mt-5 mb-3">
 	<form action="" class="get" class="--form-authentication">
 		<div class="d-flex flex-wrap gap-3 mt-5 --form-authentication">
@@ -23,6 +22,8 @@ Lista de justificativas
 		</div>
 	</form>
 </div>
+
+<h3>Total: {{$justifications->count()}}</h3>
 
 <div class="table-responsive rounded-2 shadow-sm">
 	<table class="table">

@@ -24,6 +24,10 @@ Relatório geral
 	</form>
 </div>
 	<button class="btn btn-primary-m mt-2">Gerar Relatório Geral</button>
+	
+	<h3>Total de funcionários: {{$users->count()}}</h3>
+
+
 	<div class="table-responsive mt-3 rounded-2 shadow-sm">
 	<table class="table">
 		<thead>

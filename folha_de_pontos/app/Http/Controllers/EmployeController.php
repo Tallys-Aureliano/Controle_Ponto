@@ -5,12 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\Rules;
+use Illuminate\Support\Facades\Hash;
 
 use App\Models\User;
 use App\Models\Justification;
 use App\Models\PointRegister as Point;
-
-
+use App\Models\Position;
 
 class EmployeController extends Controller
 {
@@ -45,7 +46,9 @@ class EmployeController extends Controller
      */
     public function create()
     {
-        return view('users.employe.manager.create_employe');
+        $positions = Position::all();
+
+        return view('users.employe.manager.create_employe', compact('positions'));
     }
 
     /**
@@ -56,7 +59,35 @@ class EmployeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'name' => ['required', 'string', 'max:191'],
+            'email' => ['required', 'string', 'email', 'max:191', 'unique:users'],
+            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'cpf' => ['required', 'string', 'max:14'. 'unique:users,cpf'],
+            'matricula' => ['required', 'integer', 'max:999999999999999', 'unique:users,matricula'],
+            'position' => ['required', 'integer', 'exists:positions,id'],
+            'role' => ['required', 'integer', 'in:1,2']
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->route('manager.create.employe')
+                    ->withErrors($validator)
+                    ->withInput();
+        }
+
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'cpf' => $request->cpf,
+            'role' => $request->role,
+            'matricula' => $request->matricula,
+            'position_id' => $request->position,
+            'business_id' => auth()->user()->business_id
+        ])->save();
+
+        return redirect()->route('manager.list_employes')
+            ->with('success', 'Funcionário criado com sucesso.');
     }
 
     public function createJustifications()
@@ -93,14 +124,6 @@ class EmployeController extends Controller
 
     }
 
-    // public function showJustifications()
-    // {
-    //     $justifications = Justification::all()
-    //         ->where('users_id', auth()->user()->id);
-
-    //     return view('users.employe.employe.show_justification', compact('justifications'));
-    // }
-
     /**
      * Display the specified resource.
      *
@@ -128,9 +151,14 @@ class EmployeController extends Controller
      */
     public function edit($id)
     {
-        $user = User::find($id);
+        $positions = Position::all();
 
-        return view('users.employe.manager.edit_employe', compact('user'));
+        $user = User::find($id);
+        if($user->business_id == auth()->user()->business_id){
+            return view('users.employe.manager.edit_employe', compact('user', 'positions'));
+        }
+        return redirect()->route('manager.list_employes')
+            ->with('error', 'O usuário consultado não faz parte de sua empresa.');
     }
 
     /**
@@ -142,7 +170,35 @@ class EmployeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::findOrFail($id);
+
+        $validator = Validator::make($request->all(), [
+            'name' => ['required', 'string', 'max:191'],
+            'email' => ['required', 'string', 'email', 'max:191', 'unique:users,email,' . $user->id],
+            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'cpf' => ['required', 'string', 'max:14', 'unique:users,cpf,' . $user->id],
+            'matricula' => ['required', 'integer', 'max:999999999999999', 'unique:users,matricula,' . $user->id],
+            'position' => ['required', 'integer', 'exists:positions,id'],
+            'role' => ['required', 'integer', 'in:1,2']
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->route('manager.edit.employe', ['id'=>$user->id])
+                    ->withErrors($validator)
+                    ->withInput();
+        }
+
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = Hash::make($request->password);
+        $user->cpf = $request->cpf;
+        $user->role = $request->role;
+        $user->matricula = $request->matricula;
+        $user->position_id = $request->position;
+        $user->save();
+
+        return redirect()->route('manager.list_employes')
+            ->with('success', 'Funcionário atualizado com sucesso.');
     }
 
     /**

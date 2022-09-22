@@ -7,6 +7,7 @@ use App\Http\Requests\Auth\LoginRequest;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -43,6 +44,12 @@ class AuthenticatedSessionController extends Controller
      */
     public function destroy(Request $request)
     {
+        if(auth()->user()->is_point_active == 1){
+            $user = User::findOrFail(auth()->user()->id);
+            $user->is_point_active = 0;
+            $user->save();
+        }
+
         Auth::guard('web')->logout();
 
         $request->session()->invalidate();

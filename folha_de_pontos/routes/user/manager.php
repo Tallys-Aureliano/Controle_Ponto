@@ -12,9 +12,12 @@ Route::middleware(['auth', 'check.manager'])->group(function () {
     Route::get('manager/show', [EmployeController::class, 'show'])
     	->name('manager.profile');
 
+    //FUNCIONARIOS
     Route::get('manager/employes', [ManagerController::class, 'listEmployes'])->name('manager.list_employes');
 
     Route::get('manager/employe/create', [EmployeController::class, 'create'])->name('manager.create.employe');
+
+    Route::post('manager/employe/store', [EmployeController::class, 'store'])->name('manager.store.employe');
 
     Route::get('manager/employe/report/individual', [ManagerController::class, 'createIndividualReport'])->name('manager.create.report.individual');
 
@@ -23,8 +26,16 @@ Route::middleware(['auth', 'check.manager'])->group(function () {
     Route::get('manager/employe/show/{id}', [ManagerController::class, 'showEmploye'])->name('manager.show.employe');
 
     Route::get('manager/employe/edit/{id}', [EmployeController::class, 'edit'])->name('manager.edit.employe');
+
+    Route::post('manager/employe/update/{id}', [EmployeController::class, 'update'])->name('manager.update.employe');
     
+    // EMPRESA
     Route::get('manager/business/show', [BusinessController::class, 'showMyBusiness'])->name('manager.show.business');
 
     Route::get('manager/justificative/list', [ManagerController::class, 'listJustificatives'])->name('manager.justificative.list');
+
+    // POINTS
+
+    Route::post('manager/point/store', [ManagerController::class, 'storePoint'])
+        ->name('manager.point.store');
 });

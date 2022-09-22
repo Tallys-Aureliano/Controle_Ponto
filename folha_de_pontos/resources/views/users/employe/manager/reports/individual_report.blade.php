@@ -25,6 +25,8 @@ Relatório individual
 	</form>
 </div>
 
+	<h3>Total de funcionários: {{$users->count()}}</h3>
+
 	<div class="table-responsive rounded-2 shadow-sm">
 	<table class="table">
 		<thead>

@@ -23,6 +23,10 @@ class CheckManager
             return redirect()->route('dashboard')->with('error', 'Você não tem autorização para acessar essa página.');
         }
 
+        if(auth()->user()->is_point_active == 1){
+            return redirect()->route('manager.point.create');
+        }
+
         if (!$business){
             return redirect()->route('business.create')
                 ->with('info', 'Antes de continuar, é necessário criar uma empresa.');

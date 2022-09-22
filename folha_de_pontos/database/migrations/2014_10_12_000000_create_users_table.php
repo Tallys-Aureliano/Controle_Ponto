@@ -20,6 +20,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('cpf', 14);
+            $table->boolean('is_point_active')->default(false);
             $table->string('matricula', 25)->nullable();
             $table->string('photo', 555)->nullable();
             $table->integer('role');

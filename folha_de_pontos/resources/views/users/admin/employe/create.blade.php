@@ -79,10 +79,10 @@ Criar funcionário
 		</div>
 		@endif
 	
-		<input type="password" class="form-control @if($errors->has('password')) is-invalid @endif mt-2" placeholder="Confirmar senha" name="password_confirmation" required maxlength="191">
-		@if($errors->has('password'))
+		<input type="password" class="form-control @if($errors->has('password_confirmation')) is-invalid @endif mt-2" placeholder="Confirmar senha" name="password_confirmation" required maxlength="191">
+		@if($errors->has('password_confirmation'))
 		<div class="invalid-feedback">
-			@error('password') {{ $message }} @enderror
+			@error('password_confirmation') {{ $message }} @enderror
 		</div>
 		@endif
 		<div class="text-center">

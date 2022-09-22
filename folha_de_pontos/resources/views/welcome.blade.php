@@ -29,7 +29,7 @@ Bem vindo
           <h3 class="text-center mb-4 text-white" style="text-shadow: 3px 3px 5px rgba(0,0,0, .25);">Conheça a melhor solução de controle de ponto</h3>
           <div class="text-center">
             <a type="button"
-              class="btn btn-lg btn-primary-m rounded-3" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Cadastre sua empresa!
+              class="btn btn-lg btn-primary-m rounded-3">Cadastre sua empresa!
             </a>
           </div>
         </div>

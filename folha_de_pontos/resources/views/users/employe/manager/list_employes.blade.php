@@ -30,10 +30,9 @@ Lista de funcionários
 </div>
 
 <div class="--box-form">
-	<h3>Total: {{$users->count()}}</h3>
-	<hr>
+	<h2>Total: {{$users->count()}}</h2>
 </div>
-<div class="table-responsive rounded-2 shadow-sm mt-5">
+<div class="table-responsive rounded-2 shadow-sm mt-3">
 
 	<table class="table">
 		<thead>

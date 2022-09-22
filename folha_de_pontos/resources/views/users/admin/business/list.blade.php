@@ -47,7 +47,7 @@ Lista de empresas
 			@foreach($businesss as $business)
 
 				@if(!$business->active)
-					<tr style="background-color: #FF000020">
+					<tr style="background-color: #e9ecef;">
 				@else
 					<tr>
 				@endif

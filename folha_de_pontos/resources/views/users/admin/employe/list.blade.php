@@ -33,7 +33,7 @@ Lista de usuários
 		</thead>
 		<tbody>
 			@foreach($users as $user)
-				<tr @if($user->active == 0) style="background-color: gray;" @endif>
+				<tr @if($user->active == 0) style="background-color: #e9ecef;" @endif>
 					<td><a href="{{ route('admin.employe.show', ['id' => $user->id]) }}">{{ $user->name }}</a></td>
 					<td>
 						@if($user->matricula)

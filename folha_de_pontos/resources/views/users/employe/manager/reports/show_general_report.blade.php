@@ -7,9 +7,9 @@ Relatório geral
 @section('content-dashboard')
 	<h1 class="text-center">Relatório geral</h1>
 	
-	<h3 class="text-secondary">Total de pontos batidos: {{$points->count()}}</h3>
+	<h3 class="text-secondary mt-5">Total de pontos batidos: {{$points->count()}}</h3>
 
-	<div class="table-responsive table-sm">
+	<div class="table-responsive table-sm shadow-sm rounded-2 mt-5">
 		<table class="table">
 			<thead>
 				<th>Funcionário</th>
@@ -37,5 +37,21 @@ Relatório geral
 			</tbody>
 		</table>
 	</div>
+
+	<nav aria-label="..." class="mt-3">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled rounded">
+      <a class="page-link">Anterior</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Próxima</a>
+    </li>
+  </ul>
+</nav>
 
 @endsection

@@ -12,11 +12,6 @@ use Illuminate\Support\Facades\Hash;
 
 class ManagerController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $points = Point::whereHas('users', function($query){
@@ -29,8 +24,6 @@ class ManagerController extends Controller
 
     public function listJustificatives()
     {
-        // $justifications = Justification::with(['user'])->get();
-
         $justifications = Justification::whereHas('user', function($query){
             $query->where('business_id', '=', auth()->user()->business_id);
         })->get();
@@ -38,11 +31,6 @@ class ManagerController extends Controller
         return view('users.employe.manager.list_justifications', compact('justifications'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function createPoint()
     {
         if(auth()->user()->role == 1){
@@ -57,12 +45,6 @@ class ManagerController extends Controller
             ->with('error', 'Você não possui permissão para acessar a página requisitada.');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function storePoint(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -79,7 +61,7 @@ class ManagerController extends Controller
         $user = User::where('matricula', $request->matricula)->first();
             if (Hash::check($request->password, $user->password))
             {
-                if(!$user->business_id == auth()->user()->business_id){
+                if($user->business_id != auth()->user()->business_id){
                     return redirect()->route('manager.point.create')
                         ->with('error', 'Esse funcionário não trabalha nesta empresa.');
                 }

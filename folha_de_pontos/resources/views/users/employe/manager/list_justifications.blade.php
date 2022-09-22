@@ -30,10 +30,9 @@ Lista de justificativas
 	<hr>
 </div>
 <div class="px-2 py-3 --box-form">
-	<h3>Total: {{$justifications->count()}}</h3>
-	<hr>
+	<h2>Total: {{$justifications->count()}}</h2>
 </div>
-<div class="table-responsive rounded-2 shadow-sm mt-5">
+<div class="table-responsive rounded-2 shadow-sm mt-2">
 	<table class="table">
 		<thead>
 			<tr>
@@ -57,6 +56,7 @@ Lista de justificativas
 	</table>
 	
 </div>
+
 <nav aria-label="..." class="mt-3">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">

@@ -36,7 +36,7 @@ Lista de pontos
 			</thead>
 			<tbody>
 				@foreach($points as $point)
-				<tr @if(!$point->exit_time) style="background-color: grey;" @endif>
+				<tr @if(!$point->exit_time) style="background-color: #FFC70040;" @endif>
 					<td>
 						<a href="{{ route('admin.point.show', ['id'=>$point->id]) }}">
 							{{$point->users->name}}

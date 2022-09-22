@@ -6,13 +6,26 @@ Setor: {{ $sector->name }}
 
 @section('content-admin')
 
+<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ route('admin.sector.list') }}">Setores</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ $sector->name }}</li>
+    </ol>
+  </div>
+</nav>
+
+
 <h1 class="text-center">Setor: {{ $sector->name }}</h1>
 
-	<a href="{{ route('admin.sector.edit', ['id' => $sector->id]) }}"><button class="btn btn-secundary-m mt-5">Editar</button></a>
+<div class="d-flex align-items-center gap-2 mt-5">
+	<a href="{{ route('admin.sector.edit', ['id' => $sector->id]) }}"><button class="btn btn-secundary-m ">Editar</button></a>
 	<form action="{{ route('admin.sector.destroy', ['id' => $sector->id]) }}" method="POST">
 		@csrf
-		<button class="btn btn-danger mt-3">Remover</button>
+		<button class="btn btn-danger">Remover</button>
 	</form>
+</div>
+<hr>
 
 	<h2 class="text-center mt-4">Cargos no setor</h2>
 

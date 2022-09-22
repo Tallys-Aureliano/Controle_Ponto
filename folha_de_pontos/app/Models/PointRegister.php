@@ -18,7 +18,7 @@ class PointRegister extends Model
 
     public function users()
     {
-    	return $this->belongsTo(User::class, 'id');
+    	return $this->belongsTo(User::class, 'users_id');
     }
 
     protected $table = 'point_registers';

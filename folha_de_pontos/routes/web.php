@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BusinessController;
+use App\Http\Controllers\ManagerController;
+use App\Http\Controllers\FileController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -25,10 +27,19 @@ Route::get('manager/business/create', [BusinessController::class, 'create'])
 Route::post('manager/business/store', [BusinessController::class, 'store'])
 		->middleware(['auth'])->name('business.store');
 
+Route::get('manager/point/create', [ManagerController::class, 'createPoint'])
+	->middleware(['auth'])->name('manager.point.create');
+
+Route::post('manager/point/store', [ManagerController::class, 'storePoint'])
+	->middleware(['auth'])->name('manager.point.store');
+   	
+Route::get('/attachments/{file_name}', [FileController::class, 'view'])
+	->middleware(['auth'])->name('view.attachments');
+
+Route::get('/profile/photo/{file_name}', [FileController::class, 'viewProfileImage'])
+	->middleware(['auth'])->name('view.profile.photo');
 
 require __DIR__.'/auth.php';
 require __DIR__.'/user/manager.php';
 require __DIR__.'/user/admin.php';
 require __DIR__.'/user/employe.php';
-
-

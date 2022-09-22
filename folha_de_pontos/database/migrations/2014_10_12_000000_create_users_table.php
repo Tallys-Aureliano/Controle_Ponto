@@ -20,7 +20,8 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('cpf', 14);
-            $table->bigInteger('matricula', 25)->nullable();
+            $table->boolean('is_point_active')->default(false);
+            $table->string('matricula', 25)->nullable();
             $table->string('photo', 555)->nullable();
             $table->integer('role');
             $table->boolean('active')->default(true);
@@ -31,11 +32,7 @@ return new class extends Migration
             $table->foreign('business_id')->references('id')->on('business');
             $table->unsignedBigInteger('position_id')->default(1);
             $table->foreign('position_id')->references('id')->on('positions')->onDelete('cascade');
-
-            // $table->unsignedBigInteger('position');
-            // $table->foreign('position')->references('id')->on('positions');
-            
-        });
+            });
     }
 
     /**

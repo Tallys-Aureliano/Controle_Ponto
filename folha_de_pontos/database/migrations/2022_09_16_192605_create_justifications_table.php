@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('justifications', function (Blueprint $table) {
             $table->id();
             $table->text('comment');
-            $table->string('attachment', 555);
+            $table->string('attachment', 555)->nullable();
             $table->timestamp('date');
             $table->timestamps();
             $table->unsignedBigInteger('users_id');

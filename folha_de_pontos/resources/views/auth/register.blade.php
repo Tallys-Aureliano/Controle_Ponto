@@ -6,7 +6,8 @@ Cadastro de usúario
 @endsection
 
 @section('auth-content')
-<h1 class="text-center pb-4">Cadastre-se</h1>
+<h1 class="text-center pb-1">Cadastro do Gestor</h1>
+<h5 class="text-center mt5" style="color: #6c757d;">Em seguida cadastre sua empresa</h5>
 <form method="POST" action="{{ route('register') }}">
     @csrf
     <div class="--form-authentication">

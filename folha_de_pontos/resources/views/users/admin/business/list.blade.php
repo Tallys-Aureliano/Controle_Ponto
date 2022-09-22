@@ -5,23 +5,38 @@ Lista de empresas
 @endsection
 
 @section('content-admin')
+<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Empresas</li>
+    </ol>
+  </div>
+</nav>
 
 <h1 class="text-center">EMPRESAS</h1>
-<div class="--form-filter mt-5 mb-3">
-	<form action="" class="get" class="--form-authentication">
-		<div class="d-flex flex-wrap gap-3 mt-5 --form-authentication">
-			<label for="">Consulta:</label>
-			<input class="form-control form-control-lg" type="text" placeholder="Nome" name="name">
-			<button class="btn btn-primary-m shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
+<div class="--form-filter mt-5 mb-3 --box-form">
+	<form action="" class="get" class="--box-authentication">
+			<div class="d-flex align-items-center gap-3">
+				<span>Consulta por:</span>
+					<select class="form-select shadow-sm" aria-label="Funcionario">
+						<option selected>Tipo</option>
+						<option value="1">Nome</option>
+						<option value="2">Matricula</option>
+					</select>
+					
+					<button class="btn btn-secondary shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
+			</div>
 		</div>
 	</form>
+	<hr>
 </div>
 
-<a href="{{ route('admin.business.create') }}"><button class="btn btn-secundary-m">Criar Empresa</button></a>
+
+<a href="{{ route('admin.business.create') }}"><button class="btn btn-primary-m">Criar Empresa</button></a>
 
 
-<div class="table-responsive mt-4 rounded-3  shadow-sm">
-	
+<div class="table-responsive mt-4 rounded-3  shadow-sm mt-5">
 	<table class="table">
 		<thead>
 			<th>Nome</th>
@@ -32,7 +47,7 @@ Lista de empresas
 			@foreach($businesss as $business)
 
 				@if(!$business->active)
-					<tr style="background-color: #FF000020">
+					<tr style="background-color: #e9ecef;">
 				@else
 					<tr>
 				@endif
@@ -52,7 +67,6 @@ Lista de empresas
 			@endforeach
 		</tbody>
 	</table>
-
 </div>
 
 <nav aria-label="..." class="mt-3">
@@ -70,5 +84,23 @@ Lista de empresas
     </li>
   </ul>
 </nav>
+
+<div class="modal" tabindex="-1" id="modal1">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title">Modal title</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <div class="modal-body">
+			<p>Modal body text goes here.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+			<button type="button" class="btn btn-secundary-m">Salvar</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
 
 @endsection

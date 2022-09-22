@@ -5,15 +5,25 @@ Empresa: {{ $business->name }}
 @endsection
 
 @section('content-admin')
+<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ route('admin.business.list') }}">Empresas</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ $business->name }}</li>
+    </ol>
+  </div>
+</nav>
+
 
 <h1 class="text-center">Empresa: {{ $business->name }}</h1>
 	<h2 class="text-center mt-5">Funcionários</h2>
 
 	<a href="{{ route('admin.business.edit', ['id' => $business->id]) }}" class="mt-4"><button class="btn btn-secundary-m mt-4">Editar</button></a>
+	<hr>
 	{{-- Aqui ainda vem a lista de funcionarios dessa empresa --}}
-	<div class="table-responsive mt-3 rounded-3  shadow-sm">
+	<div class="table-responsive mt-5 rounded-3  shadow-sm">
 		<table class="table">
-			<thead>git 
+			<thead>
 				<th>Nome</th>
 				<th>matricula</th>
 				<th>Cargo</th>

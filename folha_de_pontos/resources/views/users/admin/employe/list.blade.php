@@ -5,11 +5,22 @@ Lista de usuários
 @endsection
 
 @section('content-admin')
-<h1 class="text-center">LISTA DE USUÁRIOS</h1>
+<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Funcionários</li>
+    </ol>
+  </div>
+</nav>
 
-<a href="{{ route('admin.employe.create') }}"><button class="btn btn-secundary-m mt-5">Criar Usuário</button></a>
 
-<div class="table-responsive mt-3 rounded-3  shadow-sm"">
+<h1 class="text-center">Lista de funcionários</h1>
+
+<a href="{{ route('admin.employe.create') }}"><button class="btn btn-primary-m mt-5">Criar Funcionário</button></a>
+<hr>
+
+<div class="table-responsive mt-5 rounded-3  shadow-sm"">
 	<table class="table">
 		<thead>
 			<th>Nome</th>
@@ -22,7 +33,7 @@ Lista de usuários
 		</thead>
 		<tbody>
 			@foreach($users as $user)
-				<tr @if($user->active == 0) style="background-color: gray;" @endif>
+				<tr @if($user->active == 0) style="background-color: #e9ecef;" @endif>
 					<td><a href="{{ route('admin.employe.show', ['id' => $user->id]) }}">{{ $user->name }}</a></td>
 					<td>
 						@if($user->matricula)
@@ -51,6 +62,8 @@ Lista de usuários
 		</tbody>
 	</table>
 </div>
+
+
 <nav aria-label="..." class="mt-3">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled rounded">
@@ -66,4 +79,22 @@ Lista de usuários
     </li>
   </ul>
 </nav>
+
+<div class="modal" tabindex="-1" id="modal1">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title">Modal title</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <div class="modal-body">
+			<p>Modal body text goes here.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+			<button type="button" class="btn btn-secundary-m">Salvar</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
 @endsection

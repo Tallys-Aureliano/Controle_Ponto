@@ -23,7 +23,7 @@ Relatório geral
 			</div>
 		</div>
 	</form>
-	<button class="btn btn-primary-m mt-4">Gerar Relatório Geral</button>
+	<a href="{{ route('manager.show.report.general') }}"><button class="btn btn-primary-m mt-4">Gerar Relatório Geral</button></a>
 	<hr>
 </div>
 

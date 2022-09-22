@@ -145,4 +145,14 @@ class ManagerController extends Controller
         return view('users.employe.manager.reports.general_report', compact('users'));
     }
 
+    public function showGeneralReport()
+    {
+        $points = Point::whereHas('users', function($query)
+            {
+                $query->where('business_id', '=', auth()->user()->business_id);
+            })->get();
+
+        return view('users.employe.manager.reports.show_general_report', compact('points'));
+    }
+
 }

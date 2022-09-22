@@ -36,6 +36,11 @@ class EmployeController extends Controller
 
         $points = Point::with('users')->where('users_id', $id)->get();
 
+        if($points->count() == 0){
+            return redirect()->route('manager.create.report.individual')
+                ->with('error', 'Esse funcionário não possui nenhum ponto para gerar um relatório.');
+        }
+
         return view('users.employe.manager.reports.show_individual_report', compact('points'));
     }
 

@@ -18,7 +18,7 @@ Histórico de pontos
 		</thead>
 		<tbody>
 			@foreach($points as $point)
-				<tr>
+				<tr @if(!$point->exit_time) style="background-color: gray;" @endif>
 					<td>{!! date('d/m/Y', strtotime($point->date)) !!}</td>
 					<td>{{$point->entry_time}}</td>
 					<td>{{$point->exit_time}}</td>

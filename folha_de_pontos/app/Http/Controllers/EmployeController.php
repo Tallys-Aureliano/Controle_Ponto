@@ -15,11 +15,6 @@ use App\Models\Position;
 
 class EmployeController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         return view('users.employe.dashboard');
@@ -32,6 +27,18 @@ class EmployeController extends Controller
         return view('users.employe.employe.list_points', compact('points'));
     }
 
+    public function showPoints($id)
+    {
+        if(!User::findOrFail($id)->business_id = auth()->user()->id){
+            return redirect()->route('manager.list_employes')
+                ->with('error', 'Esse funcionário não trabalha em sua empresa.');
+        }
+
+        $points = Point::with('users')->where('users_id', $id)->get();
+
+        return view('users.employe.manager.reports.show_individual_report', compact('points'));
+    }
+
     public function listJustifications()
     {
         $justifications = Justification::where('users_id', auth()->user()->id)->get();
@@ -39,11 +46,6 @@ class EmployeController extends Controller
         return view('users.employe.employe.list_justifications', compact('justifications'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         $positions = Position::all();
@@ -51,12 +53,6 @@ class EmployeController extends Controller
         return view('users.employe.manager.create_employe', compact('positions'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -66,6 +62,7 @@ class EmployeController extends Controller
             'cpf' => ['required', 'string', 'max:14'. 'unique:users,cpf'],
             'matricula' => ['required', 'integer', 'max:999999999999999', 'unique:users,matricula'],
             'position' => ['required', 'integer', 'exists:positions,id'],
+            'image' => ['nullable', 'image', 'mimes:png,jpg,jpeg', 'max:3096'],
             'role' => ['required', 'integer', 'in:1,2']
         ]);
 
@@ -75,12 +72,19 @@ class EmployeController extends Controller
                     ->withInput();
         }
 
+        $imageName = NULL;
+        if($request->image){
+            Storage::disk('userFiles')->put('/profile/image/', $request->image);
+            $imageName = $request->image->hashName();
+        }
+
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'cpf' => $request->cpf,
             'role' => $request->role,
+            'photo' => $imageName,
             'matricula' => $request->matricula,
             'position_id' => $request->position,
             'business_id' => auth()->user()->business_id
@@ -112,7 +116,7 @@ class EmployeController extends Controller
         // Storage::disk('public')->put($request->name, $request->_file_);
         // $file = "";
 
-        $Justification = Justification::create([
+        $justification = Justification::create([
             'comment' => $request->comment,
             'file' => $request->file,
             'date' => $request->date,
@@ -124,12 +128,6 @@ class EmployeController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show()
     {
         $user = User::findOrFail(auth()->user()->id);
@@ -143,12 +141,6 @@ class EmployeController extends Controller
         return view('users.admin.employe.show', compact('user'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         $positions = Position::all();
@@ -161,13 +153,6 @@ class EmployeController extends Controller
             ->with('error', 'O usuário consultado não faz parte de sua empresa.');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         $user = User::findOrFail($id);
@@ -178,6 +163,7 @@ class EmployeController extends Controller
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
             'cpf' => ['required', 'string', 'max:14', 'unique:users,cpf,' . $user->id],
             'matricula' => ['required', 'integer', 'max:999999999999999', 'unique:users,matricula,' . $user->id],
+            'image' => ['nullable', 'image', 'mimes:png,jpg,jpeg', 'max:3096'],
             'position' => ['required', 'integer', 'exists:positions,id'],
             'role' => ['required', 'integer', 'in:1,2']
         ]);
@@ -188,28 +174,24 @@ class EmployeController extends Controller
                     ->withInput();
         }
 
+        $imageName = NULL;
+        if($request->image){
+            Storage::disk('userFiles')->put('/profile/image/', $request->image);
+            $imageName = $request->image->hashName();
+        }
+
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
         $user->cpf = $request->cpf;
         $user->role = $request->role;
+        $user->photo = $imageName;
         $user->matricula = $request->matricula;
         $user->position_id = $request->position;
         $user->save();
 
         return redirect()->route('manager.list_employes')
             ->with('success', 'Funcionário atualizado com sucesso.');
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
     }
 
     public function list(){

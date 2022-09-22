@@ -8,10 +8,11 @@ Editar funcionario
 
 <h1 class="text-center">Editar funcionario</h1>
 
-<form action="{{ route('manager.update.employe', ['id'=>$user->id]) }}" method="POST" class="container mt-5 --box-form">
+<form action="{{ route('manager.update.employe', ['id'=>$user->id]) }}" method="POST" class="container mt-5 --box-form" enctype="multipart/form-data">
+	@csrf
 	<label for="inputGroupFile01">Escolha uma foto</label>
 	<div class="input-group mb-3 ">
-		<input type="file" class="form-control @if($errors->has('image')) is-invalid @endif" name="image" accept="image/*" disabled>
+		<input type="file" value="@if($user->photo){{ route('view.profile.photo', ['file_name'=>$user->photo])}}@endif" class="form-control @if($errors->has('image')) is-invalid @endif" name="image" accept="image/*">
 	@if($errors->has('image'))
 		<div class="invalid-feedback">
 			@error('image') {{ $message }} @enderror

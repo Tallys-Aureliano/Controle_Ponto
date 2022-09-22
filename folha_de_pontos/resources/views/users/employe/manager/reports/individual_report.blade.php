@@ -58,7 +58,9 @@ Relatório individual
 				<td>{{ $user->email }}</td>
 				<td>{{ $user->position->name }}</td>
 				<td>
-					<button class="btn btn-primary-m mx-auto btn-sm">Gerar Relatório</button>
+					<a href="{{ route('manager.show.report.individual', ['id'=>$user->id]) }}">
+						<button class="btn btn-primary-m mx-auto btn-sm">Gerar Relatório</button>
+					</a>
 				</td>
 			</tr>
 			@endif

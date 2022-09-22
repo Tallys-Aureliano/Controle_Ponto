@@ -45,11 +45,18 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class=" color-white mr-2 d-none d-lg-inline 600 small">{{ Auth::user()->name }}</span>
-                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                                @if(auth()->user()->photo)
+                                <img
+                                class="img-profile rounded-circle"
+                                src="{{ route('view.profile.photo', ['file_name'=>auth()->user()->photo]) }}"
+                                >
+                                @else
+                                    <i class="bi bi-person"></i>
+                                @endif
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="{{ route('manager.profile') }}">
+                                <a class="dropdown-item" href="{{ route('employe.profile') }}">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Perfil
                                 </a>
@@ -71,6 +78,7 @@
                     @yield('content-dashboard')
                     
                 </div>
+                
             </div>
             <!-- /.container-fluid -->
         </div>

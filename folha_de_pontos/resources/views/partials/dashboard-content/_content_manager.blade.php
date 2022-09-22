@@ -21,7 +21,7 @@
                                     @if($point->exit_time)
                                     style="background-color: white;"
                                     @else
-                                    style="background-color: gray;"
+                                    style="background-color: # #FFC70040;"
                                     @endif
                                     >
                                         <td><a href="{{ route('manager.show.employe', ['id'=>$point->users->id]) }}">
@@ -42,10 +42,19 @@
                             </tbody>
                         </table>
                     </div>
-                    <a href="{{ route('manager.point.create') }}"><button class="btn  btn-primary-m mt-5">Registrar pontos</button></a>
+                </div>
+                
                 <hr>
 
+                <div class="text-center card shadow-sm mt-5">
+
+                    <div class="card-body">
+                        <h2 class="mt-3">Registro de pontos</h2>
+                        <h4 class="mt-3">(Exclusivo para usuário de pontos)</h4>
+                        <a href="{{ route('manager.point.create') }}"><button class="btn btn-lg  btn-primary-m mt-3 mb-3">Registrar pontos</button></a>
+                    </div>
                 </div>
+            <hr>
 
                
         <div class="row gap-1 mb-5 mt-3 mx-auto justify-content-left mt-5">
@@ -82,5 +91,5 @@
                     <a href=""><button class="btn btn-detalhar">Detalhar</button></a>
                 </div>
             </div>
-        </div>
+        </div> 
 </section>

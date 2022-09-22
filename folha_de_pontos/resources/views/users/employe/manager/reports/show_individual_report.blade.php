@@ -18,7 +18,7 @@ Relatório individual
 			</thead>
 			<tbody>
 				@foreach($points as $point)
-				<tr @if(!$point->exit_time) style="background-color: gray;" @endif>
+				<tr @if(!$point->exit_time) style="background-color: #FFC70040;" @endif>
 					<td>{{ $point->date }}</td>
 					<td>{{ $point->entry_time }}</td>
 					<td>{{ $point->exit_time }}</td>

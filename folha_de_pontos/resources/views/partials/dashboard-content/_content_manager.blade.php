@@ -21,7 +21,7 @@
                                     @if($point->exit_time)
                                     style="background-color: white;"
                                     @else
-                                    style="background-color: # #FFC70040;"
+                                    style="background-color: #FFC70040;"
                                     @endif
                                     >
                                         <td><a href="{{ route('manager.show.employe', ['id'=>$point->users->id]) }}">

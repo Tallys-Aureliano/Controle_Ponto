@@ -72,6 +72,9 @@ a.page-link {
     color: white !important;
 }
 
+.table {
+    margin: 0 !important;
+}
 .table > thead {
     background-color: #5D6CD9 !important;
     color: white !important;

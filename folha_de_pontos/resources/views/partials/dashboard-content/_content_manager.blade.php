@@ -19,7 +19,7 @@
                                 @foreach($points as $point)
                                     <tr 
                                     @if($point->exit_time)
-                                    style="background-color: green;"
+                                    style="background-color: white;"
                                     @else
                                     style="background-color: gray;"
                                     @endif

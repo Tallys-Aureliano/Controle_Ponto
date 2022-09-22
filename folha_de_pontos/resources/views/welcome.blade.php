@@ -7,6 +7,7 @@ Bem vindo
 @section('head')
   <!-- CSS INDEX -->
   <link rel="stylesheet" type="text/css" href="{{asset('assets/css/index.css')}}">
+  <!-- JavaScript Bundle with Popper -->
 @endsection
 
 @section('content')
@@ -33,7 +34,6 @@ Bem vindo
           </div>
         </div>
       </div>
-      
     </div>
   </div>
   <div class="has-shapes">
@@ -273,16 +273,9 @@ Bem vindo
           </div>
         </div>
       </div>
-      
-      
-     
-      
-      
     </div>
   </div>
 </section>
-
-
 
 @include('partials/footer_index')
 </body>

@@ -5,9 +5,19 @@ Lista de usuários
 @endsection
 
 @section('content-admin')
-<h1 class="text-center">LISTA DE USUÁRIOS</h1>
+<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Funcionários</li>
+    </ol>
+  </div>
+</nav>
 
-<a href="{{ route('admin.employe.create') }}"><button class="btn btn-primary-m mt-5">Criar Usuário</button></a>
+
+<h1 class="text-center">Lista de funcionários</h1>
+
+<a href="{{ route('admin.employe.create') }}"><button class="btn btn-primary-m mt-5">Criar Funcionário</button></a>
 <hr>
 
 <div class="table-responsive mt-5 rounded-3  shadow-sm"">

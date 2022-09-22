@@ -37,14 +37,14 @@
 
 .btn-secundary-m {
   background-color: var(--secundary-color) !important;
-  color: var(--primary-font-color) !important;
+  color: var(--white) !important;
   box-shadow: 0 7px 10px 2px #62996D30 !important;
   transition: background-color .2s !important;
 }
 
 .btn-secundary-m:hover{
   background-color: var(--secundary-color-dark) !important;
-  color: var(--primary-font-color) !important;
+
 }
 
 .btn-secundary-m:active{
@@ -59,13 +59,12 @@
 }
 
 .btn-terciary-m:hover{
-  background-color: var(--secundary-color-dark) !important;
   color: var(--primary-font-color) !important;
 }
 
 .btn-detalhar {
   background-color: var(--secundary-color) !important;
-  color: var(--primary-font-color) !important;
+  color: var(--white) !important;
   box-shadow: 0 7px 10px 2px #62996D30 !important;
   transition: background-color .2s !important;
   position: absolute;
@@ -76,7 +75,7 @@
 
 .btn-detalhar:hover {
   background-color: var(--secundary-color-dark) !important;
-  color: var(--primary-font-color) !important;
+
 }
 
 .btn-detalhar:active {
@@ -194,8 +193,8 @@ body {
 .--form-authentication > input{
     border: none;
     border-radius: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 8px;
+    padding-right: 8px;
     background-color: transparent;
     border-bottom: 1px solid gray;
 }

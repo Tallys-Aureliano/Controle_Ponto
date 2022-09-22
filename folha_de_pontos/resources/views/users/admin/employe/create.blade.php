@@ -5,6 +5,15 @@ Criar funcionário
 @endsection
 
 @section('content-admin')
+<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ route('admin.employe.list') }}">Funcionários</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Criar</li>
+    </ol>
+  </div>
+</nav>
+
 <h1 class="text-center">Criar novo funcionário</h1>
 
 <div class="mt-5 mx-auto --box-form">

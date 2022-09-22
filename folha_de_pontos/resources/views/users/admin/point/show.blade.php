@@ -5,6 +5,15 @@ Mostrar ponto
 @endsection
 
 @section('content-admin')
+<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ route('admin.employe.list') }}">Pontos</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ {{$point->users->name} }}</li>
+    </ol>
+  </div>
+</nav>
+
 
 <h1 class="text-center">Mostrar ponto</h1>
 

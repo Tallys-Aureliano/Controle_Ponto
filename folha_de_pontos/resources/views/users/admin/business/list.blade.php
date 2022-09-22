@@ -5,6 +5,14 @@ Lista de empresas
 @endsection
 
 @section('content-admin')
+<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Empresas</li>
+    </ol>
+  </div>
+</nav>
 
 <h1 class="text-center">EMPRESAS</h1>
 <div class="--form-filter mt-5 mb-3 --box-form">
@@ -29,7 +37,6 @@ Lista de empresas
 
 
 <div class="table-responsive mt-4 rounded-3  shadow-sm mt-5">
-	
 	<table class="table">
 		<thead>
 			<th>Nome</th>
@@ -60,7 +67,6 @@ Lista de empresas
 			@endforeach
 		</tbody>
 	</table>
-
 </div>
 
 <nav aria-label="..." class="mt-3">

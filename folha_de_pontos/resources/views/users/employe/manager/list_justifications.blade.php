@@ -29,10 +29,11 @@ Lista de justificativas
 	</form>
 	<hr>
 </div>
-
-<h3>Total: {{$justifications->count()}}</h3>
+<div class="px-2 py-3 --box-form">
+	<h3>Total: {{$justifications->count()}}</h3>
+	<hr>
+</div>
 <div class="table-responsive rounded-2 shadow-sm mt-5">
-
 	<table class="table">
 		<thead>
 			<tr>

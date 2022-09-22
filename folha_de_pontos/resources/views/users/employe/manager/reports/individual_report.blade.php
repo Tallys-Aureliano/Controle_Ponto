@@ -40,6 +40,7 @@ Relatório individual
 				<th scope="col">Matricula</th>
 				<th scope="col">Email</th>
 				<th scope="col">Cargo</th>
+				<th scope="col">Gerar Relatório</th>
 				<th></th>
 			</tr>
 		</thead>

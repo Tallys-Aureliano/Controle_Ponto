@@ -5,6 +5,14 @@ Criar empresa
 @endsection
 
 @section('content-admin')
+<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ route('admin.business.list') }}">Empresas</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Criar</li>
+    </ol>
+  </div>
+</nav>
 
 	<h1 class="text-center">CRIAR EMPRESA</h1>
 	<div class="mt-5 --box-form mx-auto">
@@ -19,7 +27,7 @@ Criar empresa
 					</div>
 				@endif
 			</div>
-			<button class="btn btn-secundary-m mt-2">Criar Empresa</button>
+			<button class="btn btn-primary-m mt-2">Criar Empresa</button>
 		</form>
 	</div>
 @endsection

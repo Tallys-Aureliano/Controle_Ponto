@@ -28,28 +28,32 @@ Registrando pontos
 		@include('partials.flash_messages')
 
 		<h1 class="text-center mt-3 mb-3">Registro de pontos</h1>
+		<div class="mx-auto --box-form mt-5">
+			<form action="{{ route('manager.point.store') }}" method="POST">
+				@csrf
+				<label for="matricula" class="mb-2">Matricula</label>
+				<input type="text" id="matricula" placeholder="Matricula" class="form-control @if($errors->has('matricula')) is-invalid @endif mb-3" name="matricula" required>
+				@if($errors->has('matricula'))
+					<div class="invalid-feedback">
+						@error('matricula') {{ $message }} @enderror
+					</div>
+				@endif
+	
+				<label for="password" class="mb-2">Senha</label>
+				<input type="password" id="password" placeholder="Senha" class="form-control @if($errors->has('password')) is-invalid @endif mb-3" name="password" name="password" required>
+				@if($errors->has('password'))
+					<div class="invalid-feedback">
+						@error('password') {{ $message }} @enderror
+					</div>
+				@endif
+	
+				<button class="btn btn-primary-m mt-2">Registrar</button>
+	
+			</form>
 
-		<form action="{{ route('manager.point.store') }}" method="POST">
-			@csrf
-			<label for="matricula">Matricula</label>
-			<input type="text" id="matricula" placeholder="Matricula" class="form-control form-control-sm @if($errors->has('matricula')) is-invalid @endif mb-3" name="matricula" required>
-			@if($errors->has('matricula'))
-				<div class="invalid-feedback">
-					@error('matricula') {{ $message }} @enderror
-				</div>
-			@endif
+		</div>
 
-			<label for="password">Senha</label>
-			<input type="password" id="password" placeholder="Senha" class="form-control @if($errors->has('password')) is-invalid @endif form-control-sm mb-3" name="password" name="password" required>
-			@if($errors->has('password'))
-				<div class="invalid-feedback">
-					@error('password') {{ $message }} @enderror
-				</div>
-			@endif
-
-			<button class="btn btn-sm btn-outline-success">Registrar</button>
-
-		</form>
+	
 
 	</main>
 

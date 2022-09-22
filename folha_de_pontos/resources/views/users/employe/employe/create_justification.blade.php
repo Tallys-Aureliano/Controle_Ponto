@@ -32,17 +32,14 @@ Criar justificativa
 			</div>
 			<label for="floatingTextarea2">Comentário</label>
 			<div class="form">
-				<textarea class="form-control @if($errors->has('comment')) is-invalid @endif" name="comment" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required=""></textarea>
-				<label for="floatingTextarea2">Escreva um comentário</label>
+				<textarea class="form-control @if($errors->has('comment')) is-invalid @endif mb-3" name="comment" placeholder="Escreva um comentário.." id="floatingTextarea2" style="height: 100px" required=""></textarea>
 				@if($errors->has('comment'))
 		        <div class="invalid-feedback">
 		            @error('comment') {{ $message }} @enderror
 		        </div>
         		@endif
 			</div>
-			<div class="text-start ">
-				<button class="btn btn-primary-m mt-2 ">Enviar justificativa</button>	
-			</div>
+				<button class="btn btn-primary-m mt-3 ">Enviar justificativa</button>	
 		</form>
 	</div>
 	

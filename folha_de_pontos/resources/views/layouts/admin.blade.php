@@ -17,16 +17,8 @@
   </div>
 </nav>
 
-<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Library</li>
-    </ol>
-  </div>
-</nav>
 
-<main class="container mt-4 mb-5">
+<main class="container mt-4 mb-5 mt-5 pt-5">
 	@include('partials.flash_messages')
 	@yield('content-admin')	
 </main>

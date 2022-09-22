@@ -28,7 +28,7 @@ Bem vindo
           <h3 class="text-center mb-4 text-white" style="text-shadow: 3px 3px 5px rgba(0,0,0, .25);">Conheça a melhor solução de controle de ponto</h3>
           <div class="text-center">
             <a type="button"
-              class="btn btn-lg btn-primary-m rounded-3" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Comece Agora<span style="font-size: 16px;" class="ms-2 fas fa-arrow-right"></span>
+              class="btn btn-lg btn-primary-m rounded-3" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Cadastre sua empresa!
             </a>
           </div>
         </div>
@@ -87,7 +87,7 @@ Bem vindo
   <div class="container">
     <div class="row">
       <div class="section-title pt-4">
-        <h3 class="text-center text-uppercase fw-bold mb-3 color-secundary">UM NOVO DEPARTAMENTO PESSOAL</h3>
+        <h3 class="text-center text-uppercase fw-bold mb-3 text-secondary">UM NOVO DEPARTAMENTO PESSOAL</h3>
         <h1 class="text-center color-primary">Um Departamento Pessoal Digital</h1>
       </div>
     </div> 
@@ -201,8 +201,8 @@ Bem vindo
     <div class="row justify-content-center">
       <div class="col-lg-6">
         <div class="section-title text-center">
-          <h1 class="mb-4 color-primary">Sobre</h1>
-          <h3 class="mb-0 color-secundary">Conheça nossa equipe</>
+          <h1 class="mb-4 color-secundary">Sobre</h1>
+          <h3 class="mb-0 text-secondary">Conheça nossa equipe</>
         </div>
       </div>
     </div>
@@ -213,8 +213,8 @@ Bem vindo
           <img class="card-img-top "  src="{{ asset('assets/img/ariane.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
           </div>
             <div class="card-body">
-            <h2 class="text-center color-secundary mb-3 mt-3">Ari Ane</h2>
-            <h3 class="text-center color-font-secundary mb-4">Sub-gerente</h3>
+            <h2 class="text-center mb-3 mt-3">Ari Ane</h2>
+            <h3 class="text-center text-secondary mb-4">Sub-gerente</h3>
           </div>
         </div>
       </div>
@@ -224,8 +224,8 @@ Bem vindo
           <img class="card-img-top "  src="{{ asset('assets/img/francisco.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
           </div>
             <div class="card-body">
-            <h2 class="text-center color-secundary mb-3 mt-3">Cisco Lee</h2>
-            <h3 class="text-center color-font-secundary mb-4">Front-end</h3>
+            <h2 class="text-center  mb-3 mt-3">Cisco Lee</h2>
+            <h3 class="text-center text-secondary mb-4">Front-end</h3>
           </div>
         </div>
       </div>
@@ -235,8 +235,8 @@ Bem vindo
           <img class="card-img-top "  src="{{ asset('assets/img/clara.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
           </div>
             <div class="card-body">
-            <h2 class="text-center color-secundary mb-3 mt-3">Maria Clara</h2>
-            <h3 class="text-center color-font-secundary mb-4">Tester</h3>
+            <h2 class="text-center mb-3 mt-3">Maria Clara</h2>
+            <h3 class="text-center text-secondary mb-4">Tester</h3>
           </div>
         </div>
       </div>
@@ -246,8 +246,8 @@ Bem vindo
           <img class="card-img-top "  src="{{ asset('assets/img/michel.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
           </div>
             <div class="card-body">
-            <h2 class="text-center color-secundary mb-3 mt-3">El Michel</h2>
-            <h3 class="text-center color-font-secundary mb-4">Back-end</h3>
+            <h2 class="text-center  mb-3 mt-3">El Michel</h2>
+            <h3 class="text-center text-secondary mb-4">Back-end</h3>
           </div>
         </div>
       </div>
@@ -257,8 +257,8 @@ Bem vindo
           <img class="card-img-top "  src="{{ asset('assets/img/poliana.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
           </div>
             <div class="card-body">
-            <h2 class="text-center color-secundary mb-3 mt-3">Poliana Vision</h2>
-            <h3 class="text-center color-font-secundary mb-4">Designer</h3>
+            <h2 class="text-center  mb-3 mt-3">Poliana Vision</h2>
+            <h3 class="text-center text-secondary mb-4">Designer</h3>
           </div>
         </div>
       </div>
@@ -268,8 +268,8 @@ Bem vindo
           <img class="card-img-top "  src="{{ asset('assets/img/tallys.png') }}" alt="Imagem de capa do card" style="border-bottom-right-radius: 50px ; border-top-left-radius: 50px ;">
           </div>
             <div class="card-body">
-            <h2 class="text-center color-secundary mb-3 mt-3">Tatallys</h2>
-            <h3 class="text-center color-font-secundary mb-4">Gerente</h3>
+            <h2 class="text-center  mb-3 mt-3">Tatallys</h2>
+            <h3 class="text-center text-secondary mb-4">Gerente</h3>
           </div>
         </div>
       </div>

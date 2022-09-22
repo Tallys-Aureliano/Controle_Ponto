@@ -8,7 +8,7 @@ Lista de funcionários
 <h1 class="text-center">Lista de Funcionários</h1>
 
 <div class="--form-filter mt-5 mb-3 --box-form">
-	<form action="" class="get" class="--box-authentication">
+	<form action="" class="get">
 		<div class="d-flex flex-column gap-3 mt-5">
 			<div class="text-start">
 				<label for="consult">Nome ou Matricula</label>
@@ -23,13 +23,16 @@ Lista de funcionários
 					</select>
 					
 					<button class="btn btn-secondary shadow-md" aria-placeholder="Pesquisar">Pesquisar</button>
+				</div>
 			</div>
-		</div>
-	</form>
+		</form>
+		<hr>
 </div>
-<hr>
 
-<h3>Total: {{$users->count()}}</h3>
+<div class="--box-form">
+	<h3>Total: {{$users->count()}}</h3>
+	<hr>
+</div>
 <div class="table-responsive rounded-2 shadow-sm mt-5">
 
 	<table class="table">

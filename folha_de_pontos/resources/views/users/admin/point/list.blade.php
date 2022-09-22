@@ -5,6 +5,16 @@ Lista de pontos
 @endsection
 
 @section('content-admin')
+<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Pontos</li>
+    </ol>
+  </div>
+</nav>
+
+
 <h1 class="text-center">Lista de pontos</h1>
 
 <a href="{{ route('admin.point.create') }}">

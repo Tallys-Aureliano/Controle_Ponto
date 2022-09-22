@@ -5,6 +5,15 @@ Criar cargo
 @endsection
 
 @section('content-admin')
+<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ route('admin.position.list') }}">Cargos</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Criar</li>
+    </ol>
+  </div>
+</nav>
+
 
 <h1 class="text-center">CRIAR CARGO</h1>
 

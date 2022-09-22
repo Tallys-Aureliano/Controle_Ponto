@@ -6,6 +6,16 @@ Setor: {{ $sector->name }}
 
 @section('content-admin')
 
+<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ route('admin.sector.list') }}">Setores</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ $sector->name }}</li>
+    </ol>
+  </div>
+</nav>
+
+
 <h1 class="text-center">Setor: {{ $sector->name }}</h1>
 
 <div class="d-flex align-items-center gap-2 mt-5">

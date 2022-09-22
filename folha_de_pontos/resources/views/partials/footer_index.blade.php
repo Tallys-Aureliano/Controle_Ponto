@@ -37,7 +37,7 @@
 					<a class="mb-4" href="index.html">
 						<img loading="prelaod" decoding="async" class="img-fluid" width="160" src="{{ asset('assets/img/logo-media.png') }}" alt="Serido Ponto">
 					</a>
-					<button class="btn btn-primary-m rounded-3">Cadastra-se</button>
+					<button class="btn btn-primary-m rounded-3">Cadastre sua empresa</button>
 
 				</div>
 			</div>

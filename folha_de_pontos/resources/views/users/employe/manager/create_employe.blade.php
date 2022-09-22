@@ -42,7 +42,7 @@ Criar funcionario
 
 	<label for="matricula">Matricula</label>
 	<div class="">
-		<input type="number" class="form-control mb-3 @if($errors->has('matricula')) is-invalid @endif --form-authentication" name="matricula" value="{{old('matricula')}}" placeholder="Matricula" required maxlength="19">
+		<input type="number" class="form-control mb-3 @if($errors->has('matricula')) is-invalid @endif mb-3" name="matricula" value="{{old('matricula')}}" placeholder="Matricula" required maxlength="19">
 		@if($errors->has('matricula'))
 		<div class="invalid-feedback">
 			@error('matricula') {{ $message }} @enderror
@@ -50,8 +50,9 @@ Criar funcionario
 		@endif
 	</div>
 
-	<div class="--form-authentication">
-		<select name="role" class="form-select @if($errors->has('role')) is-invalid @endif">
+	<label for="role">Função</label>
+	<div class="">
+		<select name="role" class="form-select @if($errors->has('role')) is-invalid @endif mb-3">
 			<option value="1" @if(old('position') == 1) selected="selected" @endif>Administrador da empresa</option>
 			<option value="2" @if(old('position') == 2) selected="selected" @endif>Funcionário</option>
 		</select>
@@ -62,16 +63,18 @@ Criar funcionario
 		@endif
 	</div>
 
-	<div class="--form-authentication">
-		<select name="position" class="form-select">
+<label for="position">Cargo</label>
+	<div class="">
+		<select name="position" class="form-select mb-3">
 			@foreach($positions as $position)
 				<option value="{{$position->id}}" @if($position->id == old('position')) selected="selected" @endif>{{$position->name}}</option>
 			@endforeach
 		</select>
 	</div>
 
-	<div class="--form-authentication">
-		<input type="text" class="form-control mb-3 @if($errors->has('cpf')) is-invalid @endif --form-authentication" name="cpf" value="{{old('cpf')}}" placeholder="Cpf" maxlength="19" required>
+	<label for="cpf">CPF</label>
+	<div class="">
+		<input type="text" class="form-control mb-3 @if($errors->has('cpf')) is-invalid @endif mb-3" name="cpf" value="{{old('cpf')}}" placeholder="Cpf" maxlength="19" required>
 		@if($errors->has('cpf'))
 		<div class="invalid-feedback">
 			@error('cpf') {{ $message }} @enderror
@@ -81,7 +84,7 @@ Criar funcionario
 
 	<label for="senha">Senha</label>
 	<div class="">
-		<input type="password" class="form-control @if($errors->has('password')) is-invalid @endif mb-3 --form-authentication" name="password" placeholder="Senha" minlength="8" required>
+		<input type="password" class="form-control @if($errors->has('password')) is-invalid @endif mb-3 mb-3" name="password" placeholder="Senha" minlength="8" required>
 		@if($errors->has('password'))
 		<div class="invalid-feedback">
 			@error('password') {{ $message }} @enderror
@@ -91,13 +94,13 @@ Criar funcionario
 
 	<label for="password-confirmation">Confirme sua senha</label>
 	<div class="">
-		<input type="password" class="form-control mb-3 @if($errors->has('password_confirmation')) is-invalid @endif --form-authentication" name="password_confirmation" placeholder="Confirmar senha" required>
+		<input type="password" class="form-control mb-3 @if($errors->has('password_confirmation')) is-invalid @endif mb-3" name="password_confirmation" placeholder="Confirmar senha" required>
 		@if($errors->has('password_confirmation'))
 		<div class="invalid-feedback">
 			@error('password_confirmation') {{ $message }} @enderror
 		</div>
 		@endif
 	</div>
-	<button class="btn btn-lg btn-primary-m mt-2">Criar Funcionário</button>
+	<button class="btn btn-primary-m mt-2">Criar Funcionário</button>
 </form>
 @endsection

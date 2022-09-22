@@ -19,7 +19,11 @@ a {
 
 .breadcrumb-nav {
     background-color: #525FBF !important;
-    padding: 16px 0 !important;
+    padding: 10px 0 !important;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
 }
 
 .breadcrumb {

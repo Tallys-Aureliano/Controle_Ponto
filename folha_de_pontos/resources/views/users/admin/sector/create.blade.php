@@ -6,6 +6,17 @@ Novo setor
 
 @section('content-admin')
 
+<nav aria-label="breadcrumb" class="breadcrumb-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ route('admin.sector.list') }}">Setores</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Criar</li>
+    </ol>
+  </div>
+</nav>
+
+
+
 <h1 class="text-center">Novo setor</h1>
 
 <div class="mt-5 mx-auto --box-form">

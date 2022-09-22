@@ -35,6 +35,8 @@ Route::middleware(['auth', 'check.manager'])->group(function () {
     Route::get('manager/justificative/list', [ManagerController::class, 'listJustificatives'])->name('manager.justificative.list');
 
     // POINTS
+    Route::get('manager/point/create', [ManagerController::class, 'createPoint'])
+        ->name('manager.point.create');
 
     Route::post('manager/point/store', [ManagerController::class, 'storePoint'])
         ->name('manager.point.store');
